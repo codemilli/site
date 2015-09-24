@@ -8,4 +8,8 @@ Seoul, South Korea. A web developer with fonder of JavaScript and FP.
 
 I am interested in Scala, Clojure and Elixir.
 
+```javascript
+console.log('hello emacsians');	
+```
+
 Thank you.
