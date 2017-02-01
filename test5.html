@@ -14,6 +14,16 @@
     <script>
       var link1 = document.getElementById("link1");
       var link2 = document.getElementById("link2");
+      
+      link1.addEventListener("click", function(e) {
+        e.preventDefault();
+        location.href = e.target.href;
+      });
+      
+      link2.addEventListener("click", function(e) {
+        e.preventDefault();
+        location.href = e.target.href;
+      });
     </script>
   </body>
 </html>
