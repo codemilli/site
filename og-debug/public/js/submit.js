@@ -1,5 +1,6 @@
 $(function () {
   var ogMetaList = ['og:type', 'og:url', 'og:image', 'og:image:width', 'og:image:height', 'og:title', 'og:description', 'fb:app_id'];
+  var metaTags   = [];
 
   $('form#debug').on('submit', function (e) {
     e.preventDefault();
@@ -10,15 +11,29 @@ $(function () {
 
     $iframe.attr('src', url);
     $iframe.load(function () {
-      var metas = $iframe.contents().find('meta');
+      var metas;
+
+      try {
+        metas = $iframe.contents().find('meta');
+      } catch (e) {
+        console.log('e', e);
+      }
 
       $.each(metas, function (idx) {
         var meta    = metas[idx];
         var name    = meta.name;
         var content = meta.content;
 
-        console.log('meta', name, content);
+        if (name && ogMetaList.indexOf(name) > -1) {
+          var obj         = {};
+          obj.name        = name;
+          obj.content     = content;
+          metaTags.push(obj);
+        }
       });
+
+
+      console.log('ogMetaMap', metaTags);
     });
   });
 });
