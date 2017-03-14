@@ -72,9 +72,9 @@ function submit() {
               diff = (rHeight - previewHeight) / 2;
             }
 
+            img.css({ marginTop: -diff });
             $("#result_image").css({ width: 526, height: 275 });
             $("#show_preview").parent().addClass("nohover").show();
-            img.css({ marginTop: -diff });
           });
         }
         if (name === "og:url") {
