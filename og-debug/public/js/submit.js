@@ -1,8 +1,6 @@
 $(function () {
   var ogMetaList = ['og:type', 'og:url', 'og:image', 'og:image:width', 'og:image:height', 'og:title', 'og:description', 'fb:app_id'];
 
-  $(".result").hide();
-
   $('form#debug').on('submit', function (e) {
     e.preventDefault();
 

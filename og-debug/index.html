@@ -54,7 +54,7 @@
 
     </div>
 
-    <div class="result">
+    <div class="result" style="display: none;">
       <div id="warning" class="result__type result--warning">
         <div class="result__title">
           <i></i>
@@ -92,5 +92,27 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="public/js/submit.js"></script>
+  <script>
+    $(function () {
+      function getQueryString() {
+        var qs    = {};
+        var split = location.search.substring(1).split('&');
+
+        $.each(split, function (idx) {
+          var pair = split[idx];
+          qs[pair.split('=')[0]] = pair.split('=')[1];
+        });
+
+        return qs;
+      }
+
+      var qs = getQueryString();
+
+      if (qs.target) {
+        $("#target").val(qs.target);
+        $("form#debug").submit();
+      }
+    });
+  </script>
 </body>
 </html>
