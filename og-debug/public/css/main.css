@@ -5,6 +5,10 @@ body {
   line-height: 1.28;
 }
 
+body a {
+  color: -webkit-link;
+}
+
 .header {
   background-color: white;
   min-height: 60px;

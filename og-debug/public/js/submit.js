@@ -13,7 +13,7 @@ $(function () {
     var ogUrl      = "";
 
     $("#hidden__div").html("");
-    $(".result__content tbody").html("");
+    $(".result__properties tbody").html("");
 
     $.ajax({
       method  : 'get',
@@ -36,6 +36,8 @@ $(function () {
 
           if (name === "og:image") {
             imageUrl = content;
+
+            $("");
           }
           if (name === "og:url") {
             ogUrl = content;
@@ -48,6 +50,14 @@ $(function () {
         var dom  = "<tr> <td class='result__body--title'>"+meta.name+"</td> <td class='result__body--content'>"+meta.content+"</td> </tr>";
         $(".result__properties tbody").append(dom);
       });
+
+      if (metaTags.length) {
+        $(".result__properties").show();
+      }
+      if (url) {
+        $("#show_url").append("<a href='"+url+"' target='_blank'>" + url + "</a>");
+        $(".result__content").show();
+      }
     });
   });
 });

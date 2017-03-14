@@ -6,6 +6,7 @@
 }
 
 .result__type {
+  display: none;
   font-family: 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
   margin-bottom: 16px;
   border: 1px solid;
@@ -64,15 +65,17 @@
   background-color: #f6f7f9;
 }
 
+.result__body tr:hover {
+  background-color: #e6e7e9;
+}
+
 .result__body tr td {
   font-family: Helvetica, Arial, sans-serif;
   padding: 8px;
 }
 
 .result__content {
-  border: 1px solid;
-  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
-  border-radius: 3px;
+
 }
 
 .result__body--title {
