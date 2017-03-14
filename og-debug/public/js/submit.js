@@ -1,18 +1,21 @@
 $(function () {
   var ogMetaList = ['og:type', 'og:url', 'og:image', 'og:image:width', 'og:image:height', 'og:title', 'og:description', 'fb:app_id'];
-  var metaTags   = [];
-  var domList    = [];
-  var url        = "";
-  var imageUrl   = "";
-  var ogUrl      = "";
+
+  $(".result").hide();
 
   $('form#debug').on('submit', function (e) {
     e.preventDefault();
 
-    var $target = $("#target");
-    var $iframe = $('#iframe');
+    $(".result").show();
+    var $target    = $("#target");
+    var $iframe    = $("#iframe");
+    var url        = $target.val();
+    var metaTags   = [];
+    var imageUrl   = "";
+    var ogUrl      = "";
 
-    url         = $target.val();
+    $("#hidden__div").html("");
+    $(".result__content tbody").html("");
 
     $.ajax({
       method  : 'get',
@@ -23,9 +26,9 @@ $(function () {
       var metas = $("#hidden__div").find("meta") || [];
 
       $.each(metas, function(idx) {
-        var meta    = metas[idx];
-        var name    = meta.name;
-        var content = meta.content;
+        var meta    = $(metas[idx]);
+        var name    = meta.attr("property");
+        var content = meta.attr("content");
 
         if (name && ogMetaList.indexOf(name) > -1) {
           var obj         = {};
@@ -44,15 +47,8 @@ $(function () {
 
       $.each(metaTags, function (idx) {
         var meta = metaTags[idx];
-        domList.push("<tr> <td class='result__body--title'>"+meta.name+"</td> <td class='result__body--content'>"+meta.content+"</td> </tr>");
-      });
-
-      console.log('domList', domList);
-
-      $.each(domList, function (idx) {
-        var dom = domList[idx];
-        $(".result__content tbody").append(dom);
-        console.log('dom', dom);
+        var dom  = "<tr> <td class='result__body--title'>"+meta.name+"</td> <td class='result__body--content'>"+meta.content+"</td> </tr>";
+        $(".result__properties tbody").append(dom);
       });
     });
   });
