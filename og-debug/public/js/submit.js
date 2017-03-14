@@ -10,6 +10,11 @@ $(function () {
 
 
 function submit() {
+  $(".result__properties").hide();
+  $(".result__content").hide();
+  $("#show_preview").parent().hide();
+  $("#show_canonical_url").parent().hide();
+
 
   $(".result").show();
   var $target    = $("#target");
@@ -44,10 +49,13 @@ function submit() {
         if (name === "og:image") {
           imageUrl = content;
 
-          $("");
+          $("#show_preview img").attr('src', imageUrl);
+          $("#show_preview").parent().show();
         }
         if (name === "og:url") {
           ogUrl = content;
+          $("#show_canonical_url").append("<a href='"+ogUrl+"' target='_blank'>"+ogUrl+"</a>");
+          $("#show_canonical_url").parent().show();
         }
       }
     });
