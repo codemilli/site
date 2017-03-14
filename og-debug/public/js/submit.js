@@ -4,7 +4,7 @@ $(function () {
   $('form#debug').on('submit', function (e) {
     e.preventDefault();
 
-    location.href = location.origin + "?target=" + $("#target").val();
+    location.href = location.origin + location.pathname + "?target=" + $("#target").val();
   });
 });
 
