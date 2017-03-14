@@ -55,7 +55,7 @@
     </div>
 
     <div class="result">
-      <div class="result__type result--warning">
+      <div id="warning" class="result__type result--warning">
         <div class="result__title">
           <i></i>
           <span> Warnings That Should Be Fixed </span>
@@ -63,18 +63,20 @@
       </div>
 
       <div class="result__content">
-        <ul>
-          <li>
-            <div>
-              <div></div>
-              <div></div>
-            </div>
-          </li>
-        </ul>
+        <div class="result__title">
+          <span> How we scraped the URL </span>
+        </div>
+        <div class="result__body">
+          <table>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
       </div>
-
     </div>
   </div>
+
+  <div id="hidden__div" style="display: none;"></div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="public/js/submit.js"></script>
