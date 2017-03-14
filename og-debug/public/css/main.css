@@ -6,7 +6,9 @@ body {
 }
 
 body a {
-  color: -webkit-link;
+  color: #365899;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .header {

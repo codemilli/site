@@ -46,14 +46,28 @@ function submit() {
         obj.content     = content;
         metaTags.push(obj);
 
+        if (name === "og:title") {
+          $("#result_title").text(content);
+        }
+        if (name === "og:description") {
+          $("#result_desc").text(content);
+        }
         if (name === "og:image") {
           imageUrl = content;
 
-          $("#show_preview img").attr('src', imageUrl);
+          $("#result_image").css({ width: 526, height: 275 });
+          $("#result_image img").attr('src', imageUrl);
+          $("#show_preview").parent().addClass("nohover");
           $("#show_preview").parent().show();
+
+          $("#result_image img").on("load", function () {
+            $("#result_image img");
+            console.log('loaded');
+          });
         }
         if (name === "og:url") {
           ogUrl = content;
+          $("#result_url").text(ogUrl);
           $("#show_canonical_url").append("<a href='"+ogUrl+"' target='_blank'>"+ogUrl+"</a>");
           $("#show_canonical_url").parent().show();
         }
