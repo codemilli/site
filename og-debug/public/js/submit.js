@@ -1,4 +1,7 @@
 var ogMetaList = ['og:type', 'og:url', 'og:image', 'og:image:width', 'og:image:height', 'og:title', 'og:description', 'fb:app_id'];
+var previewWidth  = 526;
+var previewHeight = 275;
+var previewRatio  = previewHeight / previewWidth;
 
 $(function () {
   $('form#debug').on('submit', function (e) {
@@ -53,16 +56,25 @@ function submit() {
           $("#result_desc").text(content);
         }
         if (name === "og:image") {
+          var img = $("#result_image img");
           imageUrl = content;
 
-          $("#result_image").css({ width: 526, height: 275 });
-          $("#result_image img").attr('src', imageUrl);
-          $("#show_preview").parent().addClass("nohover");
-          $("#show_preview").parent().show();
+          img.attr('src', imageUrl).on("load", function () {
+            var diff    = 0;
+            var nWidth  = img[0].naturalWidth;
+            var nHeight = img[0].naturalHeight;
+            var nRatio  = nHeight / nWidth;
+            var dRatio  = previewWidth / nWidth;
+            var rWidth  = parseInt(nWidth * dRatio);
+            var rHeight = parseInt(nHeight * dRatio);
 
-          $("#result_image img").on("load", function () {
-            $("#result_image img");
-            console.log('loaded');
+            if (rHeight > previewHeight) {
+              diff = (rHeight - previewHeight) / 2;
+            }
+
+            $("#result_image").css({ width: 526, height: 275 });
+            $("#show_preview").parent().addClass("nohover").show();
+            img.css({ marginTop: -diff });
           });
         }
         if (name === "og:url") {
