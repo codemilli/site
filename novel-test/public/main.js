@@ -20,6 +20,34 @@ function readerSizing() {
   console.log('readerP', readerP);
 }
 
+function nextPage() {
+  if (currentX >= readerW) {
+    return;
+  }
+
+  currentP += 1;
+  currentX = currentP * 391;
+
+  $("#reader").css({
+    "-webkit-transform": "translate3d(-" + currentX + "px, 0px, 0px)",
+    "transform": "translate3d(-" + currentX + "px, 0px, 0px)"
+  });
+}
+
+function prevPage() {
+  if (currentX <= 0) {
+    return;
+  }
+
+  currentP -= 1;
+  currentX = currentP * 391;
+
+  $("#reader").css({
+    "-webkit-transform": "translate3d(-" + currentX + "px, 0px, 0px)",
+    "transform": "translate3d(-" + currentX + "px, 0px, 0px)"
+  });
+}
+
 window.__novel_image_loaded__ = function () {
   readerSizing();
 };
@@ -35,31 +63,13 @@ $(function () {
     readerSizing();
   }
 
-  $("#btn__next").click(function () {
-    if (currentX >= readerW) {
-      return;
+  $("#btn__next").click(nextPage);
+  $("#btn__prev").click(prevPage);
+  $("#reader__wrap").click(function (e) {
+    if (e.offsetX > 177) {
+      nextPage();
+    } else {
+      prevPage();
     }
-
-    currentP += 1;
-    currentX = currentP * 391;
-
-    $("#reader").css({
-      "-webkit-transform": "translate3d(-" + currentX + "px, 0px, 0px)",
-      "transform": "translate3d(-" + currentX + "px, 0px, 0px)"
-    });
-  });
-
-  $("#btn__prev").click(function () {
-    if (currentX <= 0) {
-      return;
-    }
-
-    currentP -= 1;
-    currentX = currentP * 391;
-
-    $("#reader").css({
-      "-webkit-transform": "translate3d(-" + currentX + "px, 0px, 0px)",
-      "transform": "translate3d(-" + currentX + "px, 0px, 0px)"
-    });
   });
 });
