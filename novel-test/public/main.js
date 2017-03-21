@@ -14,6 +14,10 @@ function readerSizing() {
   readerH = $("#reader__content").height();
   readerP = parseInt(readerH / 667) + 1;
   readerW = readerP * 391;
+
+  console.log('readerH', readerH);
+  console.log('readerW', readerW);
+  console.log('readerP', readerP);
 }
 
 window.__novel_image_loaded__ = function () {
