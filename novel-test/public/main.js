@@ -4,16 +4,21 @@
  * @ncsoft
  */
 
+var borderW  = 16;
 var currentX = 0;
 var currentP = 0;
 var readerP  = 0;
 var readerH  = 0;
 var readerW  = 0;
+var windowW  = 0;
+var windowH  = 0;
 
 function readerSizing() {
+  windowW = $("#reader__wrap").width();
+  windowH = $("#reader__wrap").height();
   readerH = $("#reader__content").height();
-  readerP = parseInt(readerH / 667) + 1;
-  readerW = readerP * 391;
+  readerP = parseInt(readerH / windowH) + 1;
+  readerW = readerP * (windowW + 16);
 
   console.log('readerH', readerH);
   console.log('readerW', readerW);
@@ -26,7 +31,7 @@ function nextPage() {
   }
 
   currentP += 1;
-  currentX = currentP * 391;
+  currentX = currentP * (windowW + 16);
 
   $("#reader").css({
     "-webkit-transform": "translate3d(-" + currentX + "px, 0px, 0px)",
@@ -40,7 +45,7 @@ function prevPage() {
   }
 
   currentP -= 1;
-  currentX = currentP * 391;
+  currentX = currentP * (windowW + 16);
 
   $("#reader").css({
     "-webkit-transform": "translate3d(-" + currentX + "px, 0px, 0px)",
