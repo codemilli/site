@@ -6,7 +6,6 @@
 
   <title>Title</title>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
   <style>
     html, body {
@@ -36,6 +35,9 @@
       overflow: hidden;
       margin: auto auto;
       background-color: white;
+      user-select: none;
+      -webkit-user-drag: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
     #reader {
       column-width: 375px;

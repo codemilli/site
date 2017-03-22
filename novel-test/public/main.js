@@ -55,7 +55,7 @@ function prevPage() {
 }
 
 function onTap(e) {
-  if (e.changedPointers[0].pageX > (windowW / 2)) {
+  if (e.offsetX > (windowW / 2)) {
     nextPage();
   } else {
     prevPage();
@@ -76,8 +76,7 @@ $(function () {
     $("#reader__content").html(response);
     readerSizing();
 
-    wrap = new Hammer($("#reader__wrap")[0]);
-    wrap.on('tap', onTap);
+    $("#reader__wrap").click(onTap);
   }
 
   $("#btn__next").click(nextPage);
