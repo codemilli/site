@@ -3,8 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>SVG Animation</title>
+    <style>
+        CSS  Babel  Result
+        EDIT ON
+        body {
+            /* essential styling */
+            background: linear-gradient(90deg, #ff9800 var(--stop, 0%), #3c3c3c 0);
+            background-size: 5em;
+        }
+        body:after {
+            /* just to prettify stuff  */
+            /* use absolute positioning because
+             * margin: 0 on body
+             * breaks Edge for some reason */
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            font: calc(16vmin + 3rem)/100vh Leckerli One, cursive;
+            text-align: center;
+            cursor: pointer;
+            content: 'Click!';
+        }
+        @supports (mix-blend-mode: screen) {
+            body:after {
+                /* in supports because
+                 * background: inherit
+                 * breaks Edge for some reason
+                 * (sorry, I had no better idea) */
+                background: inherit;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                filter: invert(1) grayscale(1) contrast(3);
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>SVG Animation</h1>
+    <hr>
+    <script>
+      const NF = 80; // number of frames transition happens over
+
+      let rID = null, f = 0, dir = -1;
+
+      function stopAni() {
+        cancelAnimationFrame(rID);
+        rID = null;
+      };
+
+      function update() {
+        console.log('update')
+        f += dir; // update current frame index
+
+        let k = f/NF; // compute progress
+
+        document.body.style.setProperty('--stop', `${+(k*100).toFixed(2)}%`);
+
+        if(!(f%NF)) {
+          stopAni();
+          return
+        }
+
+        rID = requestAnimationFrame(update)
+      };
+
+      addEventListener('click', e => {
+        if(rID) stopAni(); // if an animation is already running, stop it
+      dir *= -1; // change animation direction
+      update();
+      }, false);
+    </script>
 </body>
 </html>
