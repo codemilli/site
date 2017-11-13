@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/hckrmoon/hckrmoon.github.io/issues"
   },
-  "homepage": "https://github.com/hckrmoon/hckrmoon.github.io#readme"
+  "homepage": "https://github.com/hckrmoon/hckrmoon.github.io#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
 }
