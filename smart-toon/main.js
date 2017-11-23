@@ -31,13 +31,15 @@ function onData({viewer, toon}) {
   $viewer.css({"height": `${toon.background.height * ratio}px`})
   $viewer.find('#bg-image').attr('src', toon.background.image_url)
 
-  _.map(toon.image_objects, (data, i) => {
+  _.map(toon.image_objects, (data) => {
     const imgObj = ImageObjectTmpl({
       imageUrl: data.image_url,
+      top: data.top,
+      left: data.left,
+      width: data.width,
+      height: data.height,
       priority: data.priority
     })
-
-    console.log('imgObj', imgObj)
 
     $viewer.append(imgObj)
   })

@@ -4,7 +4,7 @@
 
 var ImageObjectTmpl = _.template(`
   <div class="image-object" 
-       style="z-index: <%= priority %>;">
+       style="top: <%= top %>; left: <%= left %>;z-index: <%= priority %>;">
     <img style="" src="<%= imageUrl %>" alt="image object" />
   </div>
 `)
