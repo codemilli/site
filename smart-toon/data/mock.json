@@ -1,0 +1,32 @@
+{
+  "background": {
+    "image_url": "",
+    "width": 0,
+    "height": 0
+  },
+  "image-objects": [
+    {
+      "image_url": "",
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0,
+      "animation_list": [
+        {
+          "animation": {
+            "name": "transition",
+            "before_x": 0,
+            "before_y": 0,
+            "after_x": 0,
+            "after_y": 0
+          },
+          "start_at": 0,
+          "end_at": 0,
+          "duration": 0,
+          "delay": 0,
+          "timing_function": ""
+        }
+      ]
+    }
+  ]
+}
