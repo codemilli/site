@@ -13,8 +13,20 @@ body h3 {
 
 .viewer {
   position: relative;
-  width: 720px;
+  width: 100%;
+  max-width: 720px;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0%;
+}
+
+.viewer #bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
 }
 
 .viewer .image-object {

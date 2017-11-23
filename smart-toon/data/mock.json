@@ -1,16 +1,26 @@
 {
   "background": {
-    "image_url": "",
+    "image_url": "/smart-toon/images/bg.png",
     "width": 690,
     "height": 827
   },
-  "image-objects": [
+  "image_objects": [
     {
-      "image_url": "",
+      "image_url": "/smart-toon/images/element1.jpg",
       "top": 0,
       "left": 0,
       "width": 0,
       "height": 0,
+      "priority": -1,
+      "animation_list": []
+    },
+    {
+      "image_url": "/smart-toon/images/element2.png",
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0,
+      "priority": 1,
       "animation_list": [
         {
           "animation": {
