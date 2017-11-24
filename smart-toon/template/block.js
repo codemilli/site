@@ -8,3 +8,9 @@ var BlockTmpl = _.template(`
     <img style="" src="<%= imageUrl %>" alt="block background" />
   </div>
 `)
+
+var EmptyBlockTmpl = _.template(`
+  <div class="block" 
+       style="background: white;top: <%= top %>px;left: <%= left %>px;width: <%= width %>px;height: <%= height %>px;">
+  </div>
+`)

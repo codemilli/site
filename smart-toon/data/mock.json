@@ -137,5 +137,36 @@
         ]
       }
     ]
+  },{
+    "background": {
+      "image_url": "",
+      "top": 4972,
+      "left": 0,
+      "width": 690,
+      "height": 1561
+    },
+    "image_objects": [
+      {
+        "image_url": "/smart-toon/images/block5/element1.png",
+        "top": 50,
+        "left": 18,
+        "width": 624,
+        "height": 1391,
+        "priority": 1,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "@CUSTOM/Shaking",
+              "range": 3
+            },
+            "start_at": -200,
+            "end_at": 0,
+            "duration": 0.7,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
   }]
 }
