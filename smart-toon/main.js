@@ -8,6 +8,7 @@ onLoad()
   .then(() => $.get('/smart-toon/data/mock.json'))
   .then(calculateViewerSize)
   .then(onData)
+  .then(playBGM)
 
 function onLoad() {
   return new Promise((resolve) => $(window).load(resolve))
@@ -64,9 +65,26 @@ function onData({viewer, toon}) {
           addCustomShakingAnimation($block, $imgObj, item, ratio)
         }
       })
+
+      _.forEach(data.audio_objects, (audio) => {
+        audio.play_at
+      })
     })
 
     $viewer.append($block)
+  })
+}
+
+function playBGM() {
+  return new Promise((resolve) => {
+    const audio = document.getElementById('bgm')
+    audio.play()
+    resolve()
+
+    audio.addEventListener('ended', () => {
+      audio.currentTime = 0
+      audio.play()
+    }, false)
   })
 }
 

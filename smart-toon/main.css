@@ -23,6 +23,10 @@ body > .blank {
   margin: 0 auto;
 }
 
+.bgm {
+  visibility: hidden;
+}
+
 .block {
   position: absolute;
 }

@@ -69,6 +69,12 @@
       "width": 690,
       "height": 763
     },
+    "audio_objects": [
+      {
+        "url": "/smart-toon/audio/ping-sound.mp3",
+        "play_at": -500
+      }
+    ],
     "image_objects": [
       {
         "image_url": "/smart-toon/images/block4/element1.png",
