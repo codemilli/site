@@ -52,5 +52,23 @@
       "height": 1772
     },
     "image_objects": []
+  }, {
+    "background": {
+      "image_url": "/smart-toon/images/block3/bg.jpg",
+      "top": 2972,
+      "left": 0,
+      "width": 690,
+      "height": 1237
+    },
+    "image_objects": []
+  }, {
+    "background": {
+      "image_url": "/smart-toon/images/block4/bg.jpg",
+      "top": 2972,
+      "left": 0,
+      "width": 690,
+      "height": 1237
+    },
+    "image_objects": []
   }]
 }
