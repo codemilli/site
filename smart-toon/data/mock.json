@@ -64,11 +64,78 @@
   }, {
     "background": {
       "image_url": "/smart-toon/images/block4/bg.jpg",
-      "top": 2972,
+      "top": 4209,
       "left": 0,
       "width": 690,
-      "height": 1237
+      "height": 763
     },
-    "image_objects": []
+    "image_objects": [
+      {
+        "image_url": "/smart-toon/images/block4/element1.png",
+        "top": 43,
+        "left": 24,
+        "width": 303,
+        "height": 264,
+        "priority": 3,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 0,
+              "after_opacity": 1
+            },
+            "start_at": -500,
+            "end_at": -450,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      },
+      {
+        "image_url": "/smart-toon/images/block4/element2.png",
+        "top": 128,
+        "left": 46,
+        "width": 596,
+        "height": 585,
+        "priority": 2,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 1,
+              "after_opacity": 0
+            },
+            "start_at": -500,
+            "end_at": 1000,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      },
+      {
+        "image_url": "/smart-toon/images/block4/element3.png",
+        "top": 128,
+        "left": 46,
+        "width": 596,
+        "height": 585,
+        "priority": 1,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 1,
+              "after_opacity": 0
+            },
+            "start_at": -475,
+            "end_at": 1000,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
   }]
 }
