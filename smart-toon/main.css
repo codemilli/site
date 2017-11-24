@@ -23,12 +23,12 @@ body > .blank {
   margin: 0 auto;
 }
 
-.viewer #bg-image {
+.block {
   position: absolute;
-  top: 0;
-  left: 0;
+}
+
+.block > img {
   width: 100%;
-  z-index: 0;
 }
 
 .viewer .image-object {

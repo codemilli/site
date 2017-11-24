@@ -1,42 +1,56 @@
 {
-  "background": {
-    "image_url": "/smart-toon/images/bg.png",
-    "width": 690,
-    "height": 827
-  },
-  "image_objects": [
-    {
-      "image_url": "/smart-toon/images/element1.jpg",
-      "top": 174,
+  "width": 690,
+  "blocks": [{
+    "background": {
+      "image_url": "/smart-toon/images/block1/bg.png",
+      "top": 331,
       "left": 0,
       "width": 690,
-      "height": 474,
-      "priority": -2,
-      "animation_list": []
+      "height": 827
     },
-    {
-      "image_url": "/smart-toon/images/element2.png",
-      "top": 174,
-      "left": -953,
-      "width": 99,
-      "height": 474,
-      "priority": -1,
-      "animation_list": [
-        {
-          "animation": {
-            "name": "transition",
-            "before_x": 0,
-            "before_y": 0,
-            "after_x": 0,
-            "after_y": 0
-          },
-          "start_at": 0,
-          "end_at": 0,
-          "duration": 0,
-          "delay": 0,
-          "timing_function": ""
-        }
-      ]
-    }
-  ]
+    "image_objects": [
+      {
+        "image_url": "/smart-toon/images/block1/element1.jpg",
+        "top": 174,
+        "left": 0,
+        "width": 690,
+        "height": 474,
+        "priority": -2,
+        "animation_list": []
+      },
+      {
+        "image_url": "/smart-toon/images/block1/element2.png",
+        "top": 174,
+        "left": -953,
+        "width": 99,
+        "height": 474,
+        "priority": -1,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "translate",
+              "before_x": 0,
+              "before_y": 0,
+              "after_x": 1677,
+              "after_y": 0
+            },
+            "start_at": -700,
+            "end_at": 0,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
+  }, {
+    "background": {
+      "image_url": "/smart-toon/images/block2/bg.jpg",
+      "top": 1200,
+      "left": 0,
+      "width": 690,
+      "height": 1772
+    },
+    "image_objects": []
+  }]
 }
