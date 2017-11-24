@@ -7,6 +7,11 @@ body h3 {
   padding: 30px;
 }
 
+body > .blank {
+  background-color: white;
+  height: 300px;
+}
+
 .wrap {
   margin-top: 30px;
 }
@@ -16,9 +21,6 @@ body h3 {
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0%;
 }
 
 .viewer #bg-image {
@@ -31,4 +33,8 @@ body h3 {
 
 .viewer .image-object {
   position: absolute;
+}
+
+.image-object > img {
+  width: 100%;
 }

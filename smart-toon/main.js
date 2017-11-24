@@ -34,13 +34,14 @@ function onData({viewer, toon}) {
   _.map(toon.image_objects, (data) => {
     const imgObj = ImageObjectTmpl({
       imageUrl: data.image_url,
-      top: data.top,
-      left: data.left,
-      width: data.width,
-      height: data.height,
+      top: data.top * ratio,
+      left: data.left * ratio,
+      width: data.width * ratio,
+      height: data.height * ratio,
       priority: data.priority
     })
 
+    console.log('data', data)
     $viewer.append(imgObj)
   })
 }
