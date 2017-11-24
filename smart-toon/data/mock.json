@@ -196,7 +196,7 @@
           {
             "animation": {
               "name": "@CUSTOM/Shaking",
-              "range": 3
+              "range": 4
             },
             "start_at": -300,
             "end_at": 0,

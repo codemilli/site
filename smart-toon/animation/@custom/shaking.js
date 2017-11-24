@@ -11,7 +11,7 @@ function addCustomShakingAnimation($block, $imgObj, item, ratio) {
 
     if (nowY > 0 && !animationing) {
       animationing = true
-
+      let step = true
       const start = Date.now()
       const dur = duration * 1000
 
@@ -21,7 +21,8 @@ function addCustomShakingAnimation($block, $imgObj, item, ratio) {
         window.requestAnimationFrame(() => {
           const diff = now - start
           const progress = diff / dur
-          const step = parseInt(progress * 100) % 2
+
+          step = !step
 
           if (step) {
             $imgObj.css({"transform": `translate3d(-${range}px, 0px, 0px)`})
