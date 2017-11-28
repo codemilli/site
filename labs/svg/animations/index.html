@@ -51,13 +51,27 @@
   <style>
     #heart {
       display: inline-block;
-      width: 38px;
-      height: 38px;
+      width: 100px;
+      height: 100px;
       background-image: url("images/sprite.png");
       background-repeat: no-repeat;
-      background-position: 0px 0px;
-      background-size: 1130px 38px
+      background-position: 0 0;
+      animation: fave-heart 1s steps(28);        
     }
+
+    #heart:hover {
+      background-position: -2800px 0;
+      transition: background 1s steps(28);
+    }
+    @keyframes fave-heart {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: -2800px 0;
+      }
+    }
+
   </style>
 </body>
 </html>
