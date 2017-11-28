@@ -41,40 +41,6 @@
         }
     </style>
 </head>
-<body>
-    <h1>SVG Animation</h1>
-    <hr>
-    <script>
-      const NF = 80; // number of frames transition happens over
 
-      let rID = null, f = 0, dir = -1;
-
-      function stopAni() {
-        cancelAnimationFrame(rID);
-        rID = null;
-      };
-
-      function update() {
-        console.log('update')
-        f += dir; // update current frame index
-
-        let k = f/NF; // compute progress
-
-        document.body.style.setProperty('--stop', `${+(k*100).toFixed(2)}%`);
-
-        if(!(f%NF)) {
-          stopAni();
-          return
-        }
-
-        rID = requestAnimationFrame(update)
-      };
-
-      addEventListener('click', e => {
-        if(rID) stopAni(); // if an animation is already running, stop it
-      dir *= -1; // change animation direction
-      update();
-      }, false);
-    </script>
 </body>
 </html>
