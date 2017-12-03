@@ -13,7 +13,7 @@
     <hr/>
 
     <div class="block seoul">
-      <svg xmlns="http://www.w3.org/2000/svg">
+      <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 540 400">
         <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
         <g>
           <title>background</title>
@@ -34,7 +34,9 @@
         </g>
       </svg>
     </div>
-    <hr />
+    <div class="block seoul-building">
+
+    </div>
   </div>
   <script>
     var heart = document.getElementById('heart')
@@ -68,14 +70,15 @@
     }
 
     .seoul {
+      position: relative;
       text-align: center;
     }
     .seoul svg {
       cursor: pointer;
-      width: 580px;
+      width: 540px;
       height: 400px;
       stroke-width:17px;
-      transition:transform .5s ease-out;
+      animation: focus-out 0.7s ease-in-out forwards 3.5s;
     }
     #stroke > path {
       stroke-dasharray: 1200;
@@ -105,6 +108,18 @@
       }
       100% {
         stroke-dashoffset: 0;
+      }
+    }
+    @keyframes focus-out {
+      0% {
+        transform: scale(1);
+        width: 540px;
+        height: 400px;
+      }
+      100% {
+        transform: scale(0.3);
+        width: 270px;
+        height: 200px;
       }
     }
   </style>
