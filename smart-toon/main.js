@@ -47,6 +47,7 @@ function onData({viewer, toon}) {
   _.forEach(toon.blocks, (block) => {
     const hasBG = !!block.background.image_url
     const blockOption = {
+      bgColor: toon.background_color,
       imageUrl: block.background.image_url,
       top: block.background.top * ratio,
       left: block.background.left * ratio,
@@ -54,6 +55,8 @@ function onData({viewer, toon}) {
       height: block.background.height * ratio
     }
     const $block = $(hasBG ? BlockTmpl(blockOption) : EmptyBlockTmpl(blockOption))
+
+    $viewer.append($block)
 
     _.forEach(block.image_objects, (data) => {
       const $imgObj = $(ImageObjectTmpl({
@@ -84,8 +87,6 @@ function onData({viewer, toon}) {
         audio.play_at
       })
     })
-
-    $viewer.append($block)
   })
 }
 

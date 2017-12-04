@@ -11,6 +11,6 @@ var BlockTmpl = _.template(`
 
 var EmptyBlockTmpl = _.template(`
   <div class="block" 
-       style="background: white;top: <%= top %>px;left: <%= left %>px;width: <%= width %>px;height: <%= height %>px;">
+       style="background: <%= bgColor %>;top: <%= top %>px;left: <%= left %>px;width: <%= width %>px;height: <%= height %>px;">
   </div>
 `)

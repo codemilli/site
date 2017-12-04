@@ -3,13 +3,35 @@
   "background_color": "black",
   "blocks": [{
     "background": {
-      "image_url": "/smart-toon/images/lineage/s1_1.png",
-      "top": 500,
+      "image_url": "",
+      "top": 200,
       "left": 0,
       "width": 650,
       "height": 452
     },
     "image_objects": [
+      {
+        "image_url": "/smart-toon/images/lineage/s1_1.png",
+        "top": 0,
+        "left": 0,
+        "width": 650,
+        "height": 452,
+        "priority": 1,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 0,
+              "after_opacity": 1
+            },
+            "start_at": -500,
+            "end_at": -200,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      },
       {
         "image_url": "/smart-toon/images/lineage/s1_2.png",
         "top": 0,
@@ -24,7 +46,73 @@
               "before_opacity": 0,
               "after_opacity": 1
             },
+            "start_at": -400,
+            "end_at": -300,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
+  }, {
+    "background": {
+      "image_url": "",
+      "top": 1000,
+      "left": 0,
+      "width": 650,
+      "height": 1360
+    },
+    "image_objects": [
+      {
+        "image_url": "/smart-toon/images/lineage/s2.png",
+        "top": 0,
+        "left": 0,
+        "width": 650,
+        "height": 1360,
+        "priority": 1,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "translate",
+              "before_x": 500,
+              "before_y": 0,
+              "after_x": 0,
+              "after_y": 0
+            },
             "start_at": -500,
+            "end_at": 300,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
+  }, {
+    "background": {
+      "image_url": "",
+      "top": 2700,
+      "left": 0,
+      "width": 650,
+      "height": 449
+    },
+    "image_objects": [
+      {
+        "image_url": "/smart-toon/images/lineage/s3.png",
+        "top": 0,
+        "left": 0,
+        "width": 650,
+        "height": 449,
+        "priority": 1,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 0,
+              "after_opacity": 1
+            },
+            "start_at": -700,
             "end_at": -400,
             "duration": 0,
             "delay": 0,
@@ -33,5 +121,13 @@
         ]
       }
     ]
+  }, {
+    "background": {
+      "image_url": "",
+      "top": 3000,
+      "left": 0,
+      "width": 650,
+      "height": 1000
+    }
   }]
 }

@@ -1,7 +1,6 @@
 function addOpacityAnimation($block, $imgObj, item, ratio) {
   const {animation, start_at, end_at} = item
-
-  $(window).on('scroll', () => {
+  const onEvent = () => {
     const windowTop = $(document).scrollTop()
     const offsetTop = $block.offset().top
     const startAt = offsetTop + (start_at * ratio)
@@ -11,15 +10,15 @@ function addOpacityAnimation($block, $imgObj, item, ratio) {
     const nowY = windowTop - startAt
 
     let {before_opacity, after_opacity} = animation
-    let opacity = null
+    let opacity = before_opacity
 
-    if (nowY < 0) {
-      opacity = before_opacity
-    }
+    console.log('offsetTop', nowY)
 
     if (nowY >= 0 && nowY <= range) {
       const progress = nowY / range
+      const diff = after_opacity - before_opacity
       opacity = progress * after_opacity
+      console.log('afteropacity', diff)
     }
 
     if (nowY > range) {
@@ -27,5 +26,8 @@ function addOpacityAnimation($block, $imgObj, item, ratio) {
     }
 
     $imgObj.css({'opacity': opacity})
-  })
+  }
+
+  $(window).on('scroll', onEvent)
+  $(document).ready(onEvent)
 }

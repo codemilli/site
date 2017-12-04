@@ -3,7 +3,7 @@ function addCustomShakingAnimation($block, $imgObj, item, ratio) {
   const {range} = animation
   let animationing = false
 
-  $(window).on('scroll', () => {
+  const onEvent = () => {
     const windowTop = $(document).scrollTop()
     const offsetTop = $block.offset().top
     const startAt = offsetTop + (start_at * ratio)
@@ -42,5 +42,8 @@ function addCustomShakingAnimation($block, $imgObj, item, ratio) {
       animationing = false
       $imgObj.removeClass("custom-animation-shaking")
     }
-  })
+  }
+
+  $(window).on('scroll', onEvent)
+  $(document).ready(onEvent)
 }
