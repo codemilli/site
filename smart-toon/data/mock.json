@@ -113,7 +113,7 @@
               "after_opacity": 0
             },
             "start_at": -500,
-            "end_at": 1000,
+            "end_at": -499,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
@@ -135,7 +135,7 @@
               "after_opacity": 0
             },
             "start_at": -475,
-            "end_at": 1000,
+            "end_at": -474,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
