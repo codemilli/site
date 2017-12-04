@@ -12,13 +12,10 @@ function addScaleAnimation($block, $imgObj, item, ratio) {
     let {before_scale, after_scale} = animation
     let scale = before_scale
 
-    console.log('offsetTop', nowY)
-
     if (nowY >= 0 && nowY <= range) {
       const progress = nowY / range
       const diff = after_scale - before_scale
       scale = scale + (progress * diff)
-      console.log('afteropacity', diff)
     }
 
     if (nowY > range) {

@@ -212,8 +212,8 @@
               "before_opacity": 0,
               "after_opacity": 1
             },
-            "start_at": -700,
-            "end_at": -699,
+            "start_at": -800,
+            "end_at": -799,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
