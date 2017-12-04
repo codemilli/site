@@ -586,6 +586,64 @@
     ]
   }, {
     "background": {
+      "image_url": "/smart-toon/images/lineage/s11_1.png",
+      "top": 10000,
+      "left": 0,
+      "width": 650,
+      "height": 660
+    },
+    "image_objects": [
+      {
+        "image_url": "/smart-toon/images/lineage/s11_2.png",
+        "top": 25,
+        "left": 0,
+        "width": 650,
+        "height": 634,
+        "priority": 2,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "translate",
+              "before_x": 100,
+              "before_y": 400,
+              "after_x": 0,
+              "after_y": 0
+            },
+            "start_at": -500,
+            "end_at": -100,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      },
+      {
+        "image_url": "/smart-toon/images/lineage/s11_3.png",
+        "top": 343,
+        "left": 105,
+        "width": 546,
+        "height": 317,
+        "priority": 3,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "translate",
+              "before_x": -40,
+              "before_y": 100,
+              "after_x": 0,
+              "after_y": 0
+            },
+            "start_at": -150,
+            "end_at": -100,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
+  }, {
+    "background": {
       "image_url": "",
       "top": 12000,
       "left": 0,
