@@ -15,8 +15,7 @@ function addOpacityAnimation($block, $imgObj, item, ratio) {
     if (nowY >= 0 && nowY <= range) {
       const progress = nowY / range
       const diff = after_opacity - before_opacity
-      opacity = progress * after_opacity
-      console.log('afteropacity', start_at, before_opacity, after_opacity, diff)
+      opacity = diff + (progress * after_opacity)
     }
 
     if (nowY > range) {
