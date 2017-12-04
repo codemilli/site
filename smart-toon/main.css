@@ -29,6 +29,7 @@ body > .blank {
 
 .block {
   position: absolute;
+  overflow: hidden;
 }
 
 .block > img {
