@@ -486,18 +486,18 @@
   }, {
     "background": {
       "image_url": "",
-      "top": 9200,
+      "top": 9350,
       "left": 0,
       "width": 650,
       "height": 493
     },
     "image_objects": [
       {
-        "image_url": "/smart-toon/images/lineage/s9_1.png",
+        "image_url": "/smart-toon/images/lineage/s10_1.png",
         "top": 0,
         "left": 0,
         "width": 650,
-        "height": 493,
+        "height": 394,
         "priority": 2,
         "animation_list": [
           {
@@ -507,19 +507,40 @@
               "after_opacity": 1
             },
             "start_at": -600,
-            "end_at": -500,
+            "end_at": -550,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
           },
           {
             "animation": {
-              "name": "scale",
-              "before_scale": 1,
-              "after_scale": 1.4
+              "name": "@CUSTOM/Shaking",
+              "range": 3
             },
-            "start_at": -600,
-            "end_at": -100,
+            "start_at": -550,
+            "end_at": 0,
+            "duration": 0.5,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      },
+      {
+        "image_url": "/smart-toon/images/lineage/s10_2.png",
+        "top": 21,
+        "left": 0,
+        "width": 650,
+        "height": 334,
+        "priority": 4,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 0,
+              "after_opacity": 1
+            },
+            "start_at": -550,
+            "end_at": -500,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
@@ -527,11 +548,11 @@
         ]
       },
       {
-        "image_url": "/smart-toon/images/lineage/s9_2.png",
-        "top": 30,
-        "left": 300,
-        "width": 271,
-        "height": 196,
+        "image_url": "/smart-toon/images/lineage/s10_3.png",
+        "top": 165,
+        "left": 110,
+        "width": 478,
+        "height": 231,
         "priority": 3,
         "animation_list": [
           {
@@ -541,19 +562,21 @@
               "after_opacity": 1
             },
             "start_at": -600,
-            "end_at": -599,
+            "end_at": -580,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
           },
           {
             "animation": {
-              "name": "scale",
-              "before_scale": 1,
-              "after_scale": 1.4
+              "name": "translate",
+              "before_x": -100,
+              "before_y": 0,
+              "after_x": 0,
+              "after_y": 0
             },
             "start_at": -600,
-            "end_at": -100,
+            "end_at": -500,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
