@@ -2,10 +2,22 @@
  * 2017. 11. 23.
  */
 
+const qs = {};
+const queries = location.search.substring(1).split('&') || [];
+
+for(let i = 0; i < queries.length; i++) {
+  if (queries[i]) {
+    const pair = queries[i].split('=');
+    qs[pair[0]] = pair[1];
+  }
+}
+
 const $viewer = $('.viewer')
+const {resource} = qs
+const dataUrl = `/smart-toon/data/${resource || 'mock'}.json`
 
 onLoad()
-  .then(() => $.get('/smart-toon/data/mock.json'))
+  .then(() => $.get(dataUrl))
   .then(calculateViewerSize)
   .then(onData)
   .then(playBGM)
@@ -17,6 +29,8 @@ function onLoad() {
 function calculateViewerSize(res) {
   const width = $viewer.width(),
         height = $viewer.height()
+
+  document.documentElement.style.background = res.background_color || "white"
 
   return {
     viewer: {width, height},

@@ -8,7 +8,7 @@ body h3 {
 }
 
 body > .blank {
-  background-color: white;
+  background-color: transparent;
   height: 300px;
 }
 
