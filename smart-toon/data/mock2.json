@@ -132,8 +132,8 @@
     "image_objects": [
       {
         "image_url": "/smart-toon/images/lineage/s4_2.png",
-        "top": 0,
-        "left": 0,
+        "top": 200,
+        "left": 450,
         "width": 94,
         "height": 257,
         "priority": 1,
@@ -146,6 +146,20 @@
             },
             "start_at": -700,
             "end_at": -400,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          },
+          {
+            "animation": {
+              "name": "translate",
+              "before_x": 0,
+              "before_y": 0,
+              "after_x": 0,
+              "after_y": 200
+            },
+            "start_at": -500,
+            "end_at": -200,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
