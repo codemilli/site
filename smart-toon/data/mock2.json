@@ -123,8 +123,40 @@
     ]
   }, {
     "background": {
+      "image_url": "/smart-toon/images/lineage/s4_1.png",
+      "top": 3600,
+      "left": 0,
+      "width": 650,
+      "height": 968
+    },
+    "image_objects": [
+      {
+        "image_url": "/smart-toon/images/lineage/s4_2.png",
+        "top": 0,
+        "left": 0,
+        "width": 94,
+        "height": 257,
+        "priority": 1,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 0,
+              "after_opacity": 1
+            },
+            "start_at": -700,
+            "end_at": -400,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
+  }, {
+    "background": {
       "image_url": "",
-      "top": 3000,
+      "top": 5000,
       "left": 0,
       "width": 650,
       "height": 1000
