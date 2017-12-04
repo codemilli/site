@@ -173,6 +173,82 @@
       "top": 5000,
       "left": 0,
       "width": 650,
+      "height": 441
+    },
+    "image_objects": [
+      {
+        "image_url": "/smart-toon/images/lineage/s5_1.png",
+        "top": 0,
+        "left": 0,
+        "width": 650,
+        "height": 441,
+        "priority": 1,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "scale",
+              "before_scale": 1,
+              "after_scale": 1.3
+            },
+            "start_at": -700,
+            "end_at": -400,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      },
+      {
+        "image_url": "/smart-toon/images/lineage/s5_2.png",
+        "top": 40,
+        "left": 430,
+        "width": 80,
+        "height": 110,
+        "priority": 2,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 0,
+              "after_opacity": 1
+            },
+            "start_at": -700,
+            "end_at": -699,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      },
+      {
+        "image_url": "/smart-toon/images/lineage/s5_3.png",
+        "top": 170,
+        "left": 480,
+        "width": 108,
+        "height": 149,
+        "priority": 2,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 0,
+              "after_opacity": 1
+            },
+            "start_at": -400,
+            "end_at": -399,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
+  }, {
+    "background": {
+      "image_url": "",
+      "top": 6000,
+      "left": 0,
+      "width": 650,
       "height": 1000
     }
   }]

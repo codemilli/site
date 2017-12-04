@@ -78,6 +78,9 @@ function onData({viewer, toon}) {
         if (animation.name === "opacity") {
           addOpacityAnimation($block, $imgObj, item, ratio)
         }
+        if (animation.name === "scale") {
+          addScaleAnimation($block, $imgObj, item, ratio)
+        }
         if (animation.name === "@CUSTOM/Shaking") {
           addCustomShakingAnimation($block, $imgObj, item, ratio)
         }
