@@ -300,7 +300,115 @@
   }, {
     "background": {
       "image_url": "",
-      "top": 7000,
+      "top": 7200,
+      "left": 0,
+      "width": 650,
+      "height": 357
+    },
+    "image_objects": [
+      {
+        "image_url": "/smart-toon/images/lineage/s7.png",
+        "top": 0,
+        "left": 0,
+        "width": 650,
+        "height": 357,
+        "priority": 2,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 0,
+              "after_opacity": 1
+            },
+            "start_at": -600,
+            "end_at": -250,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
+  }, {
+    "background": {
+      "image_url": "",
+      "top": 8200,
+      "left": 0,
+      "width": 650,
+      "height": 269
+    },
+    "image_objects": [
+      {
+        "image_url": "/smart-toon/images/lineage/s8_1.png",
+        "top": 0,
+        "left": 0,
+        "width": 650,
+        "height": 269,
+        "priority": 2,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 0,
+              "after_opacity": 1
+            },
+            "start_at": -600,
+            "end_at": -599,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          },
+          {
+            "animation": {
+              "name": "@CUSTOM/Shaking",
+              "range": 3
+            },
+            "start_at": -600,
+            "end_at": 0,
+            "duration": 0.5,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      },
+      {
+        "image_url": "/smart-toon/images/lineage/s8_2.png",
+        "top": 30,
+        "left": 300,
+        "width": 208,
+        "height": 125,
+        "priority": 3,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 0,
+              "after_opacity": 1
+            },
+            "start_at": -600,
+            "end_at": -599,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          },
+          {
+            "animation": {
+              "name": "@CUSTOM/Shaking",
+              "range": 7
+            },
+            "start_at": -600,
+            "end_at": 0,
+            "duration": 0.5,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
+  }, {
+    "background": {
+      "image_url": "",
+      "top": 8000,
       "left": 0,
       "width": 650,
       "height": 1000

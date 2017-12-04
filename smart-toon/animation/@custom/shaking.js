@@ -12,11 +12,17 @@ function addCustomShakingAnimation($block, $imgObj, item, ratio) {
     if (nowY > 0 && !animationing) {
       animationing = true
       let step = true
+      let frames = 0
       const start = Date.now()
       const dur = duration * 1000
 
       !function shaking() {
+        frames++
         const now = Date.now()
+
+        if (frames % 2 !== 0) {
+          return window.requestAnimationFrame(shaking)
+        }
 
         window.requestAnimationFrame(() => {
           const diff = now - start
