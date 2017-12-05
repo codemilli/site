@@ -75,8 +75,8 @@
           {
             "animation": {
               "name": "translate",
-              "before_x": 500,
-              "before_y": 0,
+              "before_x": 700,
+              "before_y": -1000,
               "after_x": 0,
               "after_y": 0
             },
@@ -156,7 +156,7 @@
               "before_x": 0,
               "before_y": 0,
               "after_x": 0,
-              "after_y": 450
+              "after_y": 300
             },
             "start_at": -500,
             "end_at": 200,
@@ -288,8 +288,8 @@
               "before_opacity": 0,
               "after_opacity": 1
             },
-            "start_at": -450,
-            "end_at": -449,
+            "start_at": -250,
+            "end_at": -249,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
@@ -887,7 +887,23 @@
       "top": 14700,
       "left": 0,
       "width": 650,
-      "height": 335
+      "height": 335,
+      "animation_list": [
+        {
+          "animation": {
+            "name": "translate",
+            "before_x": 0,
+            "before_y": 0,
+            "after_x": 0,
+            "after_y": 600
+          },
+          "start_at": 0,
+          "end_at": 600,
+          "duration": 0,
+          "delay": 0,
+          "timing_function": ""
+        }
+      ]
     },
     "image_objects": [
       {

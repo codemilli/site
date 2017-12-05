@@ -44,7 +44,7 @@ function onData({viewer, toon}) {
   console.log('toon : ', toon)
   console.log('ratio : ', ratio)
 
-  _.forEach(toon.blocks, (block) => {
+  _.forEach(toon.blocks, (block, idx) => {
     const hasBG = !!block.background.image_url
     const blockOption = {
       bgColor: toon.background_color,
@@ -52,11 +52,28 @@ function onData({viewer, toon}) {
       top: block.background.top * ratio,
       left: block.background.left * ratio,
       width: block.background.width * ratio,
-      height: block.background.height * ratio
+      height: block.background.height * ratio,
+      idx: idx
     }
     const $block = $(hasBG ? BlockTmpl(blockOption) : EmptyBlockTmpl(blockOption))
 
     $viewer.append($block)
+
+    _.forEach(block.background.animation_list, (item) => {
+      const {animation} = item
+      if (animation.name === "translate") {
+        addTransitionAnimation($block, $block, item, ratio)
+      }
+      if (animation.name === "opacity") {
+        addOpacityAnimation($block, $block, item, ratio)
+      }
+      if (animation.name === "scale") {
+        addScaleAnimation($block, $block, item, ratio)
+      }
+      if (animation.name === "@CUSTOM/Shaking") {
+        addCustomShakingAnimation($block, $block, item, ratio)
+      }
+    })
 
     _.forEach(block.image_objects, (data) => {
       const $imgObj = $(ImageObjectTmpl({
