@@ -34,7 +34,20 @@ function addTransitionAnimation($block, $imgObj, item, ratio) {
       valueY = after_y
     }
 
-    $imgObj.css({'transform': `translate3d(${valueX}px, ${valueY}px, 0px)`})
+    const preData = $imgObj.data('transform') || {}
+    const postData = Object.assign(preData, {
+      "translate3d": {
+        x: valueX,
+        y: valueY,
+        z: 0
+      }
+    })
+
+    $imgObj.data('transform', postData)
+    const transform = $imgObj.data('transform')
+    const {translate3d, scale = 1} = transform
+
+    $imgObj.css({'transform': `translate3d(${translate3d.x}px, ${translate3d.y}px, 0px) scale(${scale})`})
   }
 
   $(window).on('scroll', onEvent)

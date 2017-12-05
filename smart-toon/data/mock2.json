@@ -486,7 +486,7 @@
   }, {
     "background": {
       "image_url": "",
-      "top": 9350,
+      "top": 10000,
       "left": 0,
       "width": 650,
       "height": 493
@@ -587,7 +587,7 @@
   }, {
     "background": {
       "image_url": "/smart-toon/images/lineage/s11_1.png",
-      "top": 10000,
+      "top": 10800,
       "left": 0,
       "width": 650,
       "height": 660
@@ -612,6 +612,17 @@
             "start_at": -500,
             "end_at": -250,
             "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          },
+          {
+            "animation": {
+              "name": "@CUSTOM/Shaking",
+              "range": 3
+            },
+            "start_at": -250,
+            "end_at": 0,
+            "duration": 0.4,
             "delay": 0,
             "timing_function": ""
           }
@@ -656,8 +667,112 @@
     ]
   }, {
     "background": {
-      "image_url": "",
+      "image_url": "/smart-toon/images/lineage/s12_1.png",
       "top": 12000,
+      "left": 0,
+      "width": 650,
+      "height": 440
+    },
+    "image_objects": [
+      {
+        "image_url": "/smart-toon/images/lineage/s12_2.png",
+        "top": 0,
+        "left": 0,
+        "width": 592,
+        "height": 440,
+        "priority": 2,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "translate",
+              "before_x": -15,
+              "before_y": 0,
+              "after_x": 0,
+              "after_y": 0
+            },
+            "start_at": -600,
+            "end_at": -100,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          },
+          {
+            "animation": {
+              "name": "scale",
+              "before_scale": 1,
+              "after_scale": 1.1
+            },
+            "start_at": -600,
+            "end_at": -100,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      },
+      {
+        "image_url": "/smart-toon/images/lineage/s12_3.png",
+        "top": 129,
+        "left": 342,
+        "width": 308,
+        "height": 311,
+        "priority": 3,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "scale",
+              "before_scale": 1.15,
+              "after_scale": 1
+            },
+            "start_at": -600,
+            "end_at": -100,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      },
+      {
+        "image_url": "/smart-toon/images/lineage/s12_4.png",
+        "top": 0,
+        "left": 0,
+        "width": 650,
+        "height": 440,
+        "priority": 4,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "translate",
+              "before_x": 50,
+              "before_y": 0,
+              "after_x": 0,
+              "after_y": 0
+            },
+            "start_at": -600,
+            "end_at": -100,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          },
+          {
+            "animation": {
+              "name": "scale",
+              "before_scale": 1.1,
+              "after_scale": 1.1
+            },
+            "start_at": 0,
+            "end_at": 0,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
+  }, {
+    "background": {
+      "image_url": "",
+      "top": 13000,
       "left": 0,
       "width": 650,
       "height": 1000
