@@ -20,6 +20,11 @@ function addTransitionAnimation($block, $imgObj, item, ratio) {
     let valueX = before_x
     let valueY = before_y
 
+    if (nowY > range) {
+      valueX = after_x
+      valueY = after_y
+    }
+
     if (nowY >= 0 && nowY <= range) {
       const progress = nowY / range
       const diffX = after_x - before_x
@@ -27,11 +32,6 @@ function addTransitionAnimation($block, $imgObj, item, ratio) {
 
       valueX = valueX + (progress * diffX)
       valueY = valueY + (progress * diffY)
-    }
-
-    if (nowY > range) {
-      valueX = after_x
-      valueY = after_y
     }
 
     const preData = $imgObj.data('transform') || {}

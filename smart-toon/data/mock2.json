@@ -699,8 +699,8 @@
           {
             "animation": {
               "name": "scale",
-              "before_scale": 1,
-              "after_scale": 1.1
+              "before_scale": 1.1,
+              "after_scale": 1
             },
             "start_at": -600,
             "end_at": -100,
@@ -771,8 +771,88 @@
     ]
   }, {
     "background": {
-      "image_url": "",
+      "image_url": "/smart-toon/images/lineage/s13_1.png",
       "top": 13000,
+      "left": 0,
+      "width": 650,
+      "height": 431
+    },
+    "image_objects": [
+      {
+        "image_url": "/smart-toon/images/lineage/s13_2.png",
+        "top": 0,
+        "left": 0,
+        "width": 650,
+        "height": 431,
+        "priority": 2,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "translate",
+              "before_x": -120,
+              "before_y": 0,
+              "after_x": 0,
+              "after_y": 0
+            },
+            "start_at": -600,
+            "end_at": -400,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      },
+      {
+        "image_url": "/smart-toon/images/lineage/s13_3.png",
+        "top": 0,
+        "left": 0,
+        "width": 650,
+        "height": 404,
+        "priority": 3,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "translate",
+              "before_x": 120,
+              "before_y": 0,
+              "after_x": 0,
+              "after_y": 0
+            },
+            "start_at": -600,
+            "end_at": -400,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      },
+      {
+        "image_url": "/smart-toon/images/lineage/s13_4.png",
+        "top": 223,
+        "left": 0,
+        "width": 650,
+        "height": 182,
+        "priority": 4,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "scale",
+              "before_scale": 1,
+              "after_scale": 1.1
+            },
+            "start_at": -600,
+            "end_at": -200,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
+  }, {
+    "background": {
+      "image_url": "",
+      "top": 15000,
       "left": 0,
       "width": 650,
       "height": 1000
