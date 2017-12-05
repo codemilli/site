@@ -1,9 +1,10 @@
 function addTransitionAnimation($block, $imgObj, item, ratio) {
   const {animation, start_at, end_at} = item
+  const idx = $block.data('idx')
 
   const onEvent = () => {
     const windowTop = $(document).scrollTop()
-    const offsetTop = $block[0].offsetTop
+    const offsetTop = $block.offset().top
     const startAt = offsetTop + (start_at * ratio)
     const endAt = offsetTop + (end_at * ratio)
 
@@ -44,17 +45,12 @@ function addTransitionAnimation($block, $imgObj, item, ratio) {
     })
 
     $imgObj.data('transform', postData)
-    const idx = $block.data('idx')
     const transform = $imgObj.data('transform')
     const {translate3d, scale = 1} = transform
 
-    if (idx === 14) {
-      console.log('translate3d', translate3d.y)
-    }
-
     $imgObj.css({
       'transform': `translate3d(${translate3d.x}px, ${translate3d.y}px, 0px) scale(${scale})`,
-      'transition': 'transform ease-out 0.001s'
+      'transition': 'transform ease-out 0.01s'
     })
   }
 

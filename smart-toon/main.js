@@ -58,20 +58,21 @@ function onData({viewer, toon}) {
     const $block = $(hasBG ? BlockTmpl(blockOption) : EmptyBlockTmpl(blockOption))
 
     $viewer.append($block)
+    const $wrapper = $block.find('.wrapper')
 
     _.forEach(block.background.animation_list, (item) => {
       const {animation} = item
       if (animation.name === "translate") {
-        addTransitionAnimation($block, $block, item, ratio)
+        addTransitionAnimation($block, $wrapper, item, ratio)
       }
       if (animation.name === "opacity") {
-        addOpacityAnimation($block, $block, item, ratio)
+        addOpacityAnimation($block, $wrapper, item, ratio)
       }
       if (animation.name === "scale") {
-        addScaleAnimation($block, $block, item, ratio)
+        addScaleAnimation($block, $wrapper, item, ratio)
       }
       if (animation.name === "@CUSTOM/Shaking") {
-        addCustomShakingAnimation($block, $block, item, ratio)
+        addCustomShakingAnimation($block, $wrapper, item, ratio)
       }
     })
 
@@ -85,7 +86,7 @@ function onData({viewer, toon}) {
         priority: data.priority
       }))
 
-      $block.append($imgObj)
+      $wrapper.append($imgObj)
 
       _.forEach(data.animation_list, (item) => {
         const {animation} = item

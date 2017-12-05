@@ -1,11 +1,12 @@
 function addOpacityAnimation($block, $imgObj, item, ratio) {
   const {animation, start_at, end_at} = item
+  const idx = $block.data('idx')
+
   const onEvent = () => {
     const windowTop = $(document).scrollTop()
     const offsetTop = $block.offset().top
     const startAt = offsetTop + (start_at * ratio)
     const endAt = offsetTop + (end_at * ratio)
-
     const range = endAt - startAt
     const nowY = windowTop - startAt
 

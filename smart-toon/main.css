@@ -29,11 +29,23 @@ body > .blank {
 
 .block {
   position: absolute;
-  overflow: hidden;
 }
 
 .block > img {
   width: 100%;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.wrapper.non-masking {
+  overflow: visible;
 }
 
 .viewer .image-object {

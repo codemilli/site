@@ -24,8 +24,8 @@
               "before_opacity": 0,
               "after_opacity": 1
             },
-            "start_at": -500,
-            "end_at": -200,
+            "start_at": -600,
+            "end_at": -400,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
@@ -47,7 +47,7 @@
               "after_opacity": 1
             },
             "start_at": -400,
-            "end_at": -300,
+            "end_at": 100,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
@@ -80,8 +80,8 @@
               "after_x": 0,
               "after_y": 0
             },
-            "start_at": -500,
-            "end_at": 300,
+            "start_at": -200,
+            "end_at": 500,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
@@ -144,8 +144,8 @@
               "before_opacity": 0,
               "after_opacity": 1
             },
-            "start_at": -700,
-            "end_at": -400,
+            "start_at": -300,
+            "end_at": 0,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
@@ -158,7 +158,7 @@
               "after_x": 0,
               "after_y": 300
             },
-            "start_at": -500,
+            "start_at": -300,
             "end_at": 200,
             "duration": 0,
             "delay": 0,
@@ -517,7 +517,7 @@
               "name": "@CUSTOM/Shaking",
               "range": 3
             },
-            "start_at": -550,
+            "start_at": -500,
             "end_at": 0,
             "duration": 0.5,
             "delay": 0,
@@ -883,7 +883,7 @@
     ]
   }, {
     "background": {
-      "image_url": "/smart-toon/images/lineage/s15_1.png",
+      "image_url": "",
       "top": 14700,
       "left": 0,
       "width": 650,
@@ -895,10 +895,10 @@
             "before_x": 0,
             "before_y": 0,
             "after_x": 0,
-            "after_y": 600
+            "after_y": 300
           },
-          "start_at": 0,
-          "end_at": 600,
+          "start_at": -300,
+          "end_at": 0,
           "duration": 0,
           "delay": 0,
           "timing_function": ""
@@ -906,6 +906,15 @@
       ]
     },
     "image_objects": [
+      {
+        "image_url": "/smart-toon/images/lineage/s15_1.png",
+        "top": 0,
+        "left": 0,
+        "width": 650,
+        "height": 335,
+        "priority": 2,
+        "animation_list": []
+      },
       {
         "image_url": "/smart-toon/images/lineage/s15_2.png",
         "top": 0,
