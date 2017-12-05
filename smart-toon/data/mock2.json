@@ -804,7 +804,7 @@
       },
       {
         "image_url": "/smart-toon/images/lineage/s13_3.png",
-        "top": 0,
+        "top": 26,
         "left": 0,
         "width": 650,
         "height": 404,
@@ -828,7 +828,7 @@
       },
       {
         "image_url": "/smart-toon/images/lineage/s13_4.png",
-        "top": 223,
+        "top": 250,
         "left": 0,
         "width": 650,
         "height": 182,
