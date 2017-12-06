@@ -884,26 +884,10 @@
   }, {
     "background": {
       "image_url": "",
-      "top": 14700,
+      "top": 15000,
       "left": 0,
       "width": 650,
-      "height": 335,
-      "animation_list": [
-        {
-          "animation": {
-            "name": "translate",
-            "before_x": 0,
-            "before_y": 0,
-            "after_x": 0,
-            "after_y": 300
-          },
-          "start_at": -300,
-          "end_at": 0,
-          "duration": 0,
-          "delay": 0,
-          "timing_function": ""
-        }
-      ]
+      "height": 335
     },
     "image_objects": [
       {
@@ -913,8 +897,31 @@
         "width": 650,
         "height": 335,
         "priority": 2,
-        "animation_list": []
-      },
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 0,
+              "after_opacity": 1
+            },
+            "start_at": -500,
+            "end_at": -300,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
+  }, {
+    "background": {
+      "image_url": "",
+      "top": 16000,
+      "left": 0,
+      "width": 650,
+      "height": 335
+    },
+    "image_objects": [
       {
         "image_url": "/smart-toon/images/lineage/s15_2.png",
         "top": 0,
@@ -929,30 +936,8 @@
               "before_opacity": 0,
               "after_opacity": 1
             },
-            "start_at": -750,
-            "end_at": -500,
-            "duration": 0,
-            "delay": 0,
-            "timing_function": ""
-          }
-        ]
-      },
-      {
-        "image_url": "/smart-toon/images/lineage/s15_3.png",
-        "top": 0,
-        "left": 0,
-        "width": 650,
-        "height": 335,
-        "priority": 3,
-        "animation_list": [
-          {
-            "animation": {
-              "name": "opacity",
-              "before_opacity": 0,
-              "after_opacity": 1
-            },
-            "start_at": -300,
-            "end_at": -100,
+            "start_at": -500,
+            "end_at": -300,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
@@ -963,7 +948,39 @@
   }, {
     "background": {
       "image_url": "",
-      "top": 16000,
+      "top": 17000,
+      "left": 0,
+      "width": 650,
+      "height": 335
+    },
+    "image_objects": [
+      {
+        "image_url": "/smart-toon/images/lineage/s15_3.png",
+        "top": 0,
+        "left": 0,
+        "width": 650,
+        "height": 335,
+        "priority": 2,
+        "animation_list": [
+          {
+            "animation": {
+              "name": "opacity",
+              "before_opacity": 0,
+              "after_opacity": 1
+            },
+            "start_at": -500,
+            "end_at": -300,
+            "duration": 0,
+            "delay": 0,
+            "timing_function": ""
+          }
+        ]
+      }
+    ]
+  }, {
+    "background": {
+      "image_url": "",
+      "top": 18000,
       "left": 0,
       "width": 650,
       "height": 1000
