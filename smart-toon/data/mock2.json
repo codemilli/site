@@ -24,7 +24,7 @@
               "before_opacity": 0,
               "after_opacity": 1
             },
-            "start_at": -600,
+            "start_at": -700,
             "end_at": -400,
             "duration": 0,
             "delay": 0,
@@ -46,8 +46,8 @@
               "before_opacity": 0,
               "after_opacity": 1
             },
-            "start_at": -400,
-            "end_at": 100,
+            "start_at": -500,
+            "end_at": -100,
             "duration": 0,
             "delay": 0,
             "timing_function": ""
@@ -872,7 +872,7 @@
               "before_opacity": 0,
               "after_opacity": 1
             },
-            "start_at": -500,
+            "start_at": -600,
             "end_at": -200,
             "duration": 0,
             "delay": 0,
@@ -904,7 +904,7 @@
               "before_opacity": 0,
               "after_opacity": 1
             },
-            "start_at": -500,
+            "start_at": -600,
             "end_at": -300,
             "duration": 0,
             "delay": 0,
@@ -936,7 +936,7 @@
               "before_opacity": 0,
               "after_opacity": 1
             },
-            "start_at": -500,
+            "start_at": -600,
             "end_at": -300,
             "duration": 0,
             "delay": 0,
@@ -968,7 +968,7 @@
               "before_opacity": 0,
               "after_opacity": 1
             },
-            "start_at": -500,
+            "start_at": -600,
             "end_at": -300,
             "duration": 0,
             "delay": 0,
