@@ -32,7 +32,9 @@ function addScaleAnimation($block, $imgObj, item, ratio) {
     const {translate3d = {}} = transform
     const {x = 0, y = 0} = translate3d
 
-    $imgObj.css({'transform': `translate3d(${x}px, ${y}px, 0px) scale(${scale})`})
+    requestAnimationFrame(() => {
+      $imgObj.css({'transform': `translate3d(${x}px, ${y}px, 0px) scale(${scale})`})
+    })
   }
 
   $(window).on('scroll', onEvent)

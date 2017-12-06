@@ -48,9 +48,11 @@ function addTransitionAnimation($block, $imgObj, item, ratio) {
     const transform = $imgObj.data('transform')
     const {translate3d, scale = 1} = transform
 
-    $imgObj.css({
-      'transform': `translate3d(${translate3d.x}px, ${translate3d.y}px, 0px) scale(${scale})`,
-      'transition': 'transform ease-out 0.01s'
+
+    requestAnimationFrame(() => {
+      $imgObj.css({
+        'transform': `translate3d(${translate3d.x}px, ${translate3d.y}px, 0px) scale(${scale})`
+      })
     })
   }
 
