@@ -14,10 +14,16 @@ for(let i = 0; i < queries.length; i++) {
 
 const $viewer = $('.viewer')
 const {resource} = qs
-const dataUrl = `/smart-toon/data/${resource || 'mock'}.json`
+const dataUrl = `${RESOURCE_PATH}/smart-toon/data/${resource || 'mock'}.json`
 
 onLoad()
-  .then(() => $.get(dataUrl))
+  .then(() => {
+    if (resource === 'latest') {
+      return JSON.parse(localStorage.getItem('latest'))
+    } else {
+      return $.get(dataUrl)
+    }
+  })
   .then(calculateViewerSize)
   .then(onData)
   .then(playBGM)
@@ -53,6 +59,7 @@ function onData({viewer, toon}) {
       left: block.background.left * ratio,
       width: block.background.width * ratio,
       height: block.background.height * ratio,
+      priority: block.background.priority,
       idx: idx
     }
     const $block = $(hasBG ? BlockTmpl(blockOption) : EmptyBlockTmpl(blockOption))
@@ -75,6 +82,15 @@ function onData({viewer, toon}) {
         addCustomShakingAnimation($block, $wrapper, item, ratio)
       }
     })
+
+    $wrapper.append($(ImageObjectTmpl({
+      imageUrl: block.background.image_url,
+      top: 0,
+      left: 0,
+      width: block.background.width * ratio,
+      height: block.background.height * ratio,
+      priority: block.background.priority,
+    })))
 
     _.forEach(block.image_objects, (data) => {
       const $imgObj = $(ImageObjectTmpl({

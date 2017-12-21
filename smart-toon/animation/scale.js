@@ -1,7 +1,7 @@
 function addScaleAnimation($block, $imgObj, item, ratio) {
   const {animation, start_at, end_at} = item
   const onEvent = () => {
-    const windowTop = $(document).scrollTop()
+    const windowTop = $(document).scrollTop() + $(window).height()
     const offsetTop = $block.offset().top
     const startAt = offsetTop + (start_at * ratio)
     const endAt = offsetTop + (end_at * ratio)

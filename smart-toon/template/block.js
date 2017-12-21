@@ -5,7 +5,7 @@
 var BlockTmpl = _.template(`
   <div class="block" data-idx="<%= idx %>"
        style="top: <%= top %>px;left: <%= left %>px;width: <%= width %>px;height: <%= height %>px;">
-    <img style="" src="<%= imageUrl %>" alt="block background" />
+    <!--<img style="" src="<%= imageUrl %>" alt="block background" />-->
     <div class="wrapper"></div>
   </div>
 `)
