@@ -22,7 +22,7 @@
               "animation":{
                 "name":"translate",
                 "before_x":0,"before_y":0,
-                "after_x":-19,"after_y":975
+                "after_x":350,"after_y":0
               },
               "start_at":-28,
               "end_at":991
@@ -36,7 +36,7 @@
               "animation":{
                 "name":"translate",
                 "before_x":0,"before_y":0,
-                "after_x":9,"after_y":-996
+                "after_x":-350,"after_y":0
               },
               "start_at":-1000,
               "end_at":6
