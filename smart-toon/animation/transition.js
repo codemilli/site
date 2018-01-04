@@ -56,6 +56,8 @@ function addTransitionAnimation($block, $imgObj, item, ratio) {
     })
   }
 
-  $(window).on('scroll', onEvent)
+  window.addEventListener('scroll', onEvent, {
+    passive: true
+  })
   $(document).ready(onEvent)
 }

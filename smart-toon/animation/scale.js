@@ -1,11 +1,12 @@
 function addScaleAnimation($block, $imgObj, item, ratio) {
   const {animation, start_at, end_at} = item
+  const top = Number(($imgObj.css('top') || '0px').replace('px', '') || 0)
+
   const onEvent = () => {
     const windowTop = $(document).scrollTop() + $(window).height()
-    const offsetTop = $block.offset().top
+    const offsetTop = $block.offset().top + top
     const startAt = offsetTop + (start_at * ratio)
     const endAt = offsetTop + (end_at * ratio)
-
     const range = endAt - startAt
     const nowY = windowTop - startAt
 
@@ -37,6 +38,8 @@ function addScaleAnimation($block, $imgObj, item, ratio) {
     })
   }
 
-  $(window).on('scroll', onEvent)
+  window.addEventListener('scroll', onEvent, {
+    passive: true
+  })
   $(document).ready(onEvent)
 }

@@ -3,8 +3,6 @@ function addOpacityAnimation($block, $imgObj, item, ratio) {
   const top = Number(($imgObj.css('top') || '0px').replace('px', '') || 0)
   const idx = $block.data('idx')
 
-  console.log('item top', item)
-
   const onEvent = () => {
     const windowTop = $(document).scrollTop() + $(window).height()
     const offsetTop = $block.offset().top + top
@@ -29,6 +27,8 @@ function addOpacityAnimation($block, $imgObj, item, ratio) {
     $imgObj.css({'opacity': opacity})
   }
 
-  $(window).on('scroll', onEvent)
+  window.addEventListener('scroll', onEvent, {
+    passive: true
+  })
   $(document).ready(onEvent)
 }

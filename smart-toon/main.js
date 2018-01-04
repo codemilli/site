@@ -13,15 +13,36 @@ for(let i = 0; i < queries.length; i++) {
 }
 
 const $viewer = $('.viewer')
-const {resource} = qs
-const dataUrl = `${RESOURCE_PATH}/smart-toon/data/${resource || 'mock'}.json`
+const {resource, toon, cid, token} = qs
+let dataUrl
+let authToken
+
+if (toon) {
+  const isDev = location.origin.indexOf('cxteam.cool') !== -1
+  const session = cid || (isDev ? '4CB1A7C514EA215FA0A28D1C25E9D831' : 'FD39693EF8DA2A7A5D7DD1077325FCE1')
+  authToken = token || (isDev ? 'eyJhbGciOiJIUzI1NiJ9.eyJ0eXBlX2NkIjoiREVWSUNFIiwiZXhwaXJlX2RhdGUiOjE1MTUwMzk5MjQwNzksImFwcF9ubyI6MTAwMSwiaWQiOiI0Q0IxQTdDNTE0RUEyMTVGQTBBMjhEMUMyNUU5RDgzMSIsInRva2VuIjoiTWlKUFJtcHRQMHh3UGlsTld5ODBPRjRsWW0wdllnPT0ifQ.iDkrh_IST4B-V1YglnzF71v9NHSdetkXlwZkheLiLOk'
+    : 'eyJhbGciOiJIUzI1NiJ9.eyJ0eXBlX2NkIjoiREVWSUNFIiwiZXhwaXJlX2RhdGUiOjE1MTUwMzk4MjU5ODgsImFwcF9ubyI6MTAwMSwiaWQiOiJGRDM5NjkzRUY4REEyQTdBNUQ3REQxMDc3MzI1RkNFMSIsInRva2VuIjoiTUdRclNDMTJXM2h5SzB4ZlVGWkRabHhoTm54Rkp3PT0ifQ.0pM46wgnOnq9lYn-9WCthRV5im_xHH8slxqtDayNerY')
+
+  dataUrl = isDev ? `http://api.cxteam.cool/v5.2/ko/toon/10061/series/10087/content/all?cid=${session}`
+    : `https://api-rc.nc-comix.com/v5.2/ko/toon/10045/series/10259/content/all?cid=${session}`
+} else {
+  dataUrl = `${RESOURCE_PATH}/smart-toon/data/${resource || 'mock'}.json`
+}
 
 onLoad()
   .then(() => {
     if (resource === 'latest') {
       return JSON.parse(localStorage.getItem('latest'))
     } else {
-      return $.get(dataUrl)
+      return $.ajax(dataUrl, {
+        crossDomain: true,
+        headers: {
+          Authorization: `bearer ${authToken}`
+        },
+        xhrFields: {
+          withCredentials: true
+        }
+      })
     }
   })
   .then(calculateViewerSize)
@@ -33,8 +54,15 @@ function onLoad() {
 }
 
 function calculateViewerSize(res) {
+  if (res.result === '504') {
+    return alert('Please Login First')
+  }
+  if (toon) {
+    res = res.value
+  }
+
   const width = $viewer.width(),
-        height = $viewer.height()
+    height = $viewer.height()
 
   document.documentElement.style.background = res.background_color || "white"
 

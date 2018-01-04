@@ -1,11 +1,12 @@
 function addCustomShakingAnimation($block, $imgObj, item, ratio) {
   const {animation, start_at, duration} = item
   const {range} = animation
+  const top = Number(($imgObj.css('top') || '0px').replace('px', '') || 0)
   let animationing = false
 
   const onEvent = () => {
-    const windowTop = $(document).scrollTop()
-    const offsetTop = $block.offset().top
+    const windowTop = $(document).scrollTop() + $(window).height()
+    const offsetTop = $block.offset().top + top
     const startAt = offsetTop + (start_at * ratio)
     const nowY = windowTop - startAt
 
@@ -27,14 +28,22 @@ function addCustomShakingAnimation($block, $imgObj, item, ratio) {
         window.requestAnimationFrame(() => {
           const diff = now - start
           const progress = diff / dur
-
           step = !step
 
-          if (step) {
-            $imgObj.css({"transform": `translate3d(-${range}px, 0px, 0px)`})
-          } else {
-            $imgObj.css({"transform": `translate3d(${range}px, 0px, 0px)`})
-          }
+          const preData = $imgObj.data('transform') || {}
+          const postData = Object.assign(preData, {
+            "translate3d": {
+              x: step ? range : -range,
+              y: 0,
+              z: 0
+            }
+          })
+          $imgObj.data('transform', postData)
+          const transform = $imgObj.data('transform')
+          const {translate3d = {}, scale = 1} = transform
+          const {x = 0, y = 0} = translate3d
+
+          $imgObj.css({'transform': `translate3d(${x}px, ${y}px, 0px) scale(${scale})`})
 
           if (progress >= 1) {
             return
@@ -50,6 +59,8 @@ function addCustomShakingAnimation($block, $imgObj, item, ratio) {
     }
   }
 
-  $(window).on('scroll', onEvent)
+  window.addEventListener('scroll', onEvent, {
+    passive: true
+  })
   $(document).ready(onEvent)
 }
