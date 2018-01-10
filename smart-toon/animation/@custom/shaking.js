@@ -1,6 +1,6 @@
-function addCustomShakingAnimation($block, $imgObj, item, ratio) {
-  const {animation, start_at, duration} = item
-  const {range} = animation
+function addCustomShakingAnimation($block, $imgObj, animation, ratio) {
+  const {start_at, end_at, duration} = animation
+  const {rangeX, rangeY} = animation
   const top = Number(($imgObj.css('top') || '0px').replace('px', '') || 0)
   let animationing = false
 
@@ -15,7 +15,7 @@ function addCustomShakingAnimation($block, $imgObj, item, ratio) {
       let step = true
       let frames = 0
       const start = Date.now()
-      const dur = duration * 1000
+      const dur = duration
 
       !function shaking() {
         frames++
@@ -33,8 +33,8 @@ function addCustomShakingAnimation($block, $imgObj, item, ratio) {
           const preData = $imgObj.data('transform') || {}
           const postData = Object.assign(preData, {
             "translate3d": {
-              x: step ? range : -range,
-              y: 0,
+              x: step ? rangeX : -rangeX,
+              y: step ? rangeY : -rangeY,
               z: 0
             }
           })

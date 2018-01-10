@@ -1,5 +1,5 @@
-function addScaleAnimation($block, $imgObj, item, ratio) {
-  const {animation, start_at, end_at} = item
+function addScaleAnimation($block, $imgObj, animation, ratio) {
+  const {start_at, end_at} = animation
   const top = Number(($imgObj.css('top') || '0px').replace('px', '') || 0)
 
   const onEvent = () => {
@@ -10,17 +10,17 @@ function addScaleAnimation($block, $imgObj, item, ratio) {
     const range = endAt - startAt
     const nowY = windowTop - startAt
 
-    let {before_scale, after_scale} = animation
-    let scale = before_scale
+    let {before, after} = animation
+    let scale = before
 
     if (nowY >= 0 && nowY <= range) {
       const progress = nowY / range
-      const diff = after_scale - before_scale
+      const diff = after - before
       scale = scale + (progress * diff)
     }
 
     if (nowY > range) {
-      scale = after_scale
+      scale = after
     }
 
     const preData = $imgObj.data('transform') || {}

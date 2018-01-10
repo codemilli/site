@@ -1,5 +1,5 @@
-function addTransitionAnimation($block, $imgObj, item, ratio) {
-  const {animation, start_at, end_at} = item
+function addTransitionAnimation($block, $imgObj, animation, ratio) {
+  const {start_at, end_at} = animation
   const idx = $block.data('idx')
   const top = Number(($imgObj.css('top') || '0px').replace('px', '') || 0)
 

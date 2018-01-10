@@ -1,5 +1,5 @@
-function addOpacityAnimation($block, $imgObj, item, ratio) {
-  const {animation, start_at, end_at} = item
+function addOpacityAnimation($block, $imgObj, animation, ratio) {
+  const {start_at, end_at} = animation
   const top = Number(($imgObj.css('top') || '0px').replace('px', '') || 0)
   const idx = $block.data('idx')
 
@@ -11,17 +11,17 @@ function addOpacityAnimation($block, $imgObj, item, ratio) {
     const range = endAt - startAt
     const nowY = windowTop - startAt
 
-    let {before_opacity, after_opacity} = animation
-    let opacity = before_opacity
+    let {before, after} = animation
+    let opacity = before
 
     if (nowY >= 0 && nowY <= range) {
       const progress = nowY / range
-      const diff = after_opacity - before_opacity
+      const diff = after - before
       opacity = opacity + (progress * diff)
     }
 
     if (nowY > range) {
-      opacity = after_opacity
+      opacity = after
     }
 
     $imgObj.css({'opacity': opacity})

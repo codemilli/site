@@ -32,7 +32,7 @@ if (toon) {
 onLoad()
   .then(() => {
     if (resource === 'latest') {
-      return JSON.parse(localStorage.getItem('latest'))
+      return JSON.parse(localStorage.getItem('latest_saved_toon'))
     } else {
       return $.ajax(dataUrl, {
         crossDomain: true,
@@ -62,7 +62,7 @@ function calculateViewerSize(res) {
   }
 
   const width = $viewer.width(),
-    height = $viewer.height()
+        height = $viewer.height()
 
   document.documentElement.style.background = res.background_color || "white"
 
@@ -73,21 +73,20 @@ function calculateViewerSize(res) {
 }
 
 function onData({viewer, toon}) {
-  const ratio = viewer.width / toon.width
+  const ratio = viewer.width / toon.standard_width
 
   console.log('toon : ', toon)
   console.log('ratio : ', ratio)
 
-  _.forEach(toon.blocks, (block, idx) => {
-    const hasBG = !!block.background.image_url
+  _.forEach(toon.scenes, (scene, idx) => {
+    const hasBG = !!scene.block.image_url
     const blockOption = {
-      bgColor: toon.background_color,
-      imageUrl: block.background.image_url,
-      top: block.background.top * ratio,
-      left: block.background.left * ratio,
-      width: block.background.width * ratio,
-      height: block.background.height * ratio,
-      priority: block.background.priority,
+      bgColor: scene.block.background_color,
+      imageUrl: scene.block.image_url,
+      top: scene.block.top * ratio,
+      left: scene.block.left * ratio,
+      width: scene.block.width * ratio,
+      height: scene.block.height * ratio,
       idx: idx
     }
     const $block = $(hasBG ? BlockTmpl(blockOption) : EmptyBlockTmpl(blockOption))
@@ -95,32 +94,22 @@ function onData({viewer, toon}) {
     $viewer.append($block)
     const $wrapper = $block.find('.wrapper')
 
-    _.forEach(block.background.animation_list, (item) => {
-      const {animation} = item
-      if (animation.name === "translate") {
-        addTransitionAnimation($block, $wrapper, item, ratio)
+    _.forEach(scene.animation_list, (animation) => {
+      if (animation.type === "translate") {
+        addTransitionAnimation($block, $wrapper, animation, ratio)
       }
-      if (animation.name === "opacity") {
-        addOpacityAnimation($block, $wrapper, item, ratio)
+      if (animation.type === "opacity") {
+        addOpacityAnimation($block, $wrapper, animation, ratio)
       }
-      if (animation.name === "scale") {
-        addScaleAnimation($block, $wrapper, item, ratio)
+      if (animation.type === "scale") {
+        addScaleAnimation($block, $wrapper, animation, ratio)
       }
-      if (animation.name === "@CUSTOM/Shaking") {
-        addCustomShakingAnimation($block, $wrapper, item, ratio)
+      if (animation.type === "@CUSTOM/Shaking") {
+        addCustomShakingAnimation($block, $wrapper, animation, ratio)
       }
     })
 
-    $wrapper.append($(ImageObjectTmpl({
-      imageUrl: block.background.image_url,
-      top: 0,
-      left: 0,
-      width: block.background.width * ratio,
-      height: block.background.height * ratio,
-      priority: block.background.priority,
-    })))
-
-    _.forEach(block.image_objects, (data) => {
+    _.forEach(scene.fragments, (data) => {
       const $imgObj = $(ImageObjectTmpl({
         imageUrl: data.image_url,
         top: data.top * ratio,
@@ -132,23 +121,22 @@ function onData({viewer, toon}) {
 
       $wrapper.append($imgObj)
 
-      _.forEach(data.animation_list, (item) => {
-        const {animation} = item
-        if (animation.name === "translate") {
-          addTransitionAnimation($block, $imgObj, item, ratio)
+      _.forEach(data.animation_list, (animation) => {
+        if (animation.type === "TRANSLATE") {
+          addTransitionAnimation($block, $imgObj, animation, ratio)
         }
-        if (animation.name === "opacity") {
-          addOpacityAnimation($block, $imgObj, item, ratio)
+        if (animation.type === "OPACITY") {
+          addOpacityAnimation($block, $imgObj, animation, ratio)
         }
-        if (animation.name === "scale") {
-          addScaleAnimation($block, $imgObj, item, ratio)
+        if (animation.type === "SCALE") {
+          addScaleAnimation($block, $imgObj, animation, ratio)
         }
-        if (animation.name === "@CUSTOM/Shaking") {
-          addCustomShakingAnimation($block, $imgObj, item, ratio)
+        if (animation.type === "CUSTOM_SHAKE") {
+          addCustomShakingAnimation($block, $imgObj, animation, ratio)
         }
       })
 
-      _.forEach(data.audio_objects, (audio) => {
+      _.forEach(data.audios, (audio) => {
         audio.play_at
       })
     })
