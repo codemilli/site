@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  width: 100%;
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -23,10 +23,8 @@ body > .blank {
 
 .viewer {
   position: relative;
-  width: 100%;
-  overflow-x: hidden;
-  max-width: 720px;
   margin: 0 auto;
+  max-width: 650px;
 }
 
 .bgm {

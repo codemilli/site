@@ -1,4 +1,4 @@
-function addCustomShakingAnimation($block, $imgObj, animation, ratio) {
+function addCustomShakingAnimation($block, $imgObj, $img, animation, ratio) {
   const {start_at, end_at, duration} = animation
   const {rangeX, rangeY} = animation
   const top = Number(($imgObj.css('top') || '0px').replace('px', '') || 0)
@@ -30,7 +30,7 @@ function addCustomShakingAnimation($block, $imgObj, animation, ratio) {
           const progress = diff / dur
           step = !step
 
-          const preData = $imgObj.data('transform') || {}
+          const preData = $img.data('transform') || {}
           const postData = Object.assign(preData, {
             "translate3d": {
               x: step ? rangeX : -rangeX,
@@ -38,12 +38,12 @@ function addCustomShakingAnimation($block, $imgObj, animation, ratio) {
               z: 0
             }
           })
-          $imgObj.data('transform', postData)
-          const transform = $imgObj.data('transform')
+          $img.data('transform', postData)
+          const transform = $img.data('transform')
           const {translate3d = {}, scale = 1} = transform
           const {x = 0, y = 0} = translate3d
 
-          $imgObj.css({'transform': `translate3d(${x}px, ${y}px, 0px) scale(${scale})`})
+          $img.css({'transform': `translate3d(${x}px, ${y}px, 0px) scale(${scale})`})
 
           if (progress >= 1) {
             return
@@ -52,10 +52,10 @@ function addCustomShakingAnimation($block, $imgObj, animation, ratio) {
         })
       }()
 
-      $imgObj.addClass("custom-animation-shaking")
+      $img.addClass("custom-animation-shaking")
     } else if (nowY < 0) {
       animationing = false
-      $imgObj.removeClass("custom-animation-shaking")
+      $img.removeClass("custom-animation-shaking")
     }
   }
 

@@ -94,20 +94,20 @@ function onData({viewer, toon}) {
     $viewer.append($block)
     const $wrapper = $block.find('.wrapper')
 
-    _.forEach(scene.animation_list, (animation) => {
-      if (animation.type === "translate") {
-        addTransitionAnimation($block, $wrapper, animation, ratio)
-      }
-      if (animation.type === "opacity") {
-        addOpacityAnimation($block, $wrapper, animation, ratio)
-      }
-      if (animation.type === "scale") {
-        addScaleAnimation($block, $wrapper, animation, ratio)
-      }
-      if (animation.type === "@CUSTOM/Shaking") {
-        addCustomShakingAnimation($block, $wrapper, animation, ratio)
-      }
-    })
+    // _.forEach(scene.animation_list, (animation) => {
+    //   if (animation.type === "translate") {
+    //     addTransitionAnimation($block, $wrapper, animation, ratio)
+    //   }
+    //   if (animation.type === "opacity") {
+    //     addOpacityAnimation($block, $wrapper, animation, ratio)
+    //   }
+    //   if (animation.type === "scale") {
+    //     addScaleAnimation($block, $wrapper, animation, ratio)
+    //   }
+    //   if (animation.type === "@CUSTOM/Shaking") {
+    //     addCustomShakingAnimation($block, $wrapper, animation, ratio)
+    //   }
+    // })
 
     _.forEach(scene.fragments, (data) => {
       const $imgObj = $(ImageObjectTmpl({
@@ -132,7 +132,7 @@ function onData({viewer, toon}) {
           addScaleAnimation($block, $imgObj, animation, ratio)
         }
         if (animation.type === "CUSTOM_SHAKE") {
-          addCustomShakingAnimation($block, $imgObj, animation, ratio)
+          addCustomShakingAnimation($block, $imgObj, $imgObj.find('img'), animation, ratio)
         }
       })
 
