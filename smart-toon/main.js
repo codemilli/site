@@ -146,12 +146,12 @@ function onData({viewer, toon}) {
 function playBGM() {
   return new Promise((resolve) => {
     const audio = document.getElementById('bgm')
-    audio.play()
+    //audio.play()
     resolve()
 
     audio.addEventListener('ended', () => {
       audio.currentTime = 0
-      audio.play()
+      // audio.play()
     }, false)
   })
 }
