@@ -33,6 +33,7 @@ body > .blank {
 
 .block {
   position: absolute;
+  overflow-x: hidden;
 }
 
 .block > img {
