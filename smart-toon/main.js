@@ -73,12 +73,15 @@ function calculateViewerSize(res) {
 }
 
 function onData({viewer, toon}) {
+  let totalHeight = 0
   const ratio = viewer.width / toon.standard_width
 
   console.log('toon : ', toon)
   console.log('ratio : ', ratio)
 
   _.forEach(toon.scenes, (scene, idx) => {
+    totalHeight = scene.block.height
+
     const hasBG = !!scene.block.image_url
     const blockOption = {
       bgColor: scene.block.background_color,
@@ -141,6 +144,8 @@ function onData({viewer, toon}) {
       })
     })
   })
+
+  $viewer.height(totalHeight)
 }
 
 function playBGM() {

@@ -25,6 +25,9 @@ body > .blank {
   position: relative;
   margin: 0 auto;
   max-width: 650px;
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 0;
 }
 
 .bgm {
@@ -33,7 +36,6 @@ body > .blank {
 
 .block {
   position: absolute;
-  overflow-x: hidden;
 }
 
 .block > img {
