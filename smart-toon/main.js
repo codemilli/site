@@ -80,7 +80,7 @@ function onData({viewer, toon}) {
   console.log('ratio : ', ratio)
 
   _.forEach(toon.scenes, (scene, idx) => {
-    totalHeight = scene.block.height
+    totalHeight += scene.block.height
 
     const hasBG = !!scene.block.image_url
     const blockOption = {
@@ -145,6 +145,7 @@ function onData({viewer, toon}) {
     })
   })
 
+  console.log('totalHeight', totalHeight)
   $viewer.height(totalHeight)
 }
 
