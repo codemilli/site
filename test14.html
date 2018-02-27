@@ -1,15 +1,47 @@
 <!doctype html>
 <html>
-  <head></head>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="resource/js/axios.js"></script>
+  </head>
   <body>
-    <audio id="audio" preload="auto">
-      <source src="resource/audio/signal.mp3" type="audio/mpeg" />
-    </audio>
+    <div class="audios">
+      <!--<audio id="audio" preload="auto">-->
+        <!--<source src="resource/audio/signal.mp3" type="audio/mpeg" />-->
+      <!--</audio>-->
+    </div>
     <script>
-      window.onload = function () {
-        var audio = document.getElementById('audio')
-        audio.play()
-      }
+      $(function () {
+        var audio = $('<audio></audio>')
+        var source = $('<source/>')
+
+        axios
+          .get('/resource/audio/signal.mp3', {responseType: 'blob'})
+          .then((response) => {
+            // var buffer = response.data
+            // var newBuffer = buffer.slice(0)
+            // var tmp = new ArrayBuffer(newBuffer.byteLength)
+            // var arrayBufferView = new Uint8Array(tmp)
+            //
+            // debugger
+            //
+            // for (var i = 0; i < newBuffer.byteLength; i++) {
+            //   arrayBufferView[i] = newBuffer.charCodeAt(i)
+            // }
+            //
+            // var blob = new Blob([arrayBufferView], {type: 'mp3'})
+            var url = URL.createObjectURL(response.data)
+
+            audio.attr('id', 'audio')
+            audio.attr('preload', 'auto')
+            source.attr('src', url)
+            source.attr('type', 'audio/mpeg')
+
+            audio.append(source)
+            $('.audios').append(audio)
+            $('#audio')[0].play()
+          })
+      })
     </script>
   </body>
 </html>
