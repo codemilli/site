@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <script src="lib/js/jquery-3.3.1.min.js"></script>
+  <script>
+    var data = {"value":{"background_color":"rgba(255, 255, 255, 100)","standard_width":650,"background_audio":{},"scenes":[{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":0,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":0,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/17/12/01/00/00/11217","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":1},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":1300,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":1300,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/18/12/01/00/00/11218","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":2},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":2600,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":2600,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/19/12/01/00/00/11219","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":3},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":3900,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":3900,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/20/12/01/00/00/11220","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":4},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":5200,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":5200,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/21/12/01/00/00/11221","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":5},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":6500,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":6500,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/22/12/01/00/00/11222","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":6},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":7800,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":7800,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/23/12/01/00/00/11223","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":7},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":9100,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":9100,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/24/12/01/00/00/11224","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":8},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":10400,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":10400,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/25/12/01/00/00/11225","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":9},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":11700,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":11700,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/26/12/01/00/00/11226","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":10},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":13000,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":13000,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/27/12/01/00/00/11227","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":11},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":14300,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":14300,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/28/12/01/00/00/11228","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":12},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":15600,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":15600,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/29/12/01/00/00/11229","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":13},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":16900,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":16900,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/30/12/01/00/00/11230","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":14},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":18200,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":18200,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/31/12/01/00/00/11231","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":15},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":19500,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":19500,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/32/12/01/00/00/11232","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":16},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":20800,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":20800,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/33/12/01/00/00/11233","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":17},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":22100,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":22100,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/34/12/01/00/00/11234","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":18},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":23400,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":23400,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/35/12/01/00/00/11235","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":19},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":24700,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":24700,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/36/12/01/00/00/11236","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":20},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":26000,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":26000,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/37/12/01/00/00/11237","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":21},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":27300,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":27300,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/38/12/01/00/00/11238","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":22},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":28600,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":28600,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/39/12/01/00/00/11239","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":23},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":29900,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":29900,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/40/12/01/00/00/11240","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":24},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":31200,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":31200,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/41/12/01/00/00/11241","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":25},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":32500,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":32500,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/42/12/01/00/00/11242","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":26},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":33800,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":33800,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/43/12/01/00/00/11243","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":27},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":35100,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":35100,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/44/12/01/00/00/11244","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":28},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":36400,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":36400,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/45/12/01/00/00/11245","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":29},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":37700,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":37700,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/46/12/01/00/00/11246","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":30},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":39000,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":39000,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/47/12/01/00/00/11247","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":31},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":40300,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":40300,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/48/12/01/00/00/11248","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":32},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":41600,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":41600,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/49/12/01/00/00/11249","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":33},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":42900,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":42900,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/50/12/01/00/00/11250","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":34},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":44200,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":44200,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/51/12/01/00/00/11251","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":35},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":45500,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":45500,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/52/12/01/00/00/11252","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":36},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":46800,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":46800,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/53/12/01/00/00/11253","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":37},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":48100,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":48100,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/54/12/01/00/00/11254","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":38},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":49400,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":49400,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/55/12/01/00/00/11255","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":39},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":50700,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":50700,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/56/12/01/00/00/11256","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":40},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":52000,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":52000,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/57/12/01/00/00/11257","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":41},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":53300,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":53300,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/58/12/01/00/00/11258","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":42},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":54600,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":54600,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/59/12/01/00/00/11259","width":650,"priority":1,"height":1300,"represent":true}],"type":"IMAGE","video_id":"","height":1300,"order":43},{"video_image_url":"","background_color":"rgba(255, 255, 255, 100)","top":55900,"left":0,"width":650,"fragments":[{"animation_list":[],"background_color":"rgba(255, 255, 255, 100)","top":55900,"left":0,"image_url":"http://nc-origin-nccomics-rc.s3.ap-northeast-2.amazonaws.com/admin/dev/content/750/60/12/01/00/00/11260","width":650,"priority":1,"height":1001,"represent":true}],"type":"IMAGE","video_id":"","height":1001,"order":44}]},"message":"OK","result":"000"}
+  </script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+    }
+    .build {
+      position: fixed;
+      font-size: 20px;
+      top: 20px;
+      left: 20px;
+    }
+    .templates {
+      display: none;
+    }
+    #root {
+
+    }
+    .scene {
+      position: relative;
+      width: 100%;
+    }
+    .layer {
+      position: absolute;
+    }
+    .img-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .img-wrap img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .img-wrap img.loaded {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="build">
+    1
+  </div>
+  <div id="root"></div>
+
+  <div class="templates">
+    <div id="scene" class="scene template">
+      <div class="layer">
+        <div class="img-wrap">
+          <img src="" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    'use strict';
+
+    !function () {
+      var root = $('#root')
+
+      data.value.scenes.forEach((data) => {
+        var scene = $('#scene').clone()
+        var layer = scene.find('.layer')
+        var imgWrap = scene.find('.img-wrap')
+        var img = scene.find('img')
+
+        scene.id = null
+        scene.height(data.height)
+
+        layer.css({
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: data.height,
+          zIndex: 1
+        })
+
+        img.attr('src', data.fragments[0].image_url)
+        img.on('load', () => {
+          img.addClass('loaded')
+        })
+
+
+        root.append(scene)
+      })
+    }()
+  </script>
+</body>
+</html>
