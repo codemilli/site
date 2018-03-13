@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <!-- META -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Title</title>
 
   <script src="lib/js/jquery-3.3.1.min.js"></script>
@@ -16,22 +19,19 @@
     }
     .build {
       position: fixed;
-      font-size: 20px;
+      font-size: 30px;
       top: 20px;
       left: 20px;
     }
     .templates {
       display: none;
     }
-    #root {
-
-    }
     .scene {
       position: relative;
       width: 100%;
     }
     .layer {
-      position: absolute;
+      /*position: absolute;*/
     }
     .img-wrap {
       position: absolute;
@@ -40,33 +40,33 @@
       right: 0;
       bottom: 0;
     }
-    .img-wrap img {
-      position: absolute;
-      top: 0;
-      left: 0;
+    img {
+      /*position: absolute;*/
+      /*top: 0;*/
+      /*left: 0;*/
       width: 100%;
-      height: 100%;
-      opacity: 0;
+      /*height: 100%;*/
+      /*opacity: 0;*/
       transition: opacity 0.3s ease-in-out;
       -webkit-transition: opacity 0.3s ease-in-out;
     }
-    .img-wrap img.loaded {
-      opacity: 1;
+    img.loaded {
+      /*opacity: 1;*/
     }
   </style>
 </head>
 <body>
   <div class="build">
-    2
+    3
   </div>
   <div id="root"></div>
 
   <div class="templates">
     <div id="scene" class="scene template">
       <div class="layer">
-        <div class="img-wrap">
+        <!--<div class="img-wrap">-->
           <img src="" alt="">
-        </div>
+        <!--</div>-->
       </div>
     </div>
   </div>
@@ -84,14 +84,14 @@
         var img = scene.find('img')
 
         scene.id = null
-        scene.height(data.height)
+        // scene.height(data.height)
 
         layer.css({
           top: 0,
           left: 0,
           width: '100%',
-          height: data.height,
-          zIndex: 1
+          // height: data.height,
+          // zIndex: 1
         })
 
         img.attr('src', data.fragments[0].image_url)
