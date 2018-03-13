@@ -57,18 +57,19 @@
 </head>
 <body>
   <div class="build">
-    3
+    4
   </div>
   <div id="root"></div>
 
   <div class="templates">
-    <div id="scene" class="scene template">
-      <div class="layer">
-        <!--<div class="img-wrap">-->
-          <img src="" alt="">
-        <!--</div>-->
-      </div>
-    </div>
+    <img id="scene" src="" alt="">
+    <!--<div id="scene" class="scene template">-->
+      <!--&lt;!&ndash;<div class="layer">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="img-wrap">&ndash;&gt;-->
+          <!--<img src="" alt="">-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
   </div>
 
   <script>
@@ -79,25 +80,25 @@
 
       data.value.scenes.forEach((data) => {
         var scene = $('#scene').clone()
-        var layer = scene.find('.layer')
-        var imgWrap = scene.find('.img-wrap')
-        var img = scene.find('img')
-
-        scene.id = null
+        // var layer = scene.find('.layer')
+        // var imgWrap = scene.find('.img-wrap')
+        // var img = scene.find('img')
+        //
+        // scene.id = null
         // scene.height(data.height)
 
-        layer.css({
-          top: 0,
-          left: 0,
-          width: '100%',
-          // height: data.height,
-          // zIndex: 1
-        })
+        // layer.css({
+        //   top: 0,
+        //   left: 0,
+        //   width: '100%',
+        //   // height: data.height,
+        //   // zIndex: 1
+        // })
 
-        img.attr('src', data.fragments[0].image_url)
-        img.on('load', () => {
-          img.addClass('loaded')
-        })
+        scene.attr('src', data.fragments[0].image_url)
+        // img.on('load', () => {
+        //   img.addClass('loaded')
+        // })
 
 
         root.append(scene)
