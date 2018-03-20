@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    window.onYouTubeIframeAPIReady = function () {
+      window.player = new YT.Player('youtube', {
+        width: window.innerWidth,
+        height: window.innerWidth * 9 / 16,
+        videoId: 'bjNjuS0DLj0',
+        playerVars: {
+          'showinfo': 0,
+          'controls': 1,
+          'rel': 0,
+          'playsinline': 1,
+          'modestbranding': 1,
+          'origin': location.protocol + '//' + location.host,
+          'mute': 0,
+          'start': parseInt(0)
+        },
+        events: {
+          'onReady': () => {
+            window.player.playVideo()
+          },
+          'onStateChange': (event) => {
+          }
+        }
+      })
+    }
+  </script>
+</head>
+<body>
+  <div id="youtube"></div>
+</body>
+</html>
