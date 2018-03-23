@@ -9,7 +9,7 @@
       window.player = new YT.Player('youtube', {
         width: window.innerWidth,
         height: window.innerWidth * 9 / 16,
-        videoId: 'bjNjuS0DLj0',
+        videoId: 'kvm6wewOAcY',
         playerVars: {
           'showinfo': 0,
           'controls': 1,
@@ -29,6 +29,10 @@
         }
       })
     }
+
+    window.addEventListener('resize', () => {
+      window.player.setSize(window.innerWidth, window.innerWidth * 9 / 16)
+    })
   </script>
 </head>
 <body>
