@@ -1,4 +1,4 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["gamepage"],{"./src/pages/StoryPage/StoryPage.tsx":
+(window.webpackJsonp=window.webpackJsonp||[]).push([["storypage"],{"./src/pages/StoryPage/StoryPage.tsx":
 /*!*******************************************!*\
   !*** ./src/pages/StoryPage/StoryPage.tsx ***!
   \*******************************************/
