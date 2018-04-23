@@ -1,0 +1,5 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["viewerpage"],{"./src/pages/ViewerPage/ViewerPage.tsx":
+/*!*********************************************!*\
+  !*** ./src/pages/ViewerPage/ViewerPage.tsx ***!
+  \*********************************************/
+/*! exports provided: ViewerPage */function(e,n,t){"use strict";t.r(n),t.d(n,"ViewerPage",function(){return c});var r=t(/*! tslib */"./node_modules/tslib/tslib.es6.js"),s=t(/*! react */"./node_modules/react/index.js"),a=t.n(s),o=t(/*! ../../core/utils/Number */"./src/core/utils/Number.ts"),i=t(/*! ../../components/Header/Header */"./src/components/Header/Header.tsx"),c=function(e){function n(n){return e.call(this,n)||this}return r.__extends(n,e),n.prototype.render=function(){return a.a.createElement("div",null,a.a.createElement(i.Header,null),a.a.createElement("h2",null," Viewer Page !!!!! ",Object(o.toNumber)("1")," "))},n}(a.a.Component)}}]);

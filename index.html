@@ -1,27 +1,23 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Title</title>
 
-<div class="home">
+  <base href="/">
 
-  <h1 class="page-heading">Posts</h1>
+  <!-- Preload start -->
 
-  <ul class="post-list">
-    <!--{% for post in site.posts %}-->
-      <!--<li>-->
-        <!--<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>-->
+  <!-- Preload end -->
 
-        <!--<h2>-->
-          <!--<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>-->
-        <!--</h2>-->
-      <!--</li>-->
-    <!--{% endfor %}-->
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-  <script>
-    //location.href= "market://details?com.ncsoft.nccomix";
-    window.location = "market://details?com.ncsoft.nccomix";
-  </script>
+  <link rel="stylesheet" href="/public/styles/normalize.css">
+</head>
+<body>
+<div id="root">
+  <p style="padding: 20px; text-align: center;">
+    Loading...
+  </p>
 </div>
-
+<script type="text/javascript" src="/vendors.be062bea1c220fd5a0fa.js"></script><script type="text/javascript" src="/async-loader.be062bea1c220fd5a0fa.js"></script></body>
+</html>
