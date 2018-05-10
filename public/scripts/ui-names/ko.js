@@ -1,14 +1,22 @@
-var __UI__ = {
-  PAGES: {
-    COVERSTORY: {
-    },
-    STORY: {
-    },
-    VIEWER: {
-    },
-  },
+(function () {
+ var ui = {
+   PAGES: {
+     COVERSTORY: {
+     },
+     STORY: {
+     },
+     VIEWER: {
+     },
+   },
 
-  GENERAL: {
-    MORE: '더보기',
-  },
-}
+   GENERAL: {
+     MORE: '더보기',
+   },
+ }
+
+ if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+   module.exports = ui
+ } else {
+   window.__UI__ = ui
+ }
+})()
