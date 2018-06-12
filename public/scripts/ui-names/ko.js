@@ -8,6 +8,11 @@
      VIEWER: {
      },
    },
+   
+   SIDEBAR: {
+    NOTICE: '공지사항',
+    QUICK_LINK_TITLE: 'NCSOFT 게임 커뮤니티',
+   },
 
    GENERAL: {
      MORE: '더보기',
