@@ -7,6 +7,9 @@
      },
      VIEWER: {
      },
+     NOTICE: {
+       TITLE: '공지사항',
+     }
    },
    
    SIDEBAR: {
