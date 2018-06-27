@@ -6,6 +6,8 @@
      STORY: {
      },
      VIEWER: {
+       PREV: '이전',
+       NEXT: '다음',
      },
      NOTICE: {
        TITLE: '공지사항',
