@@ -41,5 +41,8 @@
   <div class="head"></div>
   <div class="wrap"></div>
   <div class="dialog"></div>
+  <script>
+    if ('storage' in navigator && 'estimate' in navigator.storage) {navigator.storage.estimate().then(estimate => {alert(`Using ${estimate.usage} out of ${estimate.quota} bytes.`);});}
+  </script>
 </body>
 </html>
