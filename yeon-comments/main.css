@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 890px;
+  margin: 0 auto;
+}
+
+.word-cloud__wrap {
+  position: relative;
+  height: 60%;
+  overflow: auto;
+}
+
+.rt-comment__item {
+  font-size: 15px;
+}
+
+.rt-comment__item span {
+  font-size: 30px;
+  color: #8fb8ce;
+}
