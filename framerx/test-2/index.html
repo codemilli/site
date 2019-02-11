@@ -145,6 +145,7 @@ eval("(function webpackUniversalModuleDefinition(root, factory) {\n\tif(true)\n\
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"./App.tsx": "./code/App.tsx",
 	"./Examples.tsx": "./code/Examples.tsx",
 	"./canvas.tsx": "./code/canvas.tsx"
 };
@@ -170,6 +171,18 @@ webpackContext.keys = function webpackContextKeys() {
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
 webpackContext.id = "./code sync recursive \\.(t|j)s(x?)|\\.css$";
+
+/***/ }),
+
+/***/ "./code/App.tsx":
+/*!**********************!*\
+  !*** ./code/App.tsx ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst framer_1 = __webpack_require__(/*! framer */ \"framer\");\nconst scaleAfter300ms = framer_1.Data({ scale: framer_1.Animatable(1) });\nconst scaleAfter600ms = framer_1.Data({ scale: framer_1.Animatable(1) });\nexports.Scale300 = () => {\n    window[\"__checkBudget__\"]();\n    return {\n        scale: scaleAfter300ms.scale\n    };\n};\nexports.Scale600 = () => {\n    window[\"__checkBudget__\"]();\n    return {\n        scale: scaleAfter600ms.scale\n    };\n};\nsetTimeout(() => {\n    window[\"__checkBudget__\"]();\n    scaleAfter300ms.scale.set(0.95);\n    framer_1.animate.spring(scaleAfter300ms.scale, 1);\n}, 100);\nsetTimeout(() => {\n    window[\"__checkBudget__\"]();\n    scaleAfter600ms.scale.set(0.95);\n    framer_1.animate.spring(scaleAfter600ms.scale, 1);\n}, 300);\nexports.__info__ = [{ name: \"Scale300\", type: \"override\" }, { name: \"Scale600\", type: \"override\" }];\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb2RlL0FwcC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSw4Q0FBOEMsY0FBYztBQUM1RDtBQUNBLHVDQUF1QyxnQ0FBZ0M7QUFDdkUsdUNBQXVDLGdDQUFnQztBQUN2RTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLENBQUM7QUFDRDtBQUNBO0FBQ0E7QUFDQTtBQUNBLENBQUM7QUFDRCxxQkFBcUIscUNBQXFDLEdBQUcscUNBQXFDIiwiZmlsZSI6Ii4vY29kZS9BcHAudHN4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc3RyaWN0XCI7XG5PYmplY3QuZGVmaW5lUHJvcGVydHkoZXhwb3J0cywgXCJfX2VzTW9kdWxlXCIsIHsgdmFsdWU6IHRydWUgfSk7XG5jb25zdCBmcmFtZXJfMSA9IHJlcXVpcmUoXCJmcmFtZXJcIik7XG5jb25zdCBzY2FsZUFmdGVyMzAwbXMgPSBmcmFtZXJfMS5EYXRhKHsgc2NhbGU6IGZyYW1lcl8xLkFuaW1hdGFibGUoMSkgfSk7XG5jb25zdCBzY2FsZUFmdGVyNjAwbXMgPSBmcmFtZXJfMS5EYXRhKHsgc2NhbGU6IGZyYW1lcl8xLkFuaW1hdGFibGUoMSkgfSk7XG5leHBvcnRzLlNjYWxlMzAwID0gKCkgPT4ge1xuICAgIHdpbmRvd1tcIl9fY2hlY2tCdWRnZXRfX1wiXSgpO1xuICAgIHJldHVybiB7XG4gICAgICAgIHNjYWxlOiBzY2FsZUFmdGVyMzAwbXMuc2NhbGVcbiAgICB9O1xufTtcbmV4cG9ydHMuU2NhbGU2MDAgPSAoKSA9PiB7XG4gICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgcmV0dXJuIHtcbiAgICAgICAgc2NhbGU6IHNjYWxlQWZ0ZXI2MDBtcy5zY2FsZVxuICAgIH07XG59O1xuc2V0VGltZW91dCgoKSA9PiB7XG4gICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgc2NhbGVBZnRlcjMwMG1zLnNjYWxlLnNldCgwLjk1KTtcbiAgICBmcmFtZXJfMS5hbmltYXRlLnNwcmluZyhzY2FsZUFmdGVyMzAwbXMuc2NhbGUsIDEpO1xufSwgMTAwKTtcbnNldFRpbWVvdXQoKCkgPT4ge1xuICAgIHdpbmRvd1tcIl9fY2hlY2tCdWRnZXRfX1wiXSgpO1xuICAgIHNjYWxlQWZ0ZXI2MDBtcy5zY2FsZS5zZXQoMC45NSk7XG4gICAgZnJhbWVyXzEuYW5pbWF0ZS5zcHJpbmcoc2NhbGVBZnRlcjYwMG1zLnNjYWxlLCAxKTtcbn0sIDMwMCk7XG5leHBvcnRzLl9faW5mb19fID0gW3sgbmFtZTogXCJTY2FsZTMwMFwiLCB0eXBlOiBcIm92ZXJyaWRlXCIgfSwgeyBuYW1lOiBcIlNjYWxlNjAwXCIsIHR5cGU6IFwib3ZlcnJpZGVcIiB9XTtcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./code/App.tsx\n");
 
 /***/ }),
 
@@ -1388,7 +1401,8 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
                             "centerY": "22.2473604826546%",
                             "parentSize": null
                           },
-                          "children": []
+                          "children": [],
+                          "codeOverrideIdentifier": "./App.tsx_Scale300"
                         },
                         {
                           "componentClass": "Frame",
@@ -1421,7 +1435,8 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
                             "centerY": "22.2473604826546%",
                             "parentSize": null
                           },
-                          "children": []
+                          "children": [],
+                          "codeOverrideIdentifier": "./App.tsx_Scale600"
                         },
                         {
                           "componentClass": "Frame",
@@ -1573,7 +1588,8 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
                           "centerY": "22.2473604826546%",
                           "parentSize": null
                         },
-                        "children": []
+                        "children": [],
+                        "codeOverrideIdentifier": "./App.tsx_Scale300"
                       },
                       {
                         "componentClass": "Frame",
@@ -1606,7 +1622,8 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
                           "centerY": "22.2473604826546%",
                           "parentSize": null
                         },
-                        "children": []
+                        "children": [],
+                        "codeOverrideIdentifier": "./App.tsx_Scale600"
                       },
                       {
                         "componentClass": "Frame",
@@ -1680,7 +1697,8 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
               }
             ]
           }
-        ]
+        ],
+        "codeOverrideIdentifier": "./Examples.tsx_FlipInput"
       },
       {
         "componentClass": "ComponentContainer",
