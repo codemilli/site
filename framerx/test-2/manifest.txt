@@ -1,0 +1,33 @@
+node_modules/@framer/kasimir.iphone-x-kit/tsconfig.json
+node_modules/@framer/kasimir.iphone-x-kit/package.json
+node_modules/@framer/kasimir.iphone-x-kit/metadata/icon.png
+node_modules/@framer/kasimir.iphone-x-kit/metadata/artwork.png
+node_modules/@framer/kasimir.iphone-x-kit/dist/index.js
+node_modules/@framer/kasimir.iphone-x-kit/design/document.json
+node_modules/@framer/kasimir.iphone-x-kit/code/canvas.tsx
+node_modules/@framer/kasimir.iphone-x-kit/code/Status Bar/Status_Bar.tsx
+node_modules/@framer/kasimir.iphone-x-kit/code/Home Button (iPhone X)/HomeButton.tsx
+node_modules/@framer/kasimir.iphone-x-kit/code/Examples.tsx
+node_modules/@framer/kasimir.iphone-x-kit/build/index.js
+node_modules/@framer/kasimir.iphone-x-kit/README.md
+index.html
+images/cursors/touch@2x.png
+images/cursors/touch.png
+images/cursors/touch-active@2x.png
+images/cursors/touch-active.png
+design/images/xGBqoxCwIPOp2vs1KnYTVGWGnw.jpg
+design/images/tEM5tgtgsRaRHFhE8vzRqvVEB1w.png
+design/images/nrWwQ28AEC5mWizgJW8lFgv5Vw.jpg
+design/images/eAb8Shbnwjs5i9kmt3m6q2K4YY.jpg
+design/images/buptWBbdRA5vE1rwkHxGp1YFUA.png
+design/images/a1tBg7ryW5QpVQ6uNdGPfP07Tuw.jpg
+design/images/VQVihDdFs0ipjmIlkPv0XO9KdM.jpg
+design/images/Hc9i6e5QZ8oVMAJ7hZmhHmqyQGw.jpg
+design/images/Gtn8NGakpJqxoA53zxgx3yxwUU.jpg
+build/style.css
+build/standalone.js
+build/react.development.js
+build/react-dom.development.js
+build/framer.js
+build/Draft.css
+manifest.txt
