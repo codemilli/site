@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+
+        <script src="build/react.development.js"></script>
+        <script src="build/react-dom.development.js"></script>
+        <script src="build/framer.js"></script>
+
+        <link href="build/Draft.css" rel="stylesheet" />
+        <link href="build/style.css" rel="stylesheet" />
+
+        <!-- Workaround for a WebKit bug: loading via URL from the stylesheet is denied if this file is loaded via file:/// -->
+        <style>
+            @font-face {
+                font-family: "Roboto Mono";
+                font-style: normal;
+                font-weight: 400;
+                src: local("Roboto Mono"), local("RobotoMono-Regular"),
+                    url("fonts/RobotoMono-Regular.ttf") format("truetype");
+            }
+        </style>
+        <style>
+            * {
+                -webkit-font-smoothing: antialiased;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main></main>
+        <script src="build/standalone.js"></script>
+        
+        <script id="build_index_js">
+        (function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("framer"), require("react"));
+	else if(typeof define === 'function' && define.amd)
+		define(["framer", "react"], factory);
+	else {
+		var a = typeof exports === 'object' ? factory(require("framer"), require("react")) : factory(root["Framer"], root["React"]);
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(window, function(__WEBPACK_EXTERNAL_MODULE_framer__, __WEBPACK_EXTERNAL_MODULE_react__) {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		try { modules[moduleId].call(module.exports, module, module.exports, __webpack_require__); } catch (error) { module.exports = { error } }
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// asset url
+/******/ 	var __module_i = eval("typeof module !== 'undefined' ? module.i : ''");
+/******/ 	var __framer_package = (/(node_modules[/].*)[/](build|dist).index.js/.exec(__module_i) || [])[1]
+/******/ 	function __asset_url__(src) { return __WEBPACK_EXTERNAL_MODULE_framer__.serverURL(__framer_package, src) };
+/******/ 	installedModules['framer/resource'] = { i: 'framer/resource', l: true, exports: { url: __asset_url__ } };
+/******/
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./package.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "../../../../Applications/Framer X.app/Contents/Resources/Server/lib/framer-package-loader.js!./node_modules/@framer/codemilli.twitter-sticky/dist/index.js":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** /Users/codemilli/Applications/Framer X.app/Contents/Resources/Server/lib/framer-package-loader.js!./node_modules/@framer/codemilli.twitter-sticky/dist/index.js ***!
+  \***********************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("(function webpackUniversalModuleDefinition(root, factory) {\n\tif(true)\n\t\tmodule.exports = factory(__webpack_require__(/*! framer */ \"framer\"), __webpack_require__(/*! react */ \"react\"));\n\telse { var i, a; }\n})(window, function(__WEBPACK_EXTERNAL_MODULE_framer__, __WEBPACK_EXTERNAL_MODULE_react__) {\nreturn /******/ (function(modules) { // webpackBootstrap\n/******/ \t// The module cache\n/******/ \tvar installedModules = {};\n/******/\n/******/ \t// The require function\n/******/ \tfunction __webpack_require__(moduleId) {\n/******/\n/******/ \t\t// Check if module is in cache\n/******/ \t\tif(installedModules[moduleId]) {\n/******/ \t\t\treturn installedModules[moduleId].exports;\n/******/ \t\t}\n/******/ \t\t// Create a new module (and put it into the cache)\n/******/ \t\tvar module = installedModules[moduleId] = {\n/******/ \t\t\ti: moduleId,\n/******/ \t\t\tl: false,\n/******/ \t\t\texports: {}\n/******/ \t\t};\n/******/\n/******/ \t\t// Execute the module function\n/******/ \t\ttry { modules[moduleId].call(module.exports, module, module.exports, __webpack_require__); } catch (error) { module.exports = { error } }\n/******/\n/******/ \t\t// Flag the module as loaded\n/******/ \t\tmodule.l = true;\n/******/\n/******/ \t\t// Return the exports of the module\n/******/ \t\treturn module.exports;\n/******/ \t}\n/******/\n/******/\n/******/ \t// expose the modules object (__webpack_modules__)\n/******/ \t__webpack_require__.m = modules;\n/******/\n/******/ \t// expose the module cache\n/******/ \t__webpack_require__.c = installedModules;\n/******/\n/******/ \t// define getter function for harmony exports\n/******/ \t__webpack_require__.d = function(exports, name, getter) {\n/******/ \t\tif(!__webpack_require__.o(exports, name)) {\n/******/ \t\t\tObject.defineProperty(exports, name, {\n/******/ \t\t\t\tconfigurable: false,\n/******/ \t\t\t\tenumerable: true,\n/******/ \t\t\t\tget: getter\n/******/ \t\t\t});\n/******/ \t\t}\n/******/ \t};\n/******/\n/******/ \t// define __esModule on exports\n/******/ \t__webpack_require__.r = function(exports) {\n/******/ \t\tObject.defineProperty(exports, '__esModule', { value: true });\n/******/ \t};\n/******/\n/******/ \t// getDefaultExport function for compatibility with non-harmony modules\n/******/ \t__webpack_require__.n = function(module) {\n/******/ \t\tvar getter = module && module.__esModule ?\n/******/ \t\t\tfunction getDefault() { return module['default']; } :\n/******/ \t\t\tfunction getModuleExports() { return module; };\n/******/ \t\t__webpack_require__.d(getter, 'a', getter);\n/******/ \t\treturn getter;\n/******/ \t};\n/******/\n/******/ \t// Object.prototype.hasOwnProperty.call\n/******/ \t__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };\n/******/\n/******/ \t// __webpack_public_path__\n/******/ \t__webpack_require__.p = \"\";\n/******/\n/******/ \t// asset url\n/******/ \tvar __module_i = eval(\"typeof module !== 'undefined' ? module.i : ''\");\n/******/ \tvar __framer_package = (/(node_modules[/].*)[/](build|dist).index.js/.exec(__module_i) || [])[1]\n/******/ \tfunction __asset_url__(src) { return __WEBPACK_EXTERNAL_MODULE_framer__.serverURL(__framer_package, src) };\n/******/ \tinstalledModules['framer/resource'] = { i: 'framer/resource', l: true, exports: { url: __asset_url__ } };\n/******/\n/******/\n/******/\n/******/ \t// Load entry module and return exports\n/******/ \treturn __webpack_require__(__webpack_require__.s = \"./package.js\");\n/******/ })\n/************************************************************************/\n/******/ ({\n\n/***/ \"./code sync recursive \\\\.(t|j)s(x?)|\\\\.css$\":\n/*!***************************************!*\\\n  !*** ./code sync \\.(t|j)s(x?)|\\.css$ ***!\n  \\***************************************/\n/*! no static exports found */\n/***/ (function(module, exports, __webpack_require__) {\n\nvar map = {\n\t\"./App.tsx\": \"./code/App.tsx\",\n\t\"./App1.tsx\": \"./code/App1.tsx\",\n\t\"./Examples.tsx\": \"./code/Examples.tsx\",\n\t\"./TwitterStickyContent.tsx\": \"./code/TwitterStickyContent.tsx\",\n\t\"./TwitterStickyContext.tsx\": \"./code/TwitterStickyContext.tsx\",\n\t\"./TwitterStickyHeader.tsx\": \"./code/TwitterStickyHeader.tsx\",\n\t\"./canvas.tsx\": \"./code/canvas.tsx\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\tvar module = __webpack_require__(id);\n\treturn module;\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error('Cannot find module \"' + req + '\".');\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./code sync recursive \\\\.(t|j)s(x?)|\\\\.css$\";\n\n/***/ }),\n\n/***/ \"./code/App.tsx\":\n/*!**********************!*\\\n  !*** ./code/App.tsx ***!\n  \\**********************/\n/*! no static exports found */\n/***/ (function(module, exports, __webpack_require__) {\n\n\"use strict\";\neval(\"\\nObject.defineProperty(exports, \\\"__esModule\\\", { value: true });\\nconst framer_1 = __webpack_require__(/*! framer */ \\\"framer\\\");\\nexports.store = {};\\nexports.starFrameData = framer_1.Data({\\n    scale: 1\\n});\\nfunction setState(id) {\\n    window[\\\"__checkBudget__\\\"]();\\n    if (!exports.store[id]) {\\n        exports.store[id] = {};\\n        exports.store[id].skeletonData = framer_1.Data({\\n            scale: framer_1.Animatable(1),\\n            opacity: framer_1.Animatable(1)\\n        });\\n        exports.store[id].starData = framer_1.Data({\\n            scale: framer_1.Animatable(1),\\n            opacity: framer_1.Animatable(0)\\n        });\\n    }\\n    return exports.store[id];\\n}\\nexports.Touchable = props => {\\n    window[\\\"__checkBudget__\\\"]();\\n    const { skeletonData, starData } = setState(1);\\n    return {\\n        onTap() {\\n            window[\\\"__checkBudget__\\\"]();\\n            skeletonData.opacity.set(0);\\n            framer_1.animate.spring(starData.opacity, 1);\\n            framer_1.animate.spring(starData.scale, 10);\\n        }\\n    };\\n};\\nexports.SkeletonStar = props => {\\n    window[\\\"__checkBudget__\\\"]();\\n    const { skeletonData } = setState(1);\\n    return {\\n        scale: skeletonData.scale,\\n        opacity: skeletonData.opacity\\n    };\\n};\\nexports.Star = props => {\\n    window[\\\"__checkBudget__\\\"]();\\n    const { starData } = setState(1);\\n    return {\\n        scale: starData.scale,\\n        opacity: starData.opacity\\n    };\\n};\\nexports.StarFrame = props => {\\n    window[\\\"__checkBudget__\\\"]();\\n    return {\\n        scale: exports.starFrameData.scale\\n    };\\n};\\nexports.ScaleSlider = props => {\\n    window[\\\"__checkBudget__\\\"]();\\n    return {\\n        onValueChange: (value) => {\\n            window[\\\"__checkBudget__\\\"]();\\n            exports.starFrameData.scale = value / 10;\\n        }\\n    };\\n};\\nexports.__info__ = [{ name: \\\"Touchable\\\", type: \\\"override\\\" }, { name: \\\"SkeletonStar\\\", type: \\\"override\\\" }, { name: \\\"Star\\\", type: \\\"override\\\" }, { name: \\\"StarFrame\\\", type: \\\"override\\\" }, { name: \\\"ScaleSlider\\\", type: \\\"override\\\" }];\\n//# sourceURL=[module]\\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb2RlL0FwcC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSw4Q0FBOEMsY0FBYztBQUM1RDtBQUNBO0FBQ0E7QUFDQTtBQUNBLENBQUM7QUFDRDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLFNBQVM7QUFDVDtBQUNBO0FBQ0E7QUFDQSxTQUFTO0FBQ1Q7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLFdBQVcseUJBQXlCO0FBQ3BDO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxXQUFXLGVBQWU7QUFDMUI7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxXQUFXLFdBQVc7QUFDdEI7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLHFCQUFxQixzQ0FBc0MsR0FBRyx5Q0FBeUMsR0FBRyxpQ0FBaUMsR0FBRyxzQ0FBc0MsR0FBRyx3Q0FBd0MiLCJmaWxlIjoiLi9jb2RlL0FwcC50c3guanMiLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzdHJpY3RcIjtcbk9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCBcIl9fZXNNb2R1bGVcIiwgeyB2YWx1ZTogdHJ1ZSB9KTtcbmNvbnN0IGZyYW1lcl8xID0gcmVxdWlyZShcImZyYW1lclwiKTtcbmV4cG9ydHMuc3RvcmUgPSB7fTtcbmV4cG9ydHMuc3RhckZyYW1lRGF0YSA9IGZyYW1lcl8xLkRhdGEoe1xuICAgIHNjYWxlOiAxXG59KTtcbmZ1bmN0aW9uIHNldFN0YXRlKGlkKSB7XG4gICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgaWYgKCFleHBvcnRzLnN0b3JlW2lkXSkge1xuICAgICAgICBleHBvcnRzLnN0b3JlW2lkXSA9IHt9O1xuICAgICAgICBleHBvcnRzLnN0b3JlW2lkXS5za2VsZXRvbkRhdGEgPSBmcmFtZXJfMS5EYXRhKHtcbiAgICAgICAgICAgIHNjYWxlOiBmcmFtZXJfMS5BbmltYXRhYmxlKDEpLFxuICAgICAgICAgICAgb3BhY2l0eTogZnJhbWVyXzEuQW5pbWF0YWJsZSgxKVxuICAgICAgICB9KTtcbiAgICAgICAgZXhwb3J0cy5zdG9yZVtpZF0uc3RhckRhdGEgPSBmcmFtZXJfMS5EYXRhKHtcbiAgICAgICAgICAgIHNjYWxlOiBmcmFtZXJfMS5BbmltYXRhYmxlKDEpLFxuICAgICAgICAgICAgb3BhY2l0eTogZnJhbWVyXzEuQW5pbWF0YWJsZSgwKVxuICAgICAgICB9KTtcbiAgICB9XG4gICAgcmV0dXJuIGV4cG9ydHMuc3RvcmVbaWRdO1xufVxuZXhwb3J0cy5Ub3VjaGFibGUgPSBwcm9wcyA9PiB7XG4gICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgY29uc3QgeyBza2VsZXRvbkRhdGEsIHN0YXJEYXRhIH0gPSBzZXRTdGF0ZSgxKTtcbiAgICByZXR1cm4ge1xuICAgICAgICBvblRhcCgpIHtcbiAgICAgICAgICAgIHdpbmRvd1tcIl9fY2hlY2tCdWRnZXRfX1wiXSgpO1xuICAgICAgICAgICAgc2tlbGV0b25EYXRhLm9wYWNpdHkuc2V0KDApO1xuICAgICAgICAgICAgZnJhbWVyXzEuYW5pbWF0ZS5zcHJpbmcoc3RhckRhdGEub3BhY2l0eSwgMSk7XG4gICAgICAgICAgICBmcmFtZXJfMS5hbmltYXRlLnNwcmluZyhzdGFyRGF0YS5zY2FsZSwgMTApO1xuICAgICAgICB9XG4gICAgfTtcbn07XG5leHBvcnRzLlNrZWxldG9uU3RhciA9IHByb3BzID0+IHtcbiAgICB3aW5kb3dbXCJfX2NoZWNrQnVkZ2V0X19cIl0oKTtcbiAgICBjb25zdCB7IHNrZWxldG9uRGF0YSB9ID0gc2V0U3RhdGUoMSk7XG4gICAgcmV0dXJuIHtcbiAgICAgICAgc2NhbGU6IHNrZWxldG9uRGF0YS5zY2FsZSxcbiAgICAgICAgb3BhY2l0eTogc2tlbGV0b25EYXRhLm9wYWNpdHlcbiAgICB9O1xufTtcbmV4cG9ydHMuU3RhciA9IHByb3BzID0+IHtcbiAgICB3aW5kb3dbXCJfX2NoZWNrQnVkZ2V0X19cIl0oKTtcbiAgICBjb25zdCB7IHN0YXJEYXRhIH0gPSBzZXRTdGF0ZSgxKTtcbiAgICByZXR1cm4ge1xuICAgICAgICBzY2FsZTogc3RhckRhdGEuc2NhbGUsXG4gICAgICAgIG9wYWNpdHk6IHN0YXJEYXRhLm9wYWNpdHlcbiAgICB9O1xufTtcbmV4cG9ydHMuU3RhckZyYW1lID0gcHJvcHMgPT4ge1xuICAgIHdpbmRvd1tcIl9fY2hlY2tCdWRnZXRfX1wiXSgpO1xuICAgIHJldHVybiB7XG4gICAgICAgIHNjYWxlOiBleHBvcnRzLnN0YXJGcmFtZURhdGEuc2NhbGVcbiAgICB9O1xufTtcbmV4cG9ydHMuU2NhbGVTbGlkZXIgPSBwcm9wcyA9PiB7XG4gICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgcmV0dXJuIHtcbiAgICAgICAgb25WYWx1ZUNoYW5nZTogKHZhbHVlKSA9PiB7XG4gICAgICAgICAgICB3aW5kb3dbXCJfX2NoZWNrQnVkZ2V0X19cIl0oKTtcbiAgICAgICAgICAgIGV4cG9ydHMuc3RhckZyYW1lRGF0YS5zY2FsZSA9IHZhbHVlIC8gMTA7XG4gICAgICAgIH1cbiAgICB9O1xufTtcbmV4cG9ydHMuX19pbmZvX18gPSBbeyBuYW1lOiBcIlRvdWNoYWJsZVwiLCB0eXBlOiBcIm92ZXJyaWRlXCIgfSwgeyBuYW1lOiBcIlNrZWxldG9uU3RhclwiLCB0eXBlOiBcIm92ZXJyaWRlXCIgfSwgeyBuYW1lOiBcIlN0YXJcIiwgdHlwZTogXCJvdmVycmlkZVwiIH0sIHsgbmFtZTogXCJTdGFyRnJhbWVcIiwgdHlwZTogXCJvdmVycmlkZVwiIH0sIHsgbmFtZTogXCJTY2FsZVNsaWRlclwiLCB0eXBlOiBcIm92ZXJyaWRlXCIgfV07XG4iXSwic291cmNlUm9vdCI6IiJ9\\n//# sourceURL=webpack-internal:///./code/App.tsx\\n\");\n\n/***/ }),\n\n/***/ \"./code/App1.tsx\":\n/*!***********************!*\\\n  !*** ./code/App1.tsx ***!\n  \\***********************/\n/*! no static exports found */\n/***/ (function(module, exports, __webpack_require__) {\n\n\"use strict\";\neval(\"\\nObject.defineProperty(exports, \\\"__esModule\\\", { value: true });\\nconst framer_1 = __webpack_require__(/*! framer */ \\\"framer\\\");\\nconst data = framer_1.Data({ scale: framer_1.Animatable(1) });\\nexports.Scale = () => {\\n    window[\\\"__checkBudget__\\\"]();\\n    return {\\n        scale: data.scale,\\n        onTap() {\\n            window[\\\"__checkBudget__\\\"]();\\n            data.scale.set(0.6);\\n            framer_1.animate.spring(data.scale, 1);\\n        },\\n    };\\n};\\nexports.__info__ = [{ name: \\\"Scale\\\", type: \\\"override\\\" }];\\n//# sourceURL=[module]\\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb2RlL0FwcDEudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0EsOENBQThDLGNBQWM7QUFDNUQ7QUFDQSw0QkFBNEIsZ0NBQWdDO0FBQzVEO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxTQUFTO0FBQ1Q7QUFDQTtBQUNBLHFCQUFxQixrQ0FBa0MiLCJmaWxlIjoiLi9jb2RlL0FwcDEudHN4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc3RyaWN0XCI7XG5PYmplY3QuZGVmaW5lUHJvcGVydHkoZXhwb3J0cywgXCJfX2VzTW9kdWxlXCIsIHsgdmFsdWU6IHRydWUgfSk7XG5jb25zdCBmcmFtZXJfMSA9IHJlcXVpcmUoXCJmcmFtZXJcIik7XG5jb25zdCBkYXRhID0gZnJhbWVyXzEuRGF0YSh7IHNjYWxlOiBmcmFtZXJfMS5BbmltYXRhYmxlKDEpIH0pO1xuZXhwb3J0cy5TY2FsZSA9ICgpID0+IHtcbiAgICB3aW5kb3dbXCJfX2NoZWNrQnVkZ2V0X19cIl0oKTtcbiAgICByZXR1cm4ge1xuICAgICAgICBzY2FsZTogZGF0YS5zY2FsZSxcbiAgICAgICAgb25UYXAoKSB7XG4gICAgICAgICAgICB3aW5kb3dbXCJfX2NoZWNrQnVkZ2V0X19cIl0oKTtcbiAgICAgICAgICAgIGRhdGEuc2NhbGUuc2V0KDAuNik7XG4gICAgICAgICAgICBmcmFtZXJfMS5hbmltYXRlLnNwcmluZyhkYXRhLnNjYWxlLCAxKTtcbiAgICAgICAgfSxcbiAgICB9O1xufTtcbmV4cG9ydHMuX19pbmZvX18gPSBbeyBuYW1lOiBcIlNjYWxlXCIsIHR5cGU6IFwib3ZlcnJpZGVcIiB9XTtcbiJdLCJzb3VyY2VSb290IjoiIn0=\\n//# sourceURL=webpack-internal:///./code/App1.tsx\\n\");\n\n/***/ }),\n\n/***/ \"./code/Examples.tsx\":\n/*!***************************!*\\\n  !*** ./code/Examples.tsx ***!\n  \\***************************/\n/*! no static exports found */\n/***/ (function(module, exports, __webpack_require__) {\n\n\"use strict\";\neval(\"\\nObject.defineProperty(exports, \\\"__esModule\\\", { value: true });\\nconst framer_1 = __webpack_require__(/*! framer */ \\\"framer\\\");\\nconst data = framer_1.Data({ toggle: true, scale: framer_1.Animatable(1), opacity: framer_1.Animatable(1), rotation: framer_1.Animatable(0), rotationY: framer_1.Animatable(0) });\\nexports.Scale = () => {\\n    window[\\\"__checkBudget__\\\"]();\\n    return {\\n        scale: data.scale,\\n        onTap() {\\n            window[\\\"__checkBudget__\\\"]();\\n            data.scale.set(0.6);\\n            framer_1.animate.spring(data.scale, 1);\\n        },\\n    };\\n};\\nexports.Rotate = props => {\\n    window[\\\"__checkBudget__\\\"]();\\n    data.rotation.set(props.rotation);\\n    return {\\n        rotation: data.rotation,\\n        onTap() {\\n            window[\\\"__checkBudget__\\\"]();\\n            framer_1.animate.spring(data.rotation, data.rotation.get() + 90, {\\n                tension: 250,\\n                friction: 20,\\n            });\\n        },\\n    };\\n};\\nexports.Fade = props => {\\n    window[\\\"__checkBudget__\\\"]();\\n    data.opacity.set(props.opacity);\\n    return {\\n        opacity: data.opacity,\\n        onTap() {\\n            window[\\\"__checkBudget__\\\"]();\\n            framer_1.animate.linear(data.opacity, 0, 0.2);\\n        },\\n    };\\n};\\nexports.FlipOutput = () => {\\n    window[\\\"__checkBudget__\\\"]();\\n    return {\\n        rotationY: data.rotationY,\\n    };\\n};\\nexports.FlipInput = () => {\\n    window[\\\"__checkBudget__\\\"]();\\n    return {\\n        onTap() {\\n            window[\\\"__checkBudget__\\\"]();\\n            const toggle = data.toggle;\\n            framer_1.animate.spring({ rotationY: data.rotationY }, {\\n                rotationY: toggle ? 360 : 0,\\n            }, { tension: 200, friction: 20 });\\n            data.toggle = !toggle;\\n        },\\n    };\\n};\\nexports.__info__ = [{ name: \\\"Scale\\\", type: \\\"override\\\" }, { name: \\\"Rotate\\\", type: \\\"override\\\" }, { name: \\\"Fade\\\", type: \\\"override\\\" }, { name: \\\"FlipOutput\\\", type: \\\"override\\\" }, { name: \\\"FlipInput\\\", type: \\\"override\\\" }];\\n//# sourceURL=[module]\\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb2RlL0V4YW1wbGVzLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBLDhDQUE4QyxjQUFjO0FBQzVEO0FBQ0EsNEJBQTRCLG9KQUFvSjtBQUNoTDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsU0FBUztBQUNUO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLGFBQWE7QUFDYixTQUFTO0FBQ1Q7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxTQUFTO0FBQ1Q7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLHFDQUFxQyw0QkFBNEI7QUFDakU7QUFDQSxhQUFhLEdBQUcsNkJBQTZCO0FBQzdDO0FBQ0EsU0FBUztBQUNUO0FBQ0E7QUFDQSxxQkFBcUIsa0NBQWtDLEdBQUcsbUNBQW1DLEdBQUcsaUNBQWlDLEdBQUcsdUNBQXVDLEdBQUcsc0NBQXNDIiwiZmlsZSI6Ii4vY29kZS9FeGFtcGxlcy50c3guanMiLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzdHJpY3RcIjtcbk9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCBcIl9fZXNNb2R1bGVcIiwgeyB2YWx1ZTogdHJ1ZSB9KTtcbmNvbnN0IGZyYW1lcl8xID0gcmVxdWlyZShcImZyYW1lclwiKTtcbmNvbnN0IGRhdGEgPSBmcmFtZXJfMS5EYXRhKHsgdG9nZ2xlOiB0cnVlLCBzY2FsZTogZnJhbWVyXzEuQW5pbWF0YWJsZSgxKSwgb3BhY2l0eTogZnJhbWVyXzEuQW5pbWF0YWJsZSgxKSwgcm90YXRpb246IGZyYW1lcl8xLkFuaW1hdGFibGUoMCksIHJvdGF0aW9uWTogZnJhbWVyXzEuQW5pbWF0YWJsZSgwKSB9KTtcbmV4cG9ydHMuU2NhbGUgPSAoKSA9PiB7XG4gICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgcmV0dXJuIHtcbiAgICAgICAgc2NhbGU6IGRhdGEuc2NhbGUsXG4gICAgICAgIG9uVGFwKCkge1xuICAgICAgICAgICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgICAgICAgICBkYXRhLnNjYWxlLnNldCgwLjYpO1xuICAgICAgICAgICAgZnJhbWVyXzEuYW5pbWF0ZS5zcHJpbmcoZGF0YS5zY2FsZSwgMSk7XG4gICAgICAgIH0sXG4gICAgfTtcbn07XG5leHBvcnRzLlJvdGF0ZSA9IHByb3BzID0+IHtcbiAgICB3aW5kb3dbXCJfX2NoZWNrQnVkZ2V0X19cIl0oKTtcbiAgICBkYXRhLnJvdGF0aW9uLnNldChwcm9wcy5yb3RhdGlvbik7XG4gICAgcmV0dXJuIHtcbiAgICAgICAgcm90YXRpb246IGRhdGEucm90YXRpb24sXG4gICAgICAgIG9uVGFwKCkge1xuICAgICAgICAgICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgICAgICAgICBmcmFtZXJfMS5hbmltYXRlLnNwcmluZyhkYXRhLnJvdGF0aW9uLCBkYXRhLnJvdGF0aW9uLmdldCgpICsgOTAsIHtcbiAgICAgICAgICAgICAgICB0ZW5zaW9uOiAyNTAsXG4gICAgICAgICAgICAgICAgZnJpY3Rpb246IDIwLFxuICAgICAgICAgICAgfSk7XG4gICAgICAgIH0sXG4gICAgfTtcbn07XG5leHBvcnRzLkZhZGUgPSBwcm9wcyA9PiB7XG4gICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgZGF0YS5vcGFjaXR5LnNldChwcm9wcy5vcGFjaXR5KTtcbiAgICByZXR1cm4ge1xuICAgICAgICBvcGFjaXR5OiBkYXRhLm9wYWNpdHksXG4gICAgICAgIG9uVGFwKCkge1xuICAgICAgICAgICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgICAgICAgICBmcmFtZXJfMS5hbmltYXRlLmxpbmVhcihkYXRhLm9wYWNpdHksIDAsIDAuMik7XG4gICAgICAgIH0sXG4gICAgfTtcbn07XG5leHBvcnRzLkZsaXBPdXRwdXQgPSAoKSA9PiB7XG4gICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgcmV0dXJuIHtcbiAgICAgICAgcm90YXRpb25ZOiBkYXRhLnJvdGF0aW9uWSxcbiAgICB9O1xufTtcbmV4cG9ydHMuRmxpcElucHV0ID0gKCkgPT4ge1xuICAgIHdpbmRvd1tcIl9fY2hlY2tCdWRnZXRfX1wiXSgpO1xuICAgIHJldHVybiB7XG4gICAgICAgIG9uVGFwKCkge1xuICAgICAgICAgICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgICAgICAgICBjb25zdCB0b2dnbGUgPSBkYXRhLnRvZ2dsZTtcbiAgICAgICAgICAgIGZyYW1lcl8xLmFuaW1hdGUuc3ByaW5nKHsgcm90YXRpb25ZOiBkYXRhLnJvdGF0aW9uWSB9LCB7XG4gICAgICAgICAgICAgICAgcm90YXRpb25ZOiB0b2dnbGUgPyAzNjAgOiAwLFxuICAgICAgICAgICAgfSwgeyB0ZW5zaW9uOiAyMDAsIGZyaWN0aW9uOiAyMCB9KTtcbiAgICAgICAgICAgIGRhdGEudG9nZ2xlID0gIXRvZ2dsZTtcbiAgICAgICAgfSxcbiAgICB9O1xufTtcbmV4cG9ydHMuX19pbmZvX18gPSBbeyBuYW1lOiBcIlNjYWxlXCIsIHR5cGU6IFwib3ZlcnJpZGVcIiB9LCB7IG5hbWU6IFwiUm90YXRlXCIsIHR5cGU6IFwib3ZlcnJpZGVcIiB9LCB7IG5hbWU6IFwiRmFkZVwiLCB0eXBlOiBcIm92ZXJyaWRlXCIgfSwgeyBuYW1lOiBcIkZsaXBPdXRwdXRcIiwgdHlwZTogXCJvdmVycmlkZVwiIH0sIHsgbmFtZTogXCJGbGlwSW5wdXRcIiwgdHlwZTogXCJvdmVycmlkZVwiIH1dO1xuIl0sInNvdXJjZVJvb3QiOiIifQ==\\n//# sourceURL=webpack-internal:///./code/Examples.tsx\\n\");\n\n/***/ }),\n\n/***/ \"./code/TwitterStickyContent.tsx\":\n/*!***************************************!*\\\n  !*** ./code/TwitterStickyContent.tsx ***!\n  \\***************************************/\n/*! no static exports found */\n/***/ (function(module, exports, __webpack_require__) {\n\n\"use strict\";\neval(\"\\nObject.defineProperty(exports, \\\"__esModule\\\", { value: true });\\nconst React = __webpack_require__(/*! react */ \\\"react\\\");\\nconst framer_1 = __webpack_require__(/*! framer */ \\\"framer\\\");\\nexports.TwitterStickyContext = React.createContext({});\\nexports.TwitterStickyConsumer = exports.TwitterStickyContext.Consumer;\\nclass TwitterStickyProvider extends React.Component {\\n    constructor() {\\n        super(...arguments);\\n        this.state = {\\n            top: 0,\\n            minTop: 0,\\n            duration: 200,\\n        };\\n    }\\n    render() {\\n        window[\\\"__checkBudget__\\\"]();\\n        const { top, minTop, duration } = this.state;\\n        return (React.createElement(exports.TwitterStickyContext.Provider, { value: {\\n                top,\\n                minTop,\\n                duration,\\n                updateTop: (top) => this.setState({ top }),\\n                updateProps: ({ minTop, duration }) => this.setState({ minTop, duration }),\\n            } }, this.props.children));\\n    }\\n}\\n;\\nclass TwitterStickyContent extends React.Component {\\n    constructor() {\\n        super(...arguments);\\n        this.state = {\\n            childHeight: 0\\n        };\\n    }\\n    render() {\\n        window[\\\"__checkBudget__\\\"]();\\n        return (React.createElement(TwitterStickyProvider, null,\\n            React.createElement(ScrollableContent, Object.assign({}, this.props, { children: this.props.children }))));\\n    }\\n}\\nTwitterStickyContent.defaultProps = {\\n    minTop: 0,\\n    duration: 200,\\n};\\nTwitterStickyContent.propertyControls = {\\n    minTop: {\\n        type: framer_1.ControlType.Number,\\n        title: \\\"Offset\\\",\\n        min: 0\\n    },\\n    duration: {\\n        type: framer_1.ControlType.Number,\\n        title: 'Duration(ms)',\\n        min: 0\\n    }\\n};\\nexports.TwitterStickyContent = TwitterStickyContent;\\nclass ScrollableContent extends React.Component {\\n    constructor() {\\n        super(...arguments);\\n        this._set = false;\\n    }\\n    render() {\\n        window[\\\"__checkBudget__\\\"]();\\n        const { width, height } = this.props;\\n        return (React.createElement(exports.TwitterStickyConsumer, null, ({ updateProps, updateTop }) => {\\n            window[\\\"__checkBudget__\\\"]();\\n            if (!this._set) {\\n                this._set = true;\\n                updateProps(this.props);\\n            }\\n            return (React.createElement(framer_1.Scroll, { width: width, height: height, overflow: \\\"hidden\\\", direction: \\\"vertical\\\", onMove: ({ y }) => updateTop(y) }, this.props.children));\\n        }));\\n    }\\n}\\nexports.__info__ = [{ name: \\\"TwitterStickyContent\\\", children: true, type: \\\"component\\\" }];\\n//# sourceURL=[module]\\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb2RlL1R3aXR0ZXJTdGlja3lDb250ZW50LnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBLDhDQUE4QyxjQUFjO0FBQzVEO0FBQ0E7QUFDQSxxREFBcUQ7QUFDckQ7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZUFBZSx3QkFBd0I7QUFDdkMsNEVBQTRFO0FBQzVFO0FBQ0E7QUFDQTtBQUNBLG1EQUFtRCxNQUFNO0FBQ3pELCtCQUErQixtQkFBbUIsb0JBQW9CLG1CQUFtQjtBQUN6RixhQUFhLEVBQUU7QUFDZjtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLG1FQUFtRSxlQUFlLGdDQUFnQztBQUNsSDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsS0FBSztBQUNMO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxlQUFlLGdCQUFnQjtBQUMvQiwyRUFBMkUseUJBQXlCO0FBQ3BHO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSwwREFBMEQsb0ZBQW9GLElBQUksbUJBQW1CO0FBQ3JLLFNBQVM7QUFDVDtBQUNBO0FBQ0EscUJBQXFCLGtFQUFrRSIsImZpbGUiOiIuL2NvZGUvVHdpdHRlclN0aWNreUNvbnRlbnQudHN4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc3RyaWN0XCI7XG5PYmplY3QuZGVmaW5lUHJvcGVydHkoZXhwb3J0cywgXCJfX2VzTW9kdWxlXCIsIHsgdmFsdWU6IHRydWUgfSk7XG5jb25zdCBSZWFjdCA9IHJlcXVpcmUoXCJyZWFjdFwiKTtcbmNvbnN0IGZyYW1lcl8xID0gcmVxdWlyZShcImZyYW1lclwiKTtcbmV4cG9ydHMuVHdpdHRlclN0aWNreUNvbnRleHQgPSBSZWFjdC5jcmVhdGVDb250ZXh0KHt9KTtcbmV4cG9ydHMuVHdpdHRlclN0aWNreUNvbnN1bWVyID0gZXhwb3J0cy5Ud2l0dGVyU3RpY2t5Q29udGV4dC5Db25zdW1lcjtcbmNsYXNzIFR3aXR0ZXJTdGlja3lQcm92aWRlciBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XG4gICAgY29uc3RydWN0b3IoKSB7XG4gICAgICAgIHN1cGVyKC4uLmFyZ3VtZW50cyk7XG4gICAgICAgIHRoaXMuc3RhdGUgPSB7XG4gICAgICAgICAgICB0b3A6IDAsXG4gICAgICAgICAgICBtaW5Ub3A6IDAsXG4gICAgICAgICAgICBkdXJhdGlvbjogMjAwLFxuICAgICAgICB9O1xuICAgIH1cbiAgICByZW5kZXIoKSB7XG4gICAgICAgIHdpbmRvd1tcIl9fY2hlY2tCdWRnZXRfX1wiXSgpO1xuICAgICAgICBjb25zdCB7IHRvcCwgbWluVG9wLCBkdXJhdGlvbiB9ID0gdGhpcy5zdGF0ZTtcbiAgICAgICAgcmV0dXJuIChSZWFjdC5jcmVhdGVFbGVtZW50KGV4cG9ydHMuVHdpdHRlclN0aWNreUNvbnRleHQuUHJvdmlkZXIsIHsgdmFsdWU6IHtcbiAgICAgICAgICAgICAgICB0b3AsXG4gICAgICAgICAgICAgICAgbWluVG9wLFxuICAgICAgICAgICAgICAgIGR1cmF0aW9uLFxuICAgICAgICAgICAgICAgIHVwZGF0ZVRvcDogKHRvcCkgPT4gdGhpcy5zZXRTdGF0ZSh7IHRvcCB9KSxcbiAgICAgICAgICAgICAgICB1cGRhdGVQcm9wczogKHsgbWluVG9wLCBkdXJhdGlvbiB9KSA9PiB0aGlzLnNldFN0YXRlKHsgbWluVG9wLCBkdXJhdGlvbiB9KSxcbiAgICAgICAgICAgIH0gfSwgdGhpcy5wcm9wcy5jaGlsZHJlbikpO1xuICAgIH1cbn1cbjtcbmNsYXNzIFR3aXR0ZXJTdGlja3lDb250ZW50IGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcbiAgICBjb25zdHJ1Y3RvcigpIHtcbiAgICAgICAgc3VwZXIoLi4uYXJndW1lbnRzKTtcbiAgICAgICAgdGhpcy5zdGF0ZSA9IHtcbiAgICAgICAgICAgIGNoaWxkSGVpZ2h0OiAwXG4gICAgICAgIH07XG4gICAgfVxuICAgIHJlbmRlcigpIHtcbiAgICAgICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgICAgIHJldHVybiAoUmVhY3QuY3JlYXRlRWxlbWVudChUd2l0dGVyU3RpY2t5UHJvdmlkZXIsIG51bGwsXG4gICAgICAgICAgICBSZWFjdC5jcmVhdGVFbGVtZW50KFNjcm9sbGFibGVDb250ZW50LCBPYmplY3QuYXNzaWduKHt9LCB0aGlzLnByb3BzLCB7IGNoaWxkcmVuOiB0aGlzLnByb3BzLmNoaWxkcmVuIH0pKSkpO1xuICAgIH1cbn1cblR3aXR0ZXJTdGlja3lDb250ZW50LmRlZmF1bHRQcm9wcyA9IHtcbiAgICBtaW5Ub3A6IDAsXG4gICAgZHVyYXRpb246IDIwMCxcbn07XG5Ud2l0dGVyU3RpY2t5Q29udGVudC5wcm9wZXJ0eUNvbnRyb2xzID0ge1xuICAgIG1pblRvcDoge1xuICAgICAgICB0eXBlOiBmcmFtZXJfMS5Db250cm9sVHlwZS5OdW1iZXIsXG4gICAgICAgIHRpdGxlOiBcIk9mZnNldFwiLFxuICAgICAgICBtaW46IDBcbiAgICB9LFxuICAgIGR1cmF0aW9uOiB7XG4gICAgICAgIHR5cGU6IGZyYW1lcl8xLkNvbnRyb2xUeXBlLk51bWJlcixcbiAgICAgICAgdGl0bGU6ICdEdXJhdGlvbihtcyknLFxuICAgICAgICBtaW46IDBcbiAgICB9XG59O1xuZXhwb3J0cy5Ud2l0dGVyU3RpY2t5Q29udGVudCA9IFR3aXR0ZXJTdGlja3lDb250ZW50O1xuY2xhc3MgU2Nyb2xsYWJsZUNvbnRlbnQgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xuICAgIGNvbnN0cnVjdG9yKCkge1xuICAgICAgICBzdXBlciguLi5hcmd1bWVudHMpO1xuICAgICAgICB0aGlzLl9zZXQgPSBmYWxzZTtcbiAgICB9XG4gICAgcmVuZGVyKCkge1xuICAgICAgICB3aW5kb3dbXCJfX2NoZWNrQnVkZ2V0X19cIl0oKTtcbiAgICAgICAgY29uc3QgeyB3aWR0aCwgaGVpZ2h0IH0gPSB0aGlzLnByb3BzO1xuICAgICAgICByZXR1cm4gKFJlYWN0LmNyZWF0ZUVsZW1lbnQoZXhwb3J0cy5Ud2l0dGVyU3RpY2t5Q29uc3VtZXIsIG51bGwsICh7IHVwZGF0ZVByb3BzLCB1cGRhdGVUb3AgfSkgPT4ge1xuICAgICAgICAgICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgICAgICAgICBpZiAoIXRoaXMuX3NldCkge1xuICAgICAgICAgICAgICAgIHRoaXMuX3NldCA9IHRydWU7XG4gICAgICAgICAgICAgICAgdXBkYXRlUHJvcHModGhpcy5wcm9wcyk7XG4gICAgICAgICAgICB9XG4gICAgICAgICAgICByZXR1cm4gKFJlYWN0LmNyZWF0ZUVsZW1lbnQoZnJhbWVyXzEuU2Nyb2xsLCB7IHdpZHRoOiB3aWR0aCwgaGVpZ2h0OiBoZWlnaHQsIG92ZXJmbG93OiBcImhpZGRlblwiLCBkaXJlY3Rpb246IFwidmVydGljYWxcIiwgb25Nb3ZlOiAoeyB5IH0pID0+IHVwZGF0ZVRvcCh5KSB9LCB0aGlzLnByb3BzLmNoaWxkcmVuKSk7XG4gICAgICAgIH0pKTtcbiAgICB9XG59XG5leHBvcnRzLl9faW5mb19fID0gW3sgbmFtZTogXCJUd2l0dGVyU3RpY2t5Q29udGVudFwiLCBjaGlsZHJlbjogdHJ1ZSwgdHlwZTogXCJjb21wb25lbnRcIiB9XTtcbiJdLCJzb3VyY2VSb290IjoiIn0=\\n//# sourceURL=webpack-internal:///./code/TwitterStickyContent.tsx\\n\");\n\n/***/ }),\n\n/***/ \"./code/TwitterStickyContext.tsx\":\n/*!***************************************!*\\\n  !*** ./code/TwitterStickyContext.tsx ***!\n  \\***************************************/\n/*! no static exports found */\n/***/ (function(module, exports, __webpack_require__) {\n\n\"use strict\";\neval(\"\\nObject.defineProperty(exports, \\\"__esModule\\\", { value: true });\\n//# sourceURL=[module]\\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb2RlL1R3aXR0ZXJTdGlja3lDb250ZXh0LnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBLDhDQUE4QyxjQUFjIiwiZmlsZSI6Ii4vY29kZS9Ud2l0dGVyU3RpY2t5Q29udGV4dC50c3guanMiLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzdHJpY3RcIjtcbk9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCBcIl9fZXNNb2R1bGVcIiwgeyB2YWx1ZTogdHJ1ZSB9KTtcbiJdLCJzb3VyY2VSb290IjoiIn0=\\n//# sourceURL=webpack-internal:///./code/TwitterStickyContext.tsx\\n\");\n\n/***/ }),\n\n/***/ \"./code/TwitterStickyHeader.tsx\":\n/*!**************************************!*\\\n  !*** ./code/TwitterStickyHeader.tsx ***!\n  \\**************************************/\n/*! no static exports found */\n/***/ (function(module, exports, __webpack_require__) {\n\n\"use strict\";\neval(\"\\nObject.defineProperty(exports, \\\"__esModule\\\", { value: true });\\nconst React = __webpack_require__(/*! react */ \\\"react\\\");\\nconst TwitterStickyContent_1 = __webpack_require__(/*! ./TwitterStickyContent */ \\\"./code/TwitterStickyContent.tsx\\\");\\nclass TwitterStickyHeader extends React.Component {\\n    render() {\\n        window[\\\"__checkBudget__\\\"]();\\n        return (React.createElement(TwitterStickyContent_1.TwitterStickyConsumer, null, (value) => {\\n            window[\\\"__checkBudget__\\\"]();\\n            return React.createElement(Content, Object.assign({}, value, { children: this.props.children }));\\n        }));\\n    }\\n}\\nexports.TwitterStickyHeader = TwitterStickyHeader;\\nclass Content extends React.Component {\\n    constructor() {\\n        super(...arguments);\\n        this._latestTop = 0;\\n        this._updatedAt = Date.now();\\n        this.state = {\\n            visible: true,\\n        };\\n    }\\n    componentWillReceiveProps({ top, minTop }) {\\n        window[\\\"__checkBudget__\\\"]();\\n        const { visible } = this.state;\\n        const now = Date.now();\\n        const updatable = now > this._updatedAt + 400;\\n        const shouldHide = this._latestTop > top + 10 && -top > minTop && visible === true;\\n        const shouldVisible = top - 1 > this._latestTop && visible === false;\\n        if (updatable && (shouldHide || shouldVisible)) {\\n            this._updatedAt = Date.now();\\n            this.setState({ visible: !visible });\\n        }\\n        this._latestTop = top;\\n    }\\n    render() {\\n        window[\\\"__checkBudget__\\\"]();\\n        const { top, duration } = this.props;\\n        const { visible } = this.state;\\n        return (React.createElement(\\\"div\\\", { style: {\\n                position: 'fixed',\\n                top: `${-top}px`,\\n                left: '0',\\n                right: '0',\\n                height: '100%',\\n                transform: `translate3d(0, ${visible ? 0 : '-100%'}, 0)`,\\n                transition: visible ? '' : `transform ${duration}ms ease-in`\\n            } }, this.props.children));\\n    }\\n}\\nexports.__info__ = [{ name: \\\"TwitterStickyHeader\\\", children: true, type: \\\"component\\\" }];\\n//# sourceURL=[module]\\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb2RlL1R3aXR0ZXJTdGlja3lIZWFkZXIudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0EsOENBQThDLGNBQWM7QUFDNUQ7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxnRUFBZ0UsVUFBVSxnQ0FBZ0M7QUFDMUcsU0FBUztBQUNUO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLCtCQUErQixjQUFjO0FBQzdDO0FBQ0EsZUFBZSxVQUFVO0FBQ3pCO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLDJCQUEyQixvQkFBb0I7QUFDL0M7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLGVBQWUsZ0JBQWdCO0FBQy9CLGVBQWUsVUFBVTtBQUN6Qiw0Q0FBNEM7QUFDNUM7QUFDQSx3QkFBd0IsS0FBSztBQUM3QjtBQUNBO0FBQ0E7QUFDQSw2Q0FBNkMsc0JBQXNCO0FBQ25FLHdEQUF3RCxTQUFTO0FBQ2pFLGFBQWEsRUFBRTtBQUNmO0FBQ0E7QUFDQSxxQkFBcUIsaUVBQWlFIiwiZmlsZSI6Ii4vY29kZS9Ud2l0dGVyU3RpY2t5SGVhZGVyLnRzeC5qcyIsInNvdXJjZXNDb250ZW50IjpbIlwidXNlIHN0cmljdFwiO1xuT2JqZWN0LmRlZmluZVByb3BlcnR5KGV4cG9ydHMsIFwiX19lc01vZHVsZVwiLCB7IHZhbHVlOiB0cnVlIH0pO1xuY29uc3QgUmVhY3QgPSByZXF1aXJlKFwicmVhY3RcIik7XG5jb25zdCBUd2l0dGVyU3RpY2t5Q29udGVudF8xID0gcmVxdWlyZShcIi4vVHdpdHRlclN0aWNreUNvbnRlbnRcIik7XG5jbGFzcyBUd2l0dGVyU3RpY2t5SGVhZGVyIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcbiAgICByZW5kZXIoKSB7XG4gICAgICAgIHdpbmRvd1tcIl9fY2hlY2tCdWRnZXRfX1wiXSgpO1xuICAgICAgICByZXR1cm4gKFJlYWN0LmNyZWF0ZUVsZW1lbnQoVHdpdHRlclN0aWNreUNvbnRlbnRfMS5Ud2l0dGVyU3RpY2t5Q29uc3VtZXIsIG51bGwsICh2YWx1ZSkgPT4ge1xuICAgICAgICAgICAgd2luZG93W1wiX19jaGVja0J1ZGdldF9fXCJdKCk7XG4gICAgICAgICAgICByZXR1cm4gUmVhY3QuY3JlYXRlRWxlbWVudChDb250ZW50LCBPYmplY3QuYXNzaWduKHt9LCB2YWx1ZSwgeyBjaGlsZHJlbjogdGhpcy5wcm9wcy5jaGlsZHJlbiB9KSk7XG4gICAgICAgIH0pKTtcbiAgICB9XG59XG5leHBvcnRzLlR3aXR0ZXJTdGlja3lIZWFkZXIgPSBUd2l0dGVyU3RpY2t5SGVhZGVyO1xuY2xhc3MgQ29udGVudCBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XG4gICAgY29uc3RydWN0b3IoKSB7XG4gICAgICAgIHN1cGVyKC4uLmFyZ3VtZW50cyk7XG4gICAgICAgIHRoaXMuX2xhdGVzdFRvcCA9IDA7XG4gICAgICAgIHRoaXMuX3VwZGF0ZWRBdCA9IERhdGUubm93KCk7XG4gICAgICAgIHRoaXMuc3RhdGUgPSB7XG4gICAgICAgICAgICB2aXNpYmxlOiB0cnVlLFxuICAgICAgICB9O1xuICAgIH1cbiAgICBjb21wb25lbnRXaWxsUmVjZWl2ZVByb3BzKHsgdG9wLCBtaW5Ub3AgfSkge1xuICAgICAgICB3aW5kb3dbXCJfX2NoZWNrQnVkZ2V0X19cIl0oKTtcbiAgICAgICAgY29uc3QgeyB2aXNpYmxlIH0gPSB0aGlzLnN0YXRlO1xuICAgICAgICBjb25zdCBub3cgPSBEYXRlLm5vdygpO1xuICAgICAgICBjb25zdCB1cGRhdGFibGUgPSBub3cgPiB0aGlzLl91cGRhdGVkQXQgKyA0MDA7XG4gICAgICAgIGNvbnN0IHNob3VsZEhpZGUgPSB0aGlzLl9sYXRlc3RUb3AgPiB0b3AgKyAxMCAmJiAtdG9wID4gbWluVG9wICYmIHZpc2libGUgPT09IHRydWU7XG4gICAgICAgIGNvbnN0IHNob3VsZFZpc2libGUgPSB0b3AgLSAxID4gdGhpcy5fbGF0ZXN0VG9wICYmIHZpc2libGUgPT09IGZhbHNlO1xuICAgICAgICBpZiAodXBkYXRhYmxlICYmIChzaG91bGRIaWRlIHx8IHNob3VsZFZpc2libGUpKSB7XG4gICAgICAgICAgICB0aGlzLl91cGRhdGVkQXQgPSBEYXRlLm5vdygpO1xuICAgICAgICAgICAgdGhpcy5zZXRTdGF0ZSh7IHZpc2libGU6ICF2aXNpYmxlIH0pO1xuICAgICAgICB9XG4gICAgICAgIHRoaXMuX2xhdGVzdFRvcCA9IHRvcDtcbiAgICB9XG4gICAgcmVuZGVyKCkge1xuICAgICAgICB3aW5kb3dbXCJfX2NoZWNrQnVkZ2V0X19cIl0oKTtcbiAgICAgICAgY29uc3QgeyB0b3AsIGR1cmF0aW9uIH0gPSB0aGlzLnByb3BzO1xuICAgICAgICBjb25zdCB7IHZpc2libGUgfSA9IHRoaXMuc3RhdGU7XG4gICAgICAgIHJldHVybiAoUmVhY3QuY3JlYXRlRWxlbWVudChcImRpdlwiLCB7IHN0eWxlOiB7XG4gICAgICAgICAgICAgICAgcG9zaXRpb246ICdmaXhlZCcsXG4gICAgICAgICAgICAgICAgdG9wOiBgJHstdG9wfXB4YCxcbiAgICAgICAgICAgICAgICBsZWZ0OiAnMCcsXG4gICAgICAgICAgICAgICAgcmlnaHQ6ICcwJyxcbiAgICAgICAgICAgICAgICBoZWlnaHQ6ICcxMDAlJyxcbiAgICAgICAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGUzZCgwLCAke3Zpc2libGUgPyAwIDogJy0xMDAlJ30sIDApYCxcbiAgICAgICAgICAgICAgICB0cmFuc2l0aW9uOiB2aXNpYmxlID8gJycgOiBgdHJhbnNmb3JtICR7ZHVyYXRpb259bXMgZWFzZS1pbmBcbiAgICAgICAgICAgIH0gfSwgdGhpcy5wcm9wcy5jaGlsZHJlbikpO1xuICAgIH1cbn1cbmV4cG9ydHMuX19pbmZvX18gPSBbeyBuYW1lOiBcIlR3aXR0ZXJTdGlja3lIZWFkZXJcIiwgY2hpbGRyZW46IHRydWUsIHR5cGU6IFwiY29tcG9uZW50XCIgfV07XG4iXSwic291cmNlUm9vdCI6IiJ9\\n//# sourceURL=webpack-internal:///./code/TwitterStickyHeader.tsx\\n\");\n\n/***/ }),\n\n/***/ \"./code/canvas.tsx\":\n/*!*************************!*\\\n  !*** ./code/canvas.tsx ***!\n  \\*************************/\n/*! no static exports found */\n/***/ (function(module, exports, __webpack_require__) {\n\n\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\n// WARNING: this file is auto generated, any changes will be lost\nconst framer_1 = __webpack_require__(/*! framer */ \"framer\");\nconst canvas = framer_1.CanvasStore.shared({\"children\":[]});\n\n\n/***/ }),\n\n/***/ \"./package.js\":\n/*!********************!*\\\n  !*** ./package.js ***!\n  \\********************/\n/*! no static exports found */\n/***/ (function(module, exports, __webpack_require__) {\n\n// The template for the dynamic webpack entry. Be aware of the variables\n\nconst packageJson = __webpack_require__(/*! ./package.json */ \"./package.json\")\n\nconst package = {\n    packageJson,\n    sourceModules: {},\n    dependencies: {},\n}\n\n// This is a special webpack thing that watches the whole directory\n// https://github.com/webpack/docs/wiki/context\nconst ctx = __webpack_require__(\"./code sync recursive \\\\.(t|j)s(x?)|\\\\.css$\")\n\nctx.keys().forEach(key => {\n    package.sourceModules[key] = () => ctx(key)\n})\n\n// The packages are passed in through a template\nconst packages = {}\n\n                packages[\"framer\"] = () => {\n                    var package = {}\n                    try {\n                        package = __webpack_require__(/*! framer */ \"framer\")\n                    } catch (e) {\n                        console.log(e)\n                    }\n                    package.__framer__ = package.__framer__ || {}\n                    package.__framer__.packageJson = {\"name\":\"framer\",\"version\":\"0.10.10\",\"main\":\"build/framer.js\",\"author\":\"Framer\",\"license\":\"MIT\",\"scripts\":{\"coverage\":\"jest --config jest.json --coverage\",\"test\":\"jest --config jest.json\",\"watch\":\"jest --config jest.json --watch\"},\"devDependencies\":{\"@microsoft/api-documenter\":\"^1.5.47\",\"@microsoft/api-extractor\":\"^7\",\"@types/chalk\":\"^2.2.0\",\"@types/draft-js\":\"0.10.19\",\"@types/enzyme\":\"^3.1.10\",\"@types/enzyme-adapter-react-16\":\"^1.0.3\",\"@types/hsluv\":\"https://github.com/framer/typed_hsluv#bump\",\"@types/jest\":\"^23.0.0\",\"@types/jest-diff\":\"^20.0.0\",\"@types/jest-matcher-utils\":\"^21.0.1\",\"@types/node\":\"^9.6.0\",\"@types/react\":\"^16\",\"@types/react-dom\":\"^16\",\"cache-loader\":\"^1.2.2\",\"chalk\":\"^2.4.1\",\"convert-tsconfig-paths-to-webpack-aliases\":\"^0.9.2\",\"css.escape\":\"^1.5.1\",\"draft-js\":\"0.10.4\",\"enzyme\":\"^3.3.0\",\"enzyme-adapter-react-16\":\"^1.1.1\",\"eventemitter3\":\"^3.1.0\",\"fork-ts-checker-webpack-plugin\":\"^0.4.1\",\"hoist-non-react-statics\":\"^2.5.0\",\"hsluv\":\"^0.0.3\",\"immutable\":\"^3.8.2\",\"jest\":\"^23.1.0\",\"jest-diff\":\"^23.6.0\",\"jest-junit\":\"^5.2.0\",\"progress-bar-webpack-plugin\":\"^1.11.0\",\"raf\":\"^3.4.0\",\"react\":\"~16.4\",\"react-dev-utils\":\"^5.0.1\",\"react-dom\":\"~16.4\",\"semver\":\"^5.6.0\",\"ts-jest\":\"^23.10.5\",\"ts-loader\":\"^4.1.0\",\"typescript\":\"^3.0.1\",\"watch\":\"^1.0.2\",\"webpack\":\"^4.4.1\",\"webpack-cli\":\"^3.1.2\",\"webpack-dev-server\":\"^3.1.10\",\"xcssmatrix\":\"^0.2.2\"},\"peerDependencies\":{\"react\":\"^16.3\",\"react-dom\":\"^16.3\"},\"tsdoc\":{\"tsdocFlavor\":\"AEDoc\"},\"framer\":{\"components\":[{\"name\":\"Scroll\",\"children\":true,\"properties\":[{\"key\":\"direction\",\"title\":\"Direction\",\"kind\":\"enum\",\"options\":[\"horizontal\",\"vertical\",\"both\"]}]},{\"name\":\"Page\"},{\"name\":\"Stack\"},{\"name\":\"FramerAppleWatch38\",\"type\":\"device\"},{\"name\":\"FramerAppleWatch42\",\"type\":\"device\"},{\"name\":\"FramerSonySmartWatch\",\"type\":\"device\"},{\"name\":\"FramerAppleIPhoneSE\",\"type\":\"device\"},{\"name\":\"FramerAppleIPhone8\",\"type\":\"device\"},{\"name\":\"FramerAppleIPhone8Plus\",\"type\":\"device\"},{\"name\":\"FramerAppleIPhoneXS\",\"type\":\"device\"},{\"name\":\"FramerAppleIPhoneXR\",\"type\":\"device\"},{\"name\":\"FramerAppleIPhoneXSMax\",\"type\":\"device\"},{\"name\":\"FramerGooglePixel2\",\"type\":\"device\"},{\"name\":\"FramerGooglePixel2XL\",\"type\":\"device\"},{\"name\":\"FramerGooglePixel3\",\"type\":\"device\"},{\"name\":\"FramerGooglePixel3XL\",\"type\":\"device\"},{\"name\":\"FramerSamsungNote5\",\"type\":\"device\"},{\"name\":\"FramerSamsungGalaxyS9\",\"type\":\"device\"},{\"name\":\"FramerAppleIPadAir\",\"type\":\"device\"},{\"name\":\"FramerAppleIPadMini\",\"type\":\"device\"},{\"name\":\"FramerAppleIPadPro\",\"type\":\"device\"},{\"name\":\"FramerGoogleNexusTablet\",\"type\":\"device\"},{\"name\":\"FramerMicrosoftSurfacePro3\",\"type\":\"device\"},{\"name\":\"FramerMicrosoftSurfacePro4\",\"type\":\"device\"},{\"name\":\"FramerAppleIMac\",\"type\":\"device\"},{\"name\":\"FramerAppleThunderboltDisplay\",\"type\":\"device\"},{\"name\":\"FramerAppleMacBook\",\"type\":\"device\"},{\"name\":\"FramerAppleMacBookAir\",\"type\":\"device\"},{\"name\":\"FramerAppleMacBookPro\",\"type\":\"device\"},{\"name\":\"FramerDellXPS\",\"type\":\"device\"},{\"name\":\"FramerMicrosoftSurfaceBook\",\"type\":\"device\"},{\"name\":\"FramerSonyW850C\",\"type\":\"device\"},{\"name\":\"FramerStoreArtwork\",\"type\":\"device\"},{\"name\":\"FramerStoreIcon\",\"type\":\"device\"}]}}\n                    return package\n                }\n\npackage.dependencies = packages\n\nexports.__framer__ = package\n\n\n/***/ }),\n\n/***/ \"./package.json\":\n/*!**********************!*\\\n  !*** ./package.json ***!\n  \\**********************/\n/*! exports provided: main, license, devDependencies, peerDependencies, framer, author, dependencies, name, default */\n/***/ (function(module) {\n\nmodule.exports = {\"main\":\"dist/index.js\",\"license\":\"MIT\",\"devDependencies\":{\"@types/react\":\"^16.4.16\"},\"peerDependencies\":{\"framer\":\"^0.10\",\"react\":\"^16.3.0\",\"react-dom\":\"^16.3.0\"},\"framer\":{\"id\":\"fcf9e512-eb64-4ced-a414-5349b5c0d917\",\"displayName\":\"Twitter Sticky\"},\"author\":\"Jooyoung Moon\",\"dependencies\":{},\"name\":\"@framer/codemilli.twitter-sticky\"};\n\n/***/ }),\n\n/***/ \"framer\":\n/*!******************************************************************************************!*\\\n  !*** external {\"root\":\"Framer\",\"commonjs2\":\"framer\",\"commonjs\":\"framer\",\"amd\":\"framer\"} ***!\n  \\******************************************************************************************/\n/*! no static exports found */\n/***/ (function(module, exports) {\n\nmodule.exports = __WEBPACK_EXTERNAL_MODULE_framer__;\n\n/***/ }),\n\n/***/ \"react\":\n/*!**************************************************************************************!*\\\n  !*** external {\"root\":\"React\",\"commonjs2\":\"react\",\"commonjs\":\"react\",\"amd\":\"react\"} ***!\n  \\**************************************************************************************/\n/*! no static exports found */\n/***/ (function(module, exports) {\n\nmodule.exports = __WEBPACK_EXTERNAL_MODULE_react__;\n\n/***/ })\n\n/******/ });\n});\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9ub2RlX21vZHVsZXMvQGZyYW1lci9jb2RlbWlsbGkudHdpdHRlci1zdGlja3kvZGlzdC9pbmRleC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQSxtQkFLQTtBQUNBLENBQUM7QUFDRCxvQ0FBb0M7QUFDcEM7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZ0JBQWdCLHFGQUFxRixFQUFFLGdCQUFnQixtQkFBbUIsUUFBUTtBQUNsSjtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLGFBQWE7QUFDYjtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EseURBQXlELGNBQWM7QUFDdkU7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLG1DQUFtQywwQkFBMEIsRUFBRTtBQUMvRCx5Q0FBeUMsZUFBZTtBQUN4RDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsOERBQThELCtEQUErRDtBQUM3SDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLHVDQUF1QztBQUN2QyxpREFBaUQsMENBQTBDLHFCQUFxQjtBQUNoSDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsVUFBVTtBQUNWO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7O0FBR0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxnQkFBZ0I7QUFDaEI7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBLE9BQU87O0FBRVA7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0Esd0RBQXdELGNBQWMsRUFBRSxpRUFBaUUscUJBQXFCLHlDQUF5QyxpQkFBaUIsRUFBRSx5QkFBeUIsb0NBQW9DLCtCQUErQixpQ0FBaUMsMERBQTBELG9HQUFvRyxFQUFFLHNEQUFzRCxvR0FBb0csRUFBRSxPQUFPLCtCQUErQixHQUFHLGdDQUFnQyxvQ0FBb0MsYUFBYSx5QkFBeUIsZUFBZSxjQUFjLG1CQUFtQiw0Q0FBNEMsMENBQTBDLDJEQUEyRCwwREFBMEQsV0FBVyxRQUFRLElBQUksbUNBQW1DLG9DQUFvQyxhQUFhLGVBQWUsZUFBZSxjQUFjLG1GQUFtRixJQUFJLDJCQUEyQixvQ0FBb0MsYUFBYSxXQUFXLGVBQWUsY0FBYywyRUFBMkUsSUFBSSxnQ0FBZ0Msb0NBQW9DLGNBQWMsb0RBQW9ELElBQUksa0NBQWtDLG9DQUFvQyxjQUFjLHFDQUFxQyw0Q0FBNEMsdURBQXVELFdBQVcsUUFBUSxJQUFJLHVCQUF1QiwwQ0FBMEMsR0FBRyw2Q0FBNkMsR0FBRyxxQ0FBcUMsR0FBRywwQ0FBMEMsR0FBRyw0Q0FBNEMsRUFBRSxxRUFBcUUsY0FBYzs7QUFFenBFLE9BQU87O0FBRVA7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0Esd0RBQXdELGNBQWMsRUFBRSxpRUFBaUUsOEJBQThCLGdDQUFnQyxFQUFFLHlCQUF5QixvQ0FBb0MsY0FBYywrQ0FBK0MsNENBQTRDLGtDQUFrQyxxREFBcUQsV0FBVyxTQUFTLElBQUksdUJBQXVCLHNDQUFzQyxFQUFFLHFFQUFxRSxjQUFjOztBQUVobkIsT0FBTzs7QUFFUDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQSx3REFBd0QsY0FBYyxFQUFFLGlFQUFpRSw4QkFBOEIsb0pBQW9KLEVBQUUseUJBQXlCLG9DQUFvQyxjQUFjLCtDQUErQyw0Q0FBNEMsa0NBQWtDLHFEQUFxRCxXQUFXLFNBQVMsSUFBSSw2QkFBNkIsb0NBQW9DLHdDQUF3QyxjQUFjLHFEQUFxRCw0Q0FBNEMsZ0ZBQWdGLDZFQUE2RSxFQUFFLFdBQVcsU0FBUyxJQUFJLDJCQUEyQixvQ0FBb0Msc0NBQXNDLGNBQWMsbURBQW1ELDRDQUE0Qyw0REFBNEQsV0FBVyxTQUFTLElBQUksOEJBQThCLG9DQUFvQyxjQUFjLDRDQUE0QyxJQUFJLDZCQUE2QixvQ0FBb0MsY0FBYyxtQkFBbUIsNENBQTRDLHlDQUF5Qyx1Q0FBdUMsNEJBQTRCLEdBQUcsNkRBQTZELEdBQUcsNkJBQTZCLEVBQUUsb0NBQW9DLFdBQVcsU0FBUyxJQUFJLHVCQUF1QixzQ0FBc0MsR0FBRyx1Q0FBdUMsR0FBRyxxQ0FBcUMsR0FBRywyQ0FBMkMsR0FBRywwQ0FBMEMsRUFBRSxxRUFBcUUsY0FBYzs7QUFFOWxFLE9BQU87O0FBRVA7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0Esd0RBQXdELGNBQWMsRUFBRSw0REFBNEQsaUVBQWlFLHVEQUF1RCxFQUFFLHdFQUF3RSx1REFBdUQscUJBQXFCLDhCQUE4Qix3QkFBd0IscUZBQXFGLE9BQU8sZ0JBQWdCLHdDQUF3QyxpQkFBaUIsd0JBQXdCLGNBQWMsOEVBQThFLFNBQVMsK0hBQStILE1BQU0sbUNBQW1DLG1CQUFtQixvQkFBb0IsbUJBQW1CLGlCQUFpQixFQUFFLHdCQUF3QixPQUFPLEdBQUcsR0FBRyxzREFBc0QscUJBQXFCLDhCQUE4Qix3QkFBd0Isd0NBQXdDLE9BQU8sZ0JBQWdCLHdDQUF3Qyx1SUFBdUksZUFBZSxnQ0FBZ0MsS0FBSyxPQUFPLEdBQUcsdUNBQXVDLHdDQUF3QywyQ0FBMkMsZUFBZSwrRkFBK0Ysa0JBQWtCLG1HQUFtRyxJQUFJLHNEQUFzRCxtREFBbUQscUJBQXFCLDhCQUE4Qiw0QkFBNEIsT0FBTyxnQkFBZ0Isd0NBQXdDLGlCQUFpQixnQkFBZ0IsY0FBYyw2RUFBNkUseUJBQXlCLE1BQU0sNENBQTRDLCtCQUErQixtQ0FBbUMsMENBQTBDLGVBQWUsNERBQTRELHdGQUF3RixJQUFJLG1CQUFtQix3QkFBd0IsV0FBVyxHQUFHLE9BQU8sR0FBRyx1QkFBdUIsc0VBQXNFLEVBQUUscUVBQXFFLGNBQWM7O0FBRXh0RixPQUFPOztBQUVQO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBLHdEQUF3RCxjQUFjLEVBQUUscUVBQXFFLGNBQWM7O0FBRTNKLE9BQU87O0FBRVA7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0Esd0RBQXdELGNBQWMsRUFBRSw0REFBNEQsd0hBQXdILHFEQUFxRCxnQkFBZ0Isd0NBQXdDLHNHQUFzRyw0Q0FBNEMsa0VBQWtFLFVBQVUsZ0NBQWdDLEdBQUcsV0FBVyxHQUFHLE9BQU8sR0FBRyxvREFBb0QseUNBQXlDLHFCQUFxQiw4QkFBOEIsOEJBQThCLHVDQUF1Qyx3QkFBd0Isd0NBQXdDLE9BQU8saUNBQWlDLGNBQWMsR0FBRyx3Q0FBd0MsaUJBQWlCLFVBQVUsY0FBYyxpQ0FBaUMsd0RBQXdELDZGQUE2RiwrRUFBK0UsMkRBQTJELDJDQUEyQyw2QkFBNkIsb0JBQW9CLEVBQUUsV0FBVyxnQ0FBZ0MsT0FBTyxnQkFBZ0Isd0NBQXdDLGlCQUFpQixnQkFBZ0IsY0FBYyxpQkFBaUIsVUFBVSxjQUFjLGdEQUFnRCxTQUFTLDhEQUE4RCxLQUFLLDZJQUE2SSxzQkFBc0IsZ0VBQWdFLFNBQVMsMEJBQTBCLEVBQUUsd0JBQXdCLE9BQU8sR0FBRyx1QkFBdUIscUVBQXFFLEVBQUUscUVBQXFFLGNBQWM7O0FBRXh0RSxPQUFPOztBQUVQO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTs7QUFFQSw4Q0FBOEMsY0FBYztBQUM1RDtBQUNBO0FBQ0EsNENBQTRDLGNBQWM7OztBQUcxRCxPQUFPOztBQUVQO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTs7QUFFQTs7QUFFQTtBQUNBO0FBQ0EscUJBQXFCO0FBQ3JCLG9CQUFvQjtBQUNwQjs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBLENBQUM7O0FBRUQ7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLHFCQUFxQjtBQUNyQjtBQUNBO0FBQ0E7QUFDQSxzREFBc0QsMEdBQTBHLDJIQUEySCxvQkFBb0Isd2xDQUF3bEMscUJBQXFCLG9DQUFvQyxVQUFVLHNCQUFzQixXQUFXLGVBQWUsK0NBQStDLCtGQUErRixFQUFFLEVBQUUsY0FBYyxFQUFFLGVBQWUsRUFBRSw0Q0FBNEMsRUFBRSw0Q0FBNEMsRUFBRSw4Q0FBOEMsRUFBRSw2Q0FBNkMsRUFBRSw0Q0FBNEMsRUFBRSxnREFBZ0QsRUFBRSw2Q0FBNkMsRUFBRSw2Q0FBNkMsRUFBRSxnREFBZ0QsRUFBRSw0Q0FBNEMsRUFBRSw4Q0FBOEMsRUFBRSw0Q0FBNEMsRUFBRSw4Q0FBOEMsRUFBRSw0Q0FBNEMsRUFBRSwrQ0FBK0MsRUFBRSw0Q0FBNEMsRUFBRSw2Q0FBNkMsRUFBRSw0Q0FBNEMsRUFBRSxpREFBaUQsRUFBRSxvREFBb0QsRUFBRSxvREFBb0QsRUFBRSx5Q0FBeUMsRUFBRSx1REFBdUQsRUFBRSw0Q0FBNEMsRUFBRSwrQ0FBK0MsRUFBRSwrQ0FBK0MsRUFBRSx1Q0FBdUMsRUFBRSxvREFBb0QsRUFBRSx5Q0FBeUMsRUFBRSw0Q0FBNEMsRUFBRSx5Q0FBeUM7QUFDbG5HO0FBQ0E7O0FBRUE7O0FBRUE7OztBQUdBLE9BQU87O0FBRVA7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBLGtCQUFrQiwwREFBMEQsMEJBQTBCLHFCQUFxQix5REFBeUQsV0FBVywyRUFBMkUsMkNBQTJDOztBQUVyVCxPQUFPOztBQUVQO0FBQ0E7QUFDQSxpQkFBaUIsd0VBQXdFO0FBQ3pGO0FBQ0E7QUFDQTs7QUFFQTs7QUFFQSxPQUFPOztBQUVQO0FBQ0E7QUFDQSxpQkFBaUIsb0VBQW9FO0FBQ3JGO0FBQ0E7QUFDQTs7QUFFQTs7QUFFQSxPQUFPOztBQUVQLFVBQVU7QUFDVixDQUFDIiwiZmlsZSI6Ii4uLy4uLy4uLy4uL0FwcGxpY2F0aW9ucy9GcmFtZXIgWC5hcHAvQ29udGVudHMvUmVzb3VyY2VzL1NlcnZlci9saWIvZnJhbWVyLXBhY2thZ2UtbG9hZGVyLmpzIS4vbm9kZV9tb2R1bGVzL0BmcmFtZXIvY29kZW1pbGxpLnR3aXR0ZXItc3RpY2t5L2Rpc3QvaW5kZXguanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIoZnVuY3Rpb24gd2VicGFja1VuaXZlcnNhbE1vZHVsZURlZmluaXRpb24ocm9vdCwgZmFjdG9yeSkge1xuXHRpZih0eXBlb2YgZXhwb3J0cyA9PT0gJ29iamVjdCcgJiYgdHlwZW9mIG1vZHVsZSA9PT0gJ29iamVjdCcpXG5cdFx0bW9kdWxlLmV4cG9ydHMgPSBmYWN0b3J5KHJlcXVpcmUoXCJmcmFtZXJcIiksIHJlcXVpcmUoXCJyZWFjdFwiKSk7XG5cdGVsc2UgaWYodHlwZW9mIGRlZmluZSA9PT0gJ2Z1bmN0aW9uJyAmJiBkZWZpbmUuYW1kKVxuXHRcdGRlZmluZShbXCJmcmFtZXJcIiwgXCJyZWFjdFwiXSwgZmFjdG9yeSk7XG5cdGVsc2Uge1xuXHRcdHZhciBhID0gdHlwZW9mIGV4cG9ydHMgPT09ICdvYmplY3QnID8gZmFjdG9yeShyZXF1aXJlKFwiZnJhbWVyXCIpLCByZXF1aXJlKFwicmVhY3RcIikpIDogZmFjdG9yeShyb290W1wiRnJhbWVyXCJdLCByb290W1wiUmVhY3RcIl0pO1xuXHRcdGZvcih2YXIgaSBpbiBhKSAodHlwZW9mIGV4cG9ydHMgPT09ICdvYmplY3QnID8gZXhwb3J0cyA6IHJvb3QpW2ldID0gYVtpXTtcblx0fVxufSkod2luZG93LCBmdW5jdGlvbihfX1dFQlBBQ0tfRVhURVJOQUxfTU9EVUxFX2ZyYW1lcl9fLCBfX1dFQlBBQ0tfRVhURVJOQUxfTU9EVUxFX3JlYWN0X18pIHtcbnJldHVybiAvKioqKioqLyAoZnVuY3Rpb24obW9kdWxlcykgeyAvLyB3ZWJwYWNrQm9vdHN0cmFwXG4vKioqKioqLyBcdC8vIFRoZSBtb2R1bGUgY2FjaGVcbi8qKioqKiovIFx0dmFyIGluc3RhbGxlZE1vZHVsZXMgPSB7fTtcbi8qKioqKiovXG4vKioqKioqLyBcdC8vIFRoZSByZXF1aXJlIGZ1bmN0aW9uXG4vKioqKioqLyBcdGZ1bmN0aW9uIF9fd2VicGFja19yZXF1aXJlX18obW9kdWxlSWQpIHtcbi8qKioqKiovXG4vKioqKioqLyBcdFx0Ly8gQ2hlY2sgaWYgbW9kdWxlIGlzIGluIGNhY2hlXG4vKioqKioqLyBcdFx0aWYoaW5zdGFsbGVkTW9kdWxlc1ttb2R1bGVJZF0pIHtcbi8qKioqKiovIFx0XHRcdHJldHVybiBpbnN0YWxsZWRNb2R1bGVzW21vZHVsZUlkXS5leHBvcnRzO1xuLyoqKioqKi8gXHRcdH1cbi8qKioqKiovIFx0XHQvLyBDcmVhdGUgYSBuZXcgbW9kdWxlIChhbmQgcHV0IGl0IGludG8gdGhlIGNhY2hlKVxuLyoqKioqKi8gXHRcdHZhciBtb2R1bGUgPSBpbnN0YWxsZWRNb2R1bGVzW21vZHVsZUlkXSA9IHtcbi8qKioqKiovIFx0XHRcdGk6IG1vZHVsZUlkLFxuLyoqKioqKi8gXHRcdFx0bDogZmFsc2UsXG4vKioqKioqLyBcdFx0XHRleHBvcnRzOiB7fVxuLyoqKioqKi8gXHRcdH07XG4vKioqKioqL1xuLyoqKioqKi8gXHRcdC8vIEV4ZWN1dGUgdGhlIG1vZHVsZSBmdW5jdGlvblxuLyoqKioqKi8gXHRcdHRyeSB7IG1vZHVsZXNbbW9kdWxlSWRdLmNhbGwobW9kdWxlLmV4cG9ydHMsIG1vZHVsZSwgbW9kdWxlLmV4cG9ydHMsIF9fd2VicGFja19yZXF1aXJlX18pOyB9IGNhdGNoIChlcnJvcikgeyBtb2R1bGUuZXhwb3J0cyA9IHsgZXJyb3IgfSB9XG4vKioqKioqL1xuLyoqKioqKi8gXHRcdC8vIEZsYWcgdGhlIG1vZHVsZSBhcyBsb2FkZWRcbi8qKioqKiovIFx0XHRtb2R1bGUubCA9IHRydWU7XG4vKioqKioqL1xuLyoqKioqKi8gXHRcdC8vIFJldHVybiB0aGUgZXhwb3J0cyBvZiB0aGUgbW9kdWxlXG4vKioqKioqLyBcdFx0cmV0dXJuIG1vZHVsZS5leHBvcnRzO1xuLyoqKioqKi8gXHR9XG4vKioqKioqL1xuLyoqKioqKi9cbi8qKioqKiovIFx0Ly8gZXhwb3NlIHRoZSBtb2R1bGVzIG9iamVjdCAoX193ZWJwYWNrX21vZHVsZXNfXylcbi8qKioqKiovIFx0X193ZWJwYWNrX3JlcXVpcmVfXy5tID0gbW9kdWxlcztcbi8qKioqKiovXG4vKioqKioqLyBcdC8vIGV4cG9zZSB0aGUgbW9kdWxlIGNhY2hlXG4vKioqKioqLyBcdF9fd2VicGFja19yZXF1aXJlX18uYyA9IGluc3RhbGxlZE1vZHVsZXM7XG4vKioqKioqL1xuLyoqKioqKi8gXHQvLyBkZWZpbmUgZ2V0dGVyIGZ1bmN0aW9uIGZvciBoYXJtb255IGV4cG9ydHNcbi8qKioqKiovIFx0X193ZWJwYWNrX3JlcXVpcmVfXy5kID0gZnVuY3Rpb24oZXhwb3J0cywgbmFtZSwgZ2V0dGVyKSB7XG4vKioqKioqLyBcdFx0aWYoIV9fd2VicGFja19yZXF1aXJlX18ubyhleHBvcnRzLCBuYW1lKSkge1xuLyoqKioqKi8gXHRcdFx0T2JqZWN0LmRlZmluZVByb3BlcnR5KGV4cG9ydHMsIG5hbWUsIHtcbi8qKioqKiovIFx0XHRcdFx0Y29uZmlndXJhYmxlOiBmYWxzZSxcbi8qKioqKiovIFx0XHRcdFx0ZW51bWVyYWJsZTogdHJ1ZSxcbi8qKioqKiovIFx0XHRcdFx0Z2V0OiBnZXR0ZXJcbi8qKioqKiovIFx0XHRcdH0pO1xuLyoqKioqKi8gXHRcdH1cbi8qKioqKiovIFx0fTtcbi8qKioqKiovXG4vKioqKioqLyBcdC8vIGRlZmluZSBfX2VzTW9kdWxlIG9uIGV4cG9ydHNcbi8qKioqKiovIFx0X193ZWJwYWNrX3JlcXVpcmVfXy5yID0gZnVuY3Rpb24oZXhwb3J0cykge1xuLyoqKioqKi8gXHRcdE9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCAnX19lc01vZHVsZScsIHsgdmFsdWU6IHRydWUgfSk7XG4vKioqKioqLyBcdH07XG4vKioqKioqL1xuLyoqKioqKi8gXHQvLyBnZXREZWZhdWx0RXhwb3J0IGZ1bmN0aW9uIGZvciBjb21wYXRpYmlsaXR5IHdpdGggbm9uLWhhcm1vbnkgbW9kdWxlc1xuLyoqKioqKi8gXHRfX3dlYnBhY2tfcmVxdWlyZV9fLm4gPSBmdW5jdGlvbihtb2R1bGUpIHtcbi8qKioqKiovIFx0XHR2YXIgZ2V0dGVyID0gbW9kdWxlICYmIG1vZHVsZS5fX2VzTW9kdWxlID9cbi8qKioqKiovIFx0XHRcdGZ1bmN0aW9uIGdldERlZmF1bHQoKSB7IHJldHVybiBtb2R1bGVbJ2RlZmF1bHQnXTsgfSA6XG4vKioqKioqLyBcdFx0XHRmdW5jdGlvbiBnZXRNb2R1bGVFeHBvcnRzKCkgeyByZXR1cm4gbW9kdWxlOyB9O1xuLyoqKioqKi8gXHRcdF9fd2VicGFja19yZXF1aXJlX18uZChnZXR0ZXIsICdhJywgZ2V0dGVyKTtcbi8qKioqKiovIFx0XHRyZXR1cm4gZ2V0dGVyO1xuLyoqKioqKi8gXHR9O1xuLyoqKioqKi9cbi8qKioqKiovIFx0Ly8gT2JqZWN0LnByb3RvdHlwZS5oYXNPd25Qcm9wZXJ0eS5jYWxsXG4vKioqKioqLyBcdF9fd2VicGFja19yZXF1aXJlX18ubyA9IGZ1bmN0aW9uKG9iamVjdCwgcHJvcGVydHkpIHsgcmV0dXJuIE9iamVjdC5wcm90b3R5cGUuaGFzT3duUHJvcGVydHkuY2FsbChvYmplY3QsIHByb3BlcnR5KTsgfTtcbi8qKioqKiovXG4vKioqKioqLyBcdC8vIF9fd2VicGFja19wdWJsaWNfcGF0aF9fXG4vKioqKioqLyBcdF9fd2VicGFja19yZXF1aXJlX18ucCA9IFwiXCI7XG4vKioqKioqL1xuLyoqKioqKi8gXHQvLyBhc3NldCB1cmxcbi8qKioqKiovIFx0dmFyIF9fbW9kdWxlX2kgPSBldmFsKFwidHlwZW9mIG1vZHVsZSAhPT0gJ3VuZGVmaW5lZCcgPyBtb2R1bGUuaSA6ICcnXCIpO1xuLyoqKioqKi8gXHR2YXIgX19mcmFtZXJfcGFja2FnZSA9ICgvKG5vZGVfbW9kdWxlc1svXS4qKVsvXShidWlsZHxkaXN0KS5pbmRleC5qcy8uZXhlYyhfX21vZHVsZV9pKSB8fCBbXSlbMV1cbi8qKioqKiovIFx0ZnVuY3Rpb24gX19hc3NldF91cmxfXyhzcmMpIHsgcmV0dXJuIF9fV0VCUEFDS19FWFRFUk5BTF9NT0RVTEVfZnJhbWVyX18uc2VydmVyVVJMKF9fZnJhbWVyX3BhY2thZ2UsIHNyYykgfTtcbi8qKioqKiovIFx0aW5zdGFsbGVkTW9kdWxlc1snZnJhbWVyL3Jlc291cmNlJ10gPSB7IGk6ICdmcmFtZXIvcmVzb3VyY2UnLCBsOiB0cnVlLCBleHBvcnRzOiB7IHVybDogX19hc3NldF91cmxfXyB9IH07XG4vKioqKioqL1xuLyoqKioqKi9cbi8qKioqKiovXG4vKioqKioqLyBcdC8vIExvYWQgZW50cnkgbW9kdWxlIGFuZCByZXR1cm4gZXhwb3J0c1xuLyoqKioqKi8gXHRyZXR1cm4gX193ZWJwYWNrX3JlcXVpcmVfXyhfX3dlYnBhY2tfcmVxdWlyZV9fLnMgPSBcIi4vcGFja2FnZS5qc1wiKTtcbi8qKioqKiovIH0pXG4vKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xuLyoqKioqKi8gKHtcblxuLyoqKi8gXCIuL2NvZGUgc3luYyByZWN1cnNpdmUgXFxcXC4odHxqKXMoeD8pfFxcXFwuY3NzJFwiOlxuLyohKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqISpcXFxuICAhKioqIC4vY29kZSBzeW5jIFxcLih0fGopcyh4Pyl8XFwuY3NzJCAqKiohXG4gIFxcKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xuLyohIG5vIHN0YXRpYyBleHBvcnRzIGZvdW5kICovXG4vKioqLyAoZnVuY3Rpb24obW9kdWxlLCBleHBvcnRzLCBfX3dlYnBhY2tfcmVxdWlyZV9fKSB7XG5cbnZhciBtYXAgPSB7XG5cdFwiLi9BcHAudHN4XCI6IFwiLi9jb2RlL0FwcC50c3hcIixcblx0XCIuL0FwcDEudHN4XCI6IFwiLi9jb2RlL0FwcDEudHN4XCIsXG5cdFwiLi9FeGFtcGxlcy50c3hcIjogXCIuL2NvZGUvRXhhbXBsZXMudHN4XCIsXG5cdFwiLi9Ud2l0dGVyU3RpY2t5Q29udGVudC50c3hcIjogXCIuL2NvZGUvVHdpdHRlclN0aWNreUNvbnRlbnQudHN4XCIsXG5cdFwiLi9Ud2l0dGVyU3RpY2t5Q29udGV4dC50c3hcIjogXCIuL2NvZGUvVHdpdHRlclN0aWNreUNvbnRleHQudHN4XCIsXG5cdFwiLi9Ud2l0dGVyU3RpY2t5SGVhZGVyLnRzeFwiOiBcIi4vY29kZS9Ud2l0dGVyU3RpY2t5SGVhZGVyLnRzeFwiLFxuXHRcIi4vY2FudmFzLnRzeFwiOiBcIi4vY29kZS9jYW52YXMudHN4XCJcbn07XG5cblxuZnVuY3Rpb24gd2VicGFja0NvbnRleHQocmVxKSB7XG5cdHZhciBpZCA9IHdlYnBhY2tDb250ZXh0UmVzb2x2ZShyZXEpO1xuXHR2YXIgbW9kdWxlID0gX193ZWJwYWNrX3JlcXVpcmVfXyhpZCk7XG5cdHJldHVybiBtb2R1bGU7XG59XG5mdW5jdGlvbiB3ZWJwYWNrQ29udGV4dFJlc29sdmUocmVxKSB7XG5cdHZhciBpZCA9IG1hcFtyZXFdO1xuXHRpZighKGlkICsgMSkpIHsgLy8gY2hlY2sgZm9yIG51bWJlciBvciBzdHJpbmdcblx0XHR2YXIgZSA9IG5ldyBFcnJvcignQ2Fubm90IGZpbmQgbW9kdWxlIFwiJyArIHJlcSArICdcIi4nKTtcblx0XHRlLmNvZGUgPSAnTU9EVUxFX05PVF9GT1VORCc7XG5cdFx0dGhyb3cgZTtcblx0fVxuXHRyZXR1cm4gaWQ7XG59XG53ZWJwYWNrQ29udGV4dC5rZXlzID0gZnVuY3Rpb24gd2VicGFja0NvbnRleHRLZXlzKCkge1xuXHRyZXR1cm4gT2JqZWN0LmtleXMobWFwKTtcbn07XG53ZWJwYWNrQ29udGV4dC5yZXNvbHZlID0gd2VicGFja0NvbnRleHRSZXNvbHZlO1xubW9kdWxlLmV4cG9ydHMgPSB3ZWJwYWNrQ29udGV4dDtcbndlYnBhY2tDb250ZXh0LmlkID0gXCIuL2NvZGUgc3luYyByZWN1cnNpdmUgXFxcXC4odHxqKXMoeD8pfFxcXFwuY3NzJFwiO1xuXG4vKioqLyB9KSxcblxuLyoqKi8gXCIuL2NvZGUvQXBwLnRzeFwiOlxuLyohKioqKioqKioqKioqKioqKioqKioqKiEqXFxcbiAgISoqKiAuL2NvZGUvQXBwLnRzeCAqKiohXG4gIFxcKioqKioqKioqKioqKioqKioqKioqKi9cbi8qISBubyBzdGF0aWMgZXhwb3J0cyBmb3VuZCAqL1xuLyoqKi8gKGZ1bmN0aW9uKG1vZHVsZSwgZXhwb3J0cywgX193ZWJwYWNrX3JlcXVpcmVfXykge1xuXG5cInVzZSBzdHJpY3RcIjtcbmV2YWwoXCJcXG5PYmplY3QuZGVmaW5lUHJvcGVydHkoZXhwb3J0cywgXFxcIl9fZXNNb2R1bGVcXFwiLCB7IHZhbHVlOiB0cnVlIH0pO1xcbmNvbnN0IGZyYW1lcl8xID0gX193ZWJwYWNrX3JlcXVpcmVfXygvKiEgZnJhbWVyICovIFxcXCJmcmFtZXJcXFwiKTtcXG5leHBvcnRzLnN0b3JlID0ge307XFxuZXhwb3J0cy5zdGFyRnJhbWVEYXRhID0gZnJhbWVyXzEuRGF0YSh7XFxuICAgIHNjYWxlOiAxXFxufSk7XFxuZnVuY3Rpb24gc2V0U3RhdGUoaWQpIHtcXG4gICAgd2luZG93W1xcXCJfX2NoZWNrQnVkZ2V0X19cXFwiXSgpO1xcbiAgICBpZiAoIWV4cG9ydHMuc3RvcmVbaWRdKSB7XFxuICAgICAgICBleHBvcnRzLnN0b3JlW2lkXSA9IHt9O1xcbiAgICAgICAgZXhwb3J0cy5zdG9yZVtpZF0uc2tlbGV0b25EYXRhID0gZnJhbWVyXzEuRGF0YSh7XFxuICAgICAgICAgICAgc2NhbGU6IGZyYW1lcl8xLkFuaW1hdGFibGUoMSksXFxuICAgICAgICAgICAgb3BhY2l0eTogZnJhbWVyXzEuQW5pbWF0YWJsZSgxKVxcbiAgICAgICAgfSk7XFxuICAgICAgICBleHBvcnRzLnN0b3JlW2lkXS5zdGFyRGF0YSA9IGZyYW1lcl8xLkRhdGEoe1xcbiAgICAgICAgICAgIHNjYWxlOiBmcmFtZXJfMS5BbmltYXRhYmxlKDEpLFxcbiAgICAgICAgICAgIG9wYWNpdHk6IGZyYW1lcl8xLkFuaW1hdGFibGUoMClcXG4gICAgICAgIH0pO1xcbiAgICB9XFxuICAgIHJldHVybiBleHBvcnRzLnN0b3JlW2lkXTtcXG59XFxuZXhwb3J0cy5Ub3VjaGFibGUgPSBwcm9wcyA9PiB7XFxuICAgIHdpbmRvd1tcXFwiX19jaGVja0J1ZGdldF9fXFxcIl0oKTtcXG4gICAgY29uc3QgeyBza2VsZXRvbkRhdGEsIHN0YXJEYXRhIH0gPSBzZXRTdGF0ZSgxKTtcXG4gICAgcmV0dXJuIHtcXG4gICAgICAgIG9uVGFwKCkge1xcbiAgICAgICAgICAgIHdpbmRvd1tcXFwiX19jaGVja0J1ZGdldF9fXFxcIl0oKTtcXG4gICAgICAgICAgICBza2VsZXRvbkRhdGEub3BhY2l0eS5zZXQoMCk7XFxuICAgICAgICAgICAgZnJhbWVyXzEuYW5pbWF0ZS5zcHJpbmcoc3RhckRhdGEub3BhY2l0eSwgMSk7XFxuICAgICAgICAgICAgZnJhbWVyXzEuYW5pbWF0ZS5zcHJpbmcoc3RhckRhdGEuc2NhbGUsIDEwKTtcXG4gICAgICAgIH1cXG4gICAgfTtcXG59O1xcbmV4cG9ydHMuU2tlbGV0b25TdGFyID0gcHJvcHMgPT4ge1xcbiAgICB3aW5kb3dbXFxcIl9fY2hlY2tCdWRnZXRfX1xcXCJdKCk7XFxuICAgIGNvbnN0IHsgc2tlbGV0b25EYXRhIH0gPSBzZXRTdGF0ZSgxKTtcXG4gICAgcmV0dXJuIHtcXG4gICAgICAgIHNjYWxlOiBza2VsZXRvbkRhdGEuc2NhbGUsXFxuICAgICAgICBvcGFjaXR5OiBza2VsZXRvbkRhdGEub3BhY2l0eVxcbiAgICB9O1xcbn07XFxuZXhwb3J0cy5TdGFyID0gcHJvcHMgPT4ge1xcbiAgICB3aW5kb3dbXFxcIl9fY2hlY2tCdWRnZXRfX1xcXCJdKCk7XFxuICAgIGNvbnN0IHsgc3RhckRhdGEgfSA9IHNldFN0YXRlKDEpO1xcbiAgICByZXR1cm4ge1xcbiAgICAgICAgc2NhbGU6IHN0YXJEYXRhLnNjYWxlLFxcbiAgICAgICAgb3BhY2l0eTogc3RhckRhdGEub3BhY2l0eVxcbiAgICB9O1xcbn07XFxuZXhwb3J0cy5TdGFyRnJhbWUgPSBwcm9wcyA9PiB7XFxuICAgIHdpbmRvd1tcXFwiX19jaGVja0J1ZGdldF9fXFxcIl0oKTtcXG4gICAgcmV0dXJuIHtcXG4gICAgICAgIHNjYWxlOiBleHBvcnRzLnN0YXJGcmFtZURhdGEuc2NhbGVcXG4gICAgfTtcXG59O1xcbmV4cG9ydHMuU2NhbGVTbGlkZXIgPSBwcm9wcyA9PiB7XFxuICAgIHdpbmRvd1tcXFwiX19jaGVja0J1ZGdldF9fXFxcIl0oKTtcXG4gICAgcmV0dXJuIHtcXG4gICAgICAgIG9uVmFsdWVDaGFuZ2U6ICh2YWx1ZSkgPT4ge1xcbiAgICAgICAgICAgIHdpbmRvd1tcXFwiX19jaGVja0J1ZGdldF9fXFxcIl0oKTtcXG4gICAgICAgICAgICBleHBvcnRzLnN0YXJGcmFtZURhdGEuc2NhbGUgPSB2YWx1ZSAvIDEwO1xcbiAgICAgICAgfVxcbiAgICB9O1xcbn07XFxuZXhwb3J0cy5fX2luZm9fXyA9IFt7IG5hbWU6IFxcXCJUb3VjaGFibGVcXFwiLCB0eXBlOiBcXFwib3ZlcnJpZGVcXFwiIH0sIHsgbmFtZTogXFxcIlNrZWxldG9uU3RhclxcXCIsIHR5cGU6IFxcXCJvdmVycmlkZVxcXCIgfSwgeyBuYW1lOiBcXFwiU3RhclxcXCIsIHR5cGU6IFxcXCJvdmVycmlkZVxcXCIgfSwgeyBuYW1lOiBcXFwiU3RhckZyYW1lXFxcIiwgdHlwZTogXFxcIm92ZXJyaWRlXFxcIiB9LCB7IG5hbWU6IFxcXCJTY2FsZVNsaWRlclxcXCIsIHR5cGU6IFxcXCJvdmVycmlkZVxcXCIgfV07XFxuLy8jIHNvdXJjZVVSTD1bbW9kdWxlXVxcbi8vIyBzb3VyY2VNYXBwaW5nVVJMPWRhdGE6YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04O2Jhc2U2NCxleUoyWlhKemFXOXVJam96TENKemIzVnlZMlZ6SWpwYkluZGxZbkJoWTJzNkx5OHZMaTlqYjJSbEwwRndjQzUwYzNnaVhTd2libUZ0WlhNaU9sdGRMQ0p0WVhCd2FXNW5jeUk2SWtGQlFVRTdRVUZEUVN3NFEwRkJPRU1zWTBGQll6dEJRVU0xUkR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQkxFTkJRVU03UVVGRFJEdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQkxGTkJRVk03UVVGRFZEdEJRVU5CTzBGQlEwRTdRVUZEUVN4VFFVRlRPMEZCUTFRN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFUdEJRVU5CTEZkQlFWY3NlVUpCUVhsQ08wRkJRM0JETzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFUdEJRVU5CTzBGQlEwRTdRVUZEUVN4WFFVRlhMR1ZCUVdVN1FVRkRNVUk3UVVGRFFUdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRU3hYUVVGWExGZEJRVmM3UVVGRGRFSTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFUdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFUdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJMSEZDUVVGeFFpeHpRMEZCYzBNc1IwRkJSeXg1UTBGQmVVTXNSMEZCUnl4cFEwRkJhVU1zUjBGQlJ5eHpRMEZCYzBNc1IwRkJSeXgzUTBGQmQwTWlMQ0ptYVd4bElqb2lMaTlqYjJSbEwwRndjQzUwYzNndWFuTWlMQ0p6YjNWeVkyVnpRMjl1ZEdWdWRDSTZXeUpjSW5WelpTQnpkSEpwWTNSY0lqdGNiazlpYW1WamRDNWtaV1pwYm1WUWNtOXdaWEowZVNobGVIQnZjblJ6TENCY0lsOWZaWE5OYjJSMWJHVmNJaXdnZXlCMllXeDFaVG9nZEhKMVpTQjlLVHRjYm1OdmJuTjBJR1p5WVcxbGNsOHhJRDBnY21WeGRXbHlaU2hjSW1aeVlXMWxjbHdpS1R0Y2JtVjRjRzl5ZEhNdWMzUnZjbVVnUFNCN2ZUdGNibVY0Y0c5eWRITXVjM1JoY2taeVlXMWxSR0YwWVNBOUlHWnlZVzFsY2w4eExrUmhkR0VvZTF4dUlDQWdJSE5qWVd4bE9pQXhYRzU5S1R0Y2JtWjFibU4wYVc5dUlITmxkRk4wWVhSbEtHbGtLU0I3WEc0Z0lDQWdkMmx1Wkc5M1cxd2lYMTlqYUdWamEwSjFaR2RsZEY5ZlhDSmRLQ2s3WEc0Z0lDQWdhV1lnS0NGbGVIQnZjblJ6TG5OMGIzSmxXMmxrWFNrZ2UxeHVJQ0FnSUNBZ0lDQmxlSEJ2Y25SekxuTjBiM0psVzJsa1hTQTlJSHQ5TzF4dUlDQWdJQ0FnSUNCbGVIQnZjblJ6TG5OMGIzSmxXMmxrWFM1emEyVnNaWFJ2YmtSaGRHRWdQU0JtY21GdFpYSmZNUzVFWVhSaEtIdGNiaUFnSUNBZ0lDQWdJQ0FnSUhOallXeGxPaUJtY21GdFpYSmZNUzVCYm1sdFlYUmhZbXhsS0RFcExGeHVJQ0FnSUNBZ0lDQWdJQ0FnYjNCaFkybDBlVG9nWm5KaGJXVnlYekV1UVc1cGJXRjBZV0pzWlNneEtWeHVJQ0FnSUNBZ0lDQjlLVHRjYmlBZ0lDQWdJQ0FnWlhod2IzSjBjeTV6ZEc5eVpWdHBaRjB1YzNSaGNrUmhkR0VnUFNCbWNtRnRaWEpmTVM1RVlYUmhLSHRjYmlBZ0lDQWdJQ0FnSUNBZ0lITmpZV3hsT2lCbWNtRnRaWEpmTVM1QmJtbHRZWFJoWW14bEtERXBMRnh1SUNBZ0lDQWdJQ0FnSUNBZ2IzQmhZMmwwZVRvZ1puSmhiV1Z5WHpFdVFXNXBiV0YwWVdKc1pTZ3dLVnh1SUNBZ0lDQWdJQ0I5S1R0Y2JpQWdJQ0I5WEc0Z0lDQWdjbVYwZFhKdUlHVjRjRzl5ZEhNdWMzUnZjbVZiYVdSZE8xeHVmVnh1Wlhod2IzSjBjeTVVYjNWamFHRmliR1VnUFNCd2NtOXdjeUE5UGlCN1hHNGdJQ0FnZDJsdVpHOTNXMXdpWDE5amFHVmphMEoxWkdkbGRGOWZYQ0pkS0NrN1hHNGdJQ0FnWTI5dWMzUWdleUJ6YTJWc1pYUnZia1JoZEdFc0lITjBZWEpFWVhSaElIMGdQU0J6WlhSVGRHRjBaU2d4S1R0Y2JpQWdJQ0J5WlhSMWNtNGdlMXh1SUNBZ0lDQWdJQ0J2YmxSaGNDZ3BJSHRjYmlBZ0lDQWdJQ0FnSUNBZ0lIZHBibVJ2ZDF0Y0lsOWZZMmhsWTJ0Q2RXUm5aWFJmWDF3aVhTZ3BPMXh1SUNBZ0lDQWdJQ0FnSUNBZ2MydGxiR1YwYjI1RVlYUmhMbTl3WVdOcGRIa3VjMlYwS0RBcE8xeHVJQ0FnSUNBZ0lDQWdJQ0FnWm5KaGJXVnlYekV1WVc1cGJXRjBaUzV6Y0hKcGJtY29jM1JoY2tSaGRHRXViM0JoWTJsMGVTd2dNU2s3WEc0Z0lDQWdJQ0FnSUNBZ0lDQm1jbUZ0WlhKZk1TNWhibWx0WVhSbExuTndjbWx1WnloemRHRnlSR0YwWVM1elkyRnNaU3dnTVRBcE8xeHVJQ0FnSUNBZ0lDQjlYRzRnSUNBZ2ZUdGNibjA3WEc1bGVIQnZjblJ6TGxOclpXeGxkRzl1VTNSaGNpQTlJSEJ5YjNCeklEMCtJSHRjYmlBZ0lDQjNhVzVrYjNkYlhDSmZYMk5vWldOclFuVmtaMlYwWDE5Y0lsMG9LVHRjYmlBZ0lDQmpiMjV6ZENCN0lITnJaV3hsZEc5dVJHRjBZU0I5SUQwZ2MyVjBVM1JoZEdVb01TazdYRzRnSUNBZ2NtVjBkWEp1SUh0Y2JpQWdJQ0FnSUNBZ2MyTmhiR1U2SUhOclpXeGxkRzl1UkdGMFlTNXpZMkZzWlN4Y2JpQWdJQ0FnSUNBZ2IzQmhZMmwwZVRvZ2MydGxiR1YwYjI1RVlYUmhMbTl3WVdOcGRIbGNiaUFnSUNCOU8xeHVmVHRjYm1WNGNHOXlkSE11VTNSaGNpQTlJSEJ5YjNCeklEMCtJSHRjYmlBZ0lDQjNhVzVrYjNkYlhDSmZYMk5vWldOclFuVmtaMlYwWDE5Y0lsMG9LVHRjYmlBZ0lDQmpiMjV6ZENCN0lITjBZWEpFWVhSaElIMGdQU0J6WlhSVGRHRjBaU2d4S1R0Y2JpQWdJQ0J5WlhSMWNtNGdlMXh1SUNBZ0lDQWdJQ0J6WTJGc1pUb2djM1JoY2tSaGRHRXVjMk5oYkdVc1hHNGdJQ0FnSUNBZ0lHOXdZV05wZEhrNklITjBZWEpFWVhSaExtOXdZV05wZEhsY2JpQWdJQ0I5TzF4dWZUdGNibVY0Y0c5eWRITXVVM1JoY2taeVlXMWxJRDBnY0hKdmNITWdQVDRnZTF4dUlDQWdJSGRwYm1SdmQxdGNJbDlmWTJobFkydENkV1JuWlhSZlgxd2lYU2dwTzF4dUlDQWdJSEpsZEhWeWJpQjdYRzRnSUNBZ0lDQWdJSE5qWVd4bE9pQmxlSEJ2Y25SekxuTjBZWEpHY21GdFpVUmhkR0V1YzJOaGJHVmNiaUFnSUNCOU8xeHVmVHRjYm1WNGNHOXlkSE11VTJOaGJHVlRiR2xrWlhJZ1BTQndjbTl3Y3lBOVBpQjdYRzRnSUNBZ2QybHVaRzkzVzF3aVgxOWphR1ZqYTBKMVpHZGxkRjlmWENKZEtDazdYRzRnSUNBZ2NtVjBkWEp1SUh0Y2JpQWdJQ0FnSUNBZ2IyNVdZV3gxWlVOb1lXNW5aVG9nS0haaGJIVmxLU0E5UGlCN1hHNGdJQ0FnSUNBZ0lDQWdJQ0IzYVc1a2IzZGJYQ0pmWDJOb1pXTnJRblZrWjJWMFgxOWNJbDBvS1R0Y2JpQWdJQ0FnSUNBZ0lDQWdJR1Y0Y0c5eWRITXVjM1JoY2taeVlXMWxSR0YwWVM1elkyRnNaU0E5SUhaaGJIVmxJQzhnTVRBN1hHNGdJQ0FnSUNBZ0lIMWNiaUFnSUNCOU8xeHVmVHRjYm1WNGNHOXlkSE11WDE5cGJtWnZYMThnUFNCYmV5QnVZVzFsT2lCY0lsUnZkV05vWVdKc1pWd2lMQ0IwZVhCbE9pQmNJbTkyWlhKeWFXUmxYQ0lnZlN3Z2V5QnVZVzFsT2lCY0lsTnJaV3hsZEc5dVUzUmhjbHdpTENCMGVYQmxPaUJjSW05MlpYSnlhV1JsWENJZ2ZTd2dleUJ1WVcxbE9pQmNJbE4wWVhKY0lpd2dkSGx3WlRvZ1hDSnZkbVZ5Y21sa1pWd2lJSDBzSUhzZ2JtRnRaVG9nWENKVGRHRnlSbkpoYldWY0lpd2dkSGx3WlRvZ1hDSnZkbVZ5Y21sa1pWd2lJSDBzSUhzZ2JtRnRaVG9nWENKVFkyRnNaVk5zYVdSbGNsd2lMQ0IwZVhCbE9pQmNJbTkyWlhKeWFXUmxYQ0lnZlYwN1hHNGlYU3dpYzI5MWNtTmxVbTl2ZENJNklpSjlcXG4vLyMgc291cmNlVVJMPXdlYnBhY2staW50ZXJuYWw6Ly8vLi9jb2RlL0FwcC50c3hcXG5cIik7XG5cbi8qKiovIH0pLFxuXG4vKioqLyBcIi4vY29kZS9BcHAxLnRzeFwiOlxuLyohKioqKioqKioqKioqKioqKioqKioqKiohKlxcXG4gICEqKiogLi9jb2RlL0FwcDEudHN4ICoqKiFcbiAgXFwqKioqKioqKioqKioqKioqKioqKioqKi9cbi8qISBubyBzdGF0aWMgZXhwb3J0cyBmb3VuZCAqL1xuLyoqKi8gKGZ1bmN0aW9uKG1vZHVsZSwgZXhwb3J0cywgX193ZWJwYWNrX3JlcXVpcmVfXykge1xuXG5cInVzZSBzdHJpY3RcIjtcbmV2YWwoXCJcXG5PYmplY3QuZGVmaW5lUHJvcGVydHkoZXhwb3J0cywgXFxcIl9fZXNNb2R1bGVcXFwiLCB7IHZhbHVlOiB0cnVlIH0pO1xcbmNvbnN0IGZyYW1lcl8xID0gX193ZWJwYWNrX3JlcXVpcmVfXygvKiEgZnJhbWVyICovIFxcXCJmcmFtZXJcXFwiKTtcXG5jb25zdCBkYXRhID0gZnJhbWVyXzEuRGF0YSh7IHNjYWxlOiBmcmFtZXJfMS5BbmltYXRhYmxlKDEpIH0pO1xcbmV4cG9ydHMuU2NhbGUgPSAoKSA9PiB7XFxuICAgIHdpbmRvd1tcXFwiX19jaGVja0J1ZGdldF9fXFxcIl0oKTtcXG4gICAgcmV0dXJuIHtcXG4gICAgICAgIHNjYWxlOiBkYXRhLnNjYWxlLFxcbiAgICAgICAgb25UYXAoKSB7XFxuICAgICAgICAgICAgd2luZG93W1xcXCJfX2NoZWNrQnVkZ2V0X19cXFwiXSgpO1xcbiAgICAgICAgICAgIGRhdGEuc2NhbGUuc2V0KDAuNik7XFxuICAgICAgICAgICAgZnJhbWVyXzEuYW5pbWF0ZS5zcHJpbmcoZGF0YS5zY2FsZSwgMSk7XFxuICAgICAgICB9LFxcbiAgICB9O1xcbn07XFxuZXhwb3J0cy5fX2luZm9fXyA9IFt7IG5hbWU6IFxcXCJTY2FsZVxcXCIsIHR5cGU6IFxcXCJvdmVycmlkZVxcXCIgfV07XFxuLy8jIHNvdXJjZVVSTD1bbW9kdWxlXVxcbi8vIyBzb3VyY2VNYXBwaW5nVVJMPWRhdGE6YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04O2Jhc2U2NCxleUoyWlhKemFXOXVJam96TENKemIzVnlZMlZ6SWpwYkluZGxZbkJoWTJzNkx5OHZMaTlqYjJSbEwwRndjREV1ZEhONElsMHNJbTVoYldWeklqcGJYU3dpYldGd2NHbHVaM01pT2lKQlFVRkJPMEZCUTBFc09FTkJRVGhETEdOQlFXTTdRVUZETlVRN1FVRkRRU3cwUWtGQk5FSXNaME5CUVdkRE8wRkJRelZFTzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFTeFRRVUZUTzBGQlExUTdRVUZEUVR0QlFVTkJMSEZDUVVGeFFpeHJRMEZCYTBNaUxDSm1hV3hsSWpvaUxpOWpiMlJsTDBGd2NERXVkSE40TG1weklpd2ljMjkxY21ObGMwTnZiblJsYm5RaU9sc2lYQ0oxYzJVZ2MzUnlhV04wWENJN1hHNVBZbXBsWTNRdVpHVm1hVzVsVUhKdmNHVnlkSGtvWlhod2IzSjBjeXdnWENKZlgyVnpUVzlrZFd4bFhDSXNJSHNnZG1Gc2RXVTZJSFJ5ZFdVZ2ZTazdYRzVqYjI1emRDQm1jbUZ0WlhKZk1TQTlJSEpsY1hWcGNtVW9YQ0ptY21GdFpYSmNJaWs3WEc1amIyNXpkQ0JrWVhSaElEMGdabkpoYldWeVh6RXVSR0YwWVNoN0lITmpZV3hsT2lCbWNtRnRaWEpmTVM1QmJtbHRZWFJoWW14bEtERXBJSDBwTzF4dVpYaHdiM0owY3k1VFkyRnNaU0E5SUNncElEMCtJSHRjYmlBZ0lDQjNhVzVrYjNkYlhDSmZYMk5vWldOclFuVmtaMlYwWDE5Y0lsMG9LVHRjYmlBZ0lDQnlaWFIxY200Z2UxeHVJQ0FnSUNBZ0lDQnpZMkZzWlRvZ1pHRjBZUzV6WTJGc1pTeGNiaUFnSUNBZ0lDQWdiMjVVWVhBb0tTQjdYRzRnSUNBZ0lDQWdJQ0FnSUNCM2FXNWtiM2RiWENKZlgyTm9aV05yUW5Wa1oyVjBYMTljSWwwb0tUdGNiaUFnSUNBZ0lDQWdJQ0FnSUdSaGRHRXVjMk5oYkdVdWMyVjBLREF1TmlrN1hHNGdJQ0FnSUNBZ0lDQWdJQ0JtY21GdFpYSmZNUzVoYm1sdFlYUmxMbk53Y21sdVp5aGtZWFJoTG5OallXeGxMQ0F4S1R0Y2JpQWdJQ0FnSUNBZ2ZTeGNiaUFnSUNCOU8xeHVmVHRjYm1WNGNHOXlkSE11WDE5cGJtWnZYMThnUFNCYmV5QnVZVzFsT2lCY0lsTmpZV3hsWENJc0lIUjVjR1U2SUZ3aWIzWmxjbkpwWkdWY0lpQjlYVHRjYmlKZExDSnpiM1Z5WTJWU2IyOTBJam9pSW4wPVxcbi8vIyBzb3VyY2VVUkw9d2VicGFjay1pbnRlcm5hbDovLy8uL2NvZGUvQXBwMS50c3hcXG5cIik7XG5cbi8qKiovIH0pLFxuXG4vKioqLyBcIi4vY29kZS9FeGFtcGxlcy50c3hcIjpcbi8qISoqKioqKioqKioqKioqKioqKioqKioqKioqKiEqXFxcbiAgISoqKiAuL2NvZGUvRXhhbXBsZXMudHN4ICoqKiFcbiAgXFwqKioqKioqKioqKioqKioqKioqKioqKioqKiovXG4vKiEgbm8gc3RhdGljIGV4cG9ydHMgZm91bmQgKi9cbi8qKiovIChmdW5jdGlvbihtb2R1bGUsIGV4cG9ydHMsIF9fd2VicGFja19yZXF1aXJlX18pIHtcblxuXCJ1c2Ugc3RyaWN0XCI7XG5ldmFsKFwiXFxuT2JqZWN0LmRlZmluZVByb3BlcnR5KGV4cG9ydHMsIFxcXCJfX2VzTW9kdWxlXFxcIiwgeyB2YWx1ZTogdHJ1ZSB9KTtcXG5jb25zdCBmcmFtZXJfMSA9IF9fd2VicGFja19yZXF1aXJlX18oLyohIGZyYW1lciAqLyBcXFwiZnJhbWVyXFxcIik7XFxuY29uc3QgZGF0YSA9IGZyYW1lcl8xLkRhdGEoeyB0b2dnbGU6IHRydWUsIHNjYWxlOiBmcmFtZXJfMS5BbmltYXRhYmxlKDEpLCBvcGFjaXR5OiBmcmFtZXJfMS5BbmltYXRhYmxlKDEpLCByb3RhdGlvbjogZnJhbWVyXzEuQW5pbWF0YWJsZSgwKSwgcm90YXRpb25ZOiBmcmFtZXJfMS5BbmltYXRhYmxlKDApIH0pO1xcbmV4cG9ydHMuU2NhbGUgPSAoKSA9PiB7XFxuICAgIHdpbmRvd1tcXFwiX19jaGVja0J1ZGdldF9fXFxcIl0oKTtcXG4gICAgcmV0dXJuIHtcXG4gICAgICAgIHNjYWxlOiBkYXRhLnNjYWxlLFxcbiAgICAgICAgb25UYXAoKSB7XFxuICAgICAgICAgICAgd2luZG93W1xcXCJfX2NoZWNrQnVkZ2V0X19cXFwiXSgpO1xcbiAgICAgICAgICAgIGRhdGEuc2NhbGUuc2V0KDAuNik7XFxuICAgICAgICAgICAgZnJhbWVyXzEuYW5pbWF0ZS5zcHJpbmcoZGF0YS5zY2FsZSwgMSk7XFxuICAgICAgICB9LFxcbiAgICB9O1xcbn07XFxuZXhwb3J0cy5Sb3RhdGUgPSBwcm9wcyA9PiB7XFxuICAgIHdpbmRvd1tcXFwiX19jaGVja0J1ZGdldF9fXFxcIl0oKTtcXG4gICAgZGF0YS5yb3RhdGlvbi5zZXQocHJvcHMucm90YXRpb24pO1xcbiAgICByZXR1cm4ge1xcbiAgICAgICAgcm90YXRpb246IGRhdGEucm90YXRpb24sXFxuICAgICAgICBvblRhcCgpIHtcXG4gICAgICAgICAgICB3aW5kb3dbXFxcIl9fY2hlY2tCdWRnZXRfX1xcXCJdKCk7XFxuICAgICAgICAgICAgZnJhbWVyXzEuYW5pbWF0ZS5zcHJpbmcoZGF0YS5yb3RhdGlvbiwgZGF0YS5yb3RhdGlvbi5nZXQoKSArIDkwLCB7XFxuICAgICAgICAgICAgICAgIHRlbnNpb246IDI1MCxcXG4gICAgICAgICAgICAgICAgZnJpY3Rpb246IDIwLFxcbiAgICAgICAgICAgIH0pO1xcbiAgICAgICAgfSxcXG4gICAgfTtcXG59O1xcbmV4cG9ydHMuRmFkZSA9IHByb3BzID0+IHtcXG4gICAgd2luZG93W1xcXCJfX2NoZWNrQnVkZ2V0X19cXFwiXSgpO1xcbiAgICBkYXRhLm9wYWNpdHkuc2V0KHByb3BzLm9wYWNpdHkpO1xcbiAgICByZXR1cm4ge1xcbiAgICAgICAgb3BhY2l0eTogZGF0YS5vcGFjaXR5LFxcbiAgICAgICAgb25UYXAoKSB7XFxuICAgICAgICAgICAgd2luZG93W1xcXCJfX2NoZWNrQnVkZ2V0X19cXFwiXSgpO1xcbiAgICAgICAgICAgIGZyYW1lcl8xLmFuaW1hdGUubGluZWFyKGRhdGEub3BhY2l0eSwgMCwgMC4yKTtcXG4gICAgICAgIH0sXFxuICAgIH07XFxufTtcXG5leHBvcnRzLkZsaXBPdXRwdXQgPSAoKSA9PiB7XFxuICAgIHdpbmRvd1tcXFwiX19jaGVja0J1ZGdldF9fXFxcIl0oKTtcXG4gICAgcmV0dXJuIHtcXG4gICAgICAgIHJvdGF0aW9uWTogZGF0YS5yb3RhdGlvblksXFxuICAgIH07XFxufTtcXG5leHBvcnRzLkZsaXBJbnB1dCA9ICgpID0+IHtcXG4gICAgd2luZG93W1xcXCJfX2NoZWNrQnVkZ2V0X19cXFwiXSgpO1xcbiAgICByZXR1cm4ge1xcbiAgICAgICAgb25UYXAoKSB7XFxuICAgICAgICAgICAgd2luZG93W1xcXCJfX2NoZWNrQnVkZ2V0X19cXFwiXSgpO1xcbiAgICAgICAgICAgIGNvbnN0IHRvZ2dsZSA9IGRhdGEudG9nZ2xlO1xcbiAgICAgICAgICAgIGZyYW1lcl8xLmFuaW1hdGUuc3ByaW5nKHsgcm90YXRpb25ZOiBkYXRhLnJvdGF0aW9uWSB9LCB7XFxuICAgICAgICAgICAgICAgIHJvdGF0aW9uWTogdG9nZ2xlID8gMzYwIDogMCxcXG4gICAgICAgICAgICB9LCB7IHRlbnNpb246IDIwMCwgZnJpY3Rpb246IDIwIH0pO1xcbiAgICAgICAgICAgIGRhdGEudG9nZ2xlID0gIXRvZ2dsZTtcXG4gICAgICAgIH0sXFxuICAgIH07XFxufTtcXG5leHBvcnRzLl9faW5mb19fID0gW3sgbmFtZTogXFxcIlNjYWxlXFxcIiwgdHlwZTogXFxcIm92ZXJyaWRlXFxcIiB9LCB7IG5hbWU6IFxcXCJSb3RhdGVcXFwiLCB0eXBlOiBcXFwib3ZlcnJpZGVcXFwiIH0sIHsgbmFtZTogXFxcIkZhZGVcXFwiLCB0eXBlOiBcXFwib3ZlcnJpZGVcXFwiIH0sIHsgbmFtZTogXFxcIkZsaXBPdXRwdXRcXFwiLCB0eXBlOiBcXFwib3ZlcnJpZGVcXFwiIH0sIHsgbmFtZTogXFxcIkZsaXBJbnB1dFxcXCIsIHR5cGU6IFxcXCJvdmVycmlkZVxcXCIgfV07XFxuLy8jIHNvdXJjZVVSTD1bbW9kdWxlXVxcbi8vIyBzb3VyY2VNYXBwaW5nVVJMPWRhdGE6YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04O2Jhc2U2NCxleUoyWlhKemFXOXVJam96TENKemIzVnlZMlZ6SWpwYkluZGxZbkJoWTJzNkx5OHZMaTlqYjJSbEwwVjRZVzF3YkdWekxuUnplQ0pkTENKdVlXMWxjeUk2VzEwc0ltMWhjSEJwYm1keklqb2lRVUZCUVR0QlFVTkJMRGhEUVVFNFF5eGpRVUZqTzBGQlF6VkVPMEZCUTBFc05FSkJRVFJDTEc5S1FVRnZTanRCUVVOb1REdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEVzVTBGQlV6dEJRVU5VTzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFUdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJMR0ZCUVdFN1FVRkRZaXhUUVVGVE8wRkJRMVE3UVVGRFFUdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFTeFRRVUZUTzBGQlExUTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFUdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQkxIRkRRVUZ4UXl3MFFrRkJORUk3UVVGRGFrVTdRVUZEUVN4aFFVRmhMRWRCUVVjc05rSkJRVFpDTzBGQlF6ZERPMEZCUTBFc1UwRkJVenRCUVVOVU8wRkJRMEU3UVVGRFFTeHhRa0ZCY1VJc2EwTkJRV3RETEVkQlFVY3NiVU5CUVcxRExFZEJRVWNzYVVOQlFXbERMRWRCUVVjc2RVTkJRWFZETEVkQlFVY3NjME5CUVhORElpd2labWxzWlNJNklpNHZZMjlrWlM5RmVHRnRjR3hsY3k1MGMzZ3Vhbk1pTENKemIzVnlZMlZ6UTI5dWRHVnVkQ0k2V3lKY0luVnpaU0J6ZEhKcFkzUmNJanRjYms5aWFtVmpkQzVrWldacGJtVlFjbTl3WlhKMGVTaGxlSEJ2Y25SekxDQmNJbDlmWlhOTmIyUjFiR1ZjSWl3Z2V5QjJZV3gxWlRvZ2RISjFaU0I5S1R0Y2JtTnZibk4wSUdaeVlXMWxjbDh4SUQwZ2NtVnhkV2x5WlNoY0ltWnlZVzFsY2x3aUtUdGNibU52Ym5OMElHUmhkR0VnUFNCbWNtRnRaWEpmTVM1RVlYUmhLSHNnZEc5bloyeGxPaUIwY25WbExDQnpZMkZzWlRvZ1puSmhiV1Z5WHpFdVFXNXBiV0YwWVdKc1pTZ3hLU3dnYjNCaFkybDBlVG9nWm5KaGJXVnlYekV1UVc1cGJXRjBZV0pzWlNneEtTd2djbTkwWVhScGIyNDZJR1p5WVcxbGNsOHhMa0Z1YVcxaGRHRmliR1VvTUNrc0lISnZkR0YwYVc5dVdUb2dabkpoYldWeVh6RXVRVzVwYldGMFlXSnNaU2d3S1NCOUtUdGNibVY0Y0c5eWRITXVVMk5oYkdVZ1BTQW9LU0E5UGlCN1hHNGdJQ0FnZDJsdVpHOTNXMXdpWDE5amFHVmphMEoxWkdkbGRGOWZYQ0pkS0NrN1hHNGdJQ0FnY21WMGRYSnVJSHRjYmlBZ0lDQWdJQ0FnYzJOaGJHVTZJR1JoZEdFdWMyTmhiR1VzWEc0Z0lDQWdJQ0FnSUc5dVZHRndLQ2tnZTF4dUlDQWdJQ0FnSUNBZ0lDQWdkMmx1Wkc5M1cxd2lYMTlqYUdWamEwSjFaR2RsZEY5ZlhDSmRLQ2s3WEc0Z0lDQWdJQ0FnSUNBZ0lDQmtZWFJoTG5OallXeGxMbk5sZENnd0xqWXBPMXh1SUNBZ0lDQWdJQ0FnSUNBZ1puSmhiV1Z5WHpFdVlXNXBiV0YwWlM1emNISnBibWNvWkdGMFlTNXpZMkZzWlN3Z01TazdYRzRnSUNBZ0lDQWdJSDBzWEc0Z0lDQWdmVHRjYm4wN1hHNWxlSEJ2Y25SekxsSnZkR0YwWlNBOUlIQnliM0J6SUQwK0lIdGNiaUFnSUNCM2FXNWtiM2RiWENKZlgyTm9aV05yUW5Wa1oyVjBYMTljSWwwb0tUdGNiaUFnSUNCa1lYUmhMbkp2ZEdGMGFXOXVMbk5sZENod2NtOXdjeTV5YjNSaGRHbHZiaWs3WEc0Z0lDQWdjbVYwZFhKdUlIdGNiaUFnSUNBZ0lDQWdjbTkwWVhScGIyNDZJR1JoZEdFdWNtOTBZWFJwYjI0c1hHNGdJQ0FnSUNBZ0lHOXVWR0Z3S0NrZ2UxeHVJQ0FnSUNBZ0lDQWdJQ0FnZDJsdVpHOTNXMXdpWDE5amFHVmphMEoxWkdkbGRGOWZYQ0pkS0NrN1hHNGdJQ0FnSUNBZ0lDQWdJQ0JtY21GdFpYSmZNUzVoYm1sdFlYUmxMbk53Y21sdVp5aGtZWFJoTG5KdmRHRjBhVzl1TENCa1lYUmhMbkp2ZEdGMGFXOXVMbWRsZENncElDc2dPVEFzSUh0Y2JpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNCMFpXNXphVzl1T2lBeU5UQXNYRzRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdabkpwWTNScGIyNDZJREl3TEZ4dUlDQWdJQ0FnSUNBZ0lDQWdmU2s3WEc0Z0lDQWdJQ0FnSUgwc1hHNGdJQ0FnZlR0Y2JuMDdYRzVsZUhCdmNuUnpMa1poWkdVZ1BTQndjbTl3Y3lBOVBpQjdYRzRnSUNBZ2QybHVaRzkzVzF3aVgxOWphR1ZqYTBKMVpHZGxkRjlmWENKZEtDazdYRzRnSUNBZ1pHRjBZUzV2Y0dGamFYUjVMbk5sZENod2NtOXdjeTV2Y0dGamFYUjVLVHRjYmlBZ0lDQnlaWFIxY200Z2UxeHVJQ0FnSUNBZ0lDQnZjR0ZqYVhSNU9pQmtZWFJoTG05d1lXTnBkSGtzWEc0Z0lDQWdJQ0FnSUc5dVZHRndLQ2tnZTF4dUlDQWdJQ0FnSUNBZ0lDQWdkMmx1Wkc5M1cxd2lYMTlqYUdWamEwSjFaR2RsZEY5ZlhDSmRLQ2s3WEc0Z0lDQWdJQ0FnSUNBZ0lDQm1jbUZ0WlhKZk1TNWhibWx0WVhSbExteHBibVZoY2loa1lYUmhMbTl3WVdOcGRIa3NJREFzSURBdU1pazdYRzRnSUNBZ0lDQWdJSDBzWEc0Z0lDQWdmVHRjYm4wN1hHNWxlSEJ2Y25SekxrWnNhWEJQZFhSd2RYUWdQU0FvS1NBOVBpQjdYRzRnSUNBZ2QybHVaRzkzVzF3aVgxOWphR1ZqYTBKMVpHZGxkRjlmWENKZEtDazdYRzRnSUNBZ2NtVjBkWEp1SUh0Y2JpQWdJQ0FnSUNBZ2NtOTBZWFJwYjI1Wk9pQmtZWFJoTG5KdmRHRjBhVzl1V1N4Y2JpQWdJQ0I5TzF4dWZUdGNibVY0Y0c5eWRITXVSbXhwY0VsdWNIVjBJRDBnS0NrZ1BUNGdlMXh1SUNBZ0lIZHBibVJ2ZDF0Y0lsOWZZMmhsWTJ0Q2RXUm5aWFJmWDF3aVhTZ3BPMXh1SUNBZ0lISmxkSFZ5YmlCN1hHNGdJQ0FnSUNBZ0lHOXVWR0Z3S0NrZ2UxeHVJQ0FnSUNBZ0lDQWdJQ0FnZDJsdVpHOTNXMXdpWDE5amFHVmphMEoxWkdkbGRGOWZYQ0pkS0NrN1hHNGdJQ0FnSUNBZ0lDQWdJQ0JqYjI1emRDQjBiMmRuYkdVZ1BTQmtZWFJoTG5SdloyZHNaVHRjYmlBZ0lDQWdJQ0FnSUNBZ0lHWnlZVzFsY2w4eExtRnVhVzFoZEdVdWMzQnlhVzVuS0hzZ2NtOTBZWFJwYjI1Wk9pQmtZWFJoTG5KdmRHRjBhVzl1V1NCOUxDQjdYRzRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdjbTkwWVhScGIyNVpPaUIwYjJkbmJHVWdQeUF6TmpBZ09pQXdMRnh1SUNBZ0lDQWdJQ0FnSUNBZ2ZTd2dleUIwWlc1emFXOXVPaUF5TURBc0lHWnlhV04wYVc5dU9pQXlNQ0I5S1R0Y2JpQWdJQ0FnSUNBZ0lDQWdJR1JoZEdFdWRHOW5aMnhsSUQwZ0lYUnZaMmRzWlR0Y2JpQWdJQ0FnSUNBZ2ZTeGNiaUFnSUNCOU8xeHVmVHRjYm1WNGNHOXlkSE11WDE5cGJtWnZYMThnUFNCYmV5QnVZVzFsT2lCY0lsTmpZV3hsWENJc0lIUjVjR1U2SUZ3aWIzWmxjbkpwWkdWY0lpQjlMQ0I3SUc1aGJXVTZJRndpVW05MFlYUmxYQ0lzSUhSNWNHVTZJRndpYjNabGNuSnBaR1ZjSWlCOUxDQjdJRzVoYldVNklGd2lSbUZrWlZ3aUxDQjBlWEJsT2lCY0ltOTJaWEp5YVdSbFhDSWdmU3dnZXlCdVlXMWxPaUJjSWtac2FYQlBkWFJ3ZFhSY0lpd2dkSGx3WlRvZ1hDSnZkbVZ5Y21sa1pWd2lJSDBzSUhzZ2JtRnRaVG9nWENKR2JHbHdTVzV3ZFhSY0lpd2dkSGx3WlRvZ1hDSnZkbVZ5Y21sa1pWd2lJSDFkTzF4dUlsMHNJbk52ZFhKalpWSnZiM1FpT2lJaWZRPT1cXG4vLyMgc291cmNlVVJMPXdlYnBhY2staW50ZXJuYWw6Ly8vLi9jb2RlL0V4YW1wbGVzLnRzeFxcblwiKTtcblxuLyoqKi8gfSksXG5cbi8qKiovIFwiLi9jb2RlL1R3aXR0ZXJTdGlja3lDb250ZW50LnRzeFwiOlxuLyohKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqISpcXFxuICAhKioqIC4vY29kZS9Ud2l0dGVyU3RpY2t5Q29udGVudC50c3ggKioqIVxuICBcXCoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi9cbi8qISBubyBzdGF0aWMgZXhwb3J0cyBmb3VuZCAqL1xuLyoqKi8gKGZ1bmN0aW9uKG1vZHVsZSwgZXhwb3J0cywgX193ZWJwYWNrX3JlcXVpcmVfXykge1xuXG5cInVzZSBzdHJpY3RcIjtcbmV2YWwoXCJcXG5PYmplY3QuZGVmaW5lUHJvcGVydHkoZXhwb3J0cywgXFxcIl9fZXNNb2R1bGVcXFwiLCB7IHZhbHVlOiB0cnVlIH0pO1xcbmNvbnN0IFJlYWN0ID0gX193ZWJwYWNrX3JlcXVpcmVfXygvKiEgcmVhY3QgKi8gXFxcInJlYWN0XFxcIik7XFxuY29uc3QgZnJhbWVyXzEgPSBfX3dlYnBhY2tfcmVxdWlyZV9fKC8qISBmcmFtZXIgKi8gXFxcImZyYW1lclxcXCIpO1xcbmV4cG9ydHMuVHdpdHRlclN0aWNreUNvbnRleHQgPSBSZWFjdC5jcmVhdGVDb250ZXh0KHt9KTtcXG5leHBvcnRzLlR3aXR0ZXJTdGlja3lDb25zdW1lciA9IGV4cG9ydHMuVHdpdHRlclN0aWNreUNvbnRleHQuQ29uc3VtZXI7XFxuY2xhc3MgVHdpdHRlclN0aWNreVByb3ZpZGVyIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcXG4gICAgY29uc3RydWN0b3IoKSB7XFxuICAgICAgICBzdXBlciguLi5hcmd1bWVudHMpO1xcbiAgICAgICAgdGhpcy5zdGF0ZSA9IHtcXG4gICAgICAgICAgICB0b3A6IDAsXFxuICAgICAgICAgICAgbWluVG9wOiAwLFxcbiAgICAgICAgICAgIGR1cmF0aW9uOiAyMDAsXFxuICAgICAgICB9O1xcbiAgICB9XFxuICAgIHJlbmRlcigpIHtcXG4gICAgICAgIHdpbmRvd1tcXFwiX19jaGVja0J1ZGdldF9fXFxcIl0oKTtcXG4gICAgICAgIGNvbnN0IHsgdG9wLCBtaW5Ub3AsIGR1cmF0aW9uIH0gPSB0aGlzLnN0YXRlO1xcbiAgICAgICAgcmV0dXJuIChSZWFjdC5jcmVhdGVFbGVtZW50KGV4cG9ydHMuVHdpdHRlclN0aWNreUNvbnRleHQuUHJvdmlkZXIsIHsgdmFsdWU6IHtcXG4gICAgICAgICAgICAgICAgdG9wLFxcbiAgICAgICAgICAgICAgICBtaW5Ub3AsXFxuICAgICAgICAgICAgICAgIGR1cmF0aW9uLFxcbiAgICAgICAgICAgICAgICB1cGRhdGVUb3A6ICh0b3ApID0+IHRoaXMuc2V0U3RhdGUoeyB0b3AgfSksXFxuICAgICAgICAgICAgICAgIHVwZGF0ZVByb3BzOiAoeyBtaW5Ub3AsIGR1cmF0aW9uIH0pID0+IHRoaXMuc2V0U3RhdGUoeyBtaW5Ub3AsIGR1cmF0aW9uIH0pLFxcbiAgICAgICAgICAgIH0gfSwgdGhpcy5wcm9wcy5jaGlsZHJlbikpO1xcbiAgICB9XFxufVxcbjtcXG5jbGFzcyBUd2l0dGVyU3RpY2t5Q29udGVudCBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XFxuICAgIGNvbnN0cnVjdG9yKCkge1xcbiAgICAgICAgc3VwZXIoLi4uYXJndW1lbnRzKTtcXG4gICAgICAgIHRoaXMuc3RhdGUgPSB7XFxuICAgICAgICAgICAgY2hpbGRIZWlnaHQ6IDBcXG4gICAgICAgIH07XFxuICAgIH1cXG4gICAgcmVuZGVyKCkge1xcbiAgICAgICAgd2luZG93W1xcXCJfX2NoZWNrQnVkZ2V0X19cXFwiXSgpO1xcbiAgICAgICAgcmV0dXJuIChSZWFjdC5jcmVhdGVFbGVtZW50KFR3aXR0ZXJTdGlja3lQcm92aWRlciwgbnVsbCxcXG4gICAgICAgICAgICBSZWFjdC5jcmVhdGVFbGVtZW50KFNjcm9sbGFibGVDb250ZW50LCBPYmplY3QuYXNzaWduKHt9LCB0aGlzLnByb3BzLCB7IGNoaWxkcmVuOiB0aGlzLnByb3BzLmNoaWxkcmVuIH0pKSkpO1xcbiAgICB9XFxufVxcblR3aXR0ZXJTdGlja3lDb250ZW50LmRlZmF1bHRQcm9wcyA9IHtcXG4gICAgbWluVG9wOiAwLFxcbiAgICBkdXJhdGlvbjogMjAwLFxcbn07XFxuVHdpdHRlclN0aWNreUNvbnRlbnQucHJvcGVydHlDb250cm9scyA9IHtcXG4gICAgbWluVG9wOiB7XFxuICAgICAgICB0eXBlOiBmcmFtZXJfMS5Db250cm9sVHlwZS5OdW1iZXIsXFxuICAgICAgICB0aXRsZTogXFxcIk9mZnNldFxcXCIsXFxuICAgICAgICBtaW46IDBcXG4gICAgfSxcXG4gICAgZHVyYXRpb246IHtcXG4gICAgICAgIHR5cGU6IGZyYW1lcl8xLkNvbnRyb2xUeXBlLk51bWJlcixcXG4gICAgICAgIHRpdGxlOiAnRHVyYXRpb24obXMpJyxcXG4gICAgICAgIG1pbjogMFxcbiAgICB9XFxufTtcXG5leHBvcnRzLlR3aXR0ZXJTdGlja3lDb250ZW50ID0gVHdpdHRlclN0aWNreUNvbnRlbnQ7XFxuY2xhc3MgU2Nyb2xsYWJsZUNvbnRlbnQgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xcbiAgICBjb25zdHJ1Y3RvcigpIHtcXG4gICAgICAgIHN1cGVyKC4uLmFyZ3VtZW50cyk7XFxuICAgICAgICB0aGlzLl9zZXQgPSBmYWxzZTtcXG4gICAgfVxcbiAgICByZW5kZXIoKSB7XFxuICAgICAgICB3aW5kb3dbXFxcIl9fY2hlY2tCdWRnZXRfX1xcXCJdKCk7XFxuICAgICAgICBjb25zdCB7IHdpZHRoLCBoZWlnaHQgfSA9IHRoaXMucHJvcHM7XFxuICAgICAgICByZXR1cm4gKFJlYWN0LmNyZWF0ZUVsZW1lbnQoZXhwb3J0cy5Ud2l0dGVyU3RpY2t5Q29uc3VtZXIsIG51bGwsICh7IHVwZGF0ZVByb3BzLCB1cGRhdGVUb3AgfSkgPT4ge1xcbiAgICAgICAgICAgIHdpbmRvd1tcXFwiX19jaGVja0J1ZGdldF9fXFxcIl0oKTtcXG4gICAgICAgICAgICBpZiAoIXRoaXMuX3NldCkge1xcbiAgICAgICAgICAgICAgICB0aGlzLl9zZXQgPSB0cnVlO1xcbiAgICAgICAgICAgICAgICB1cGRhdGVQcm9wcyh0aGlzLnByb3BzKTtcXG4gICAgICAgICAgICB9XFxuICAgICAgICAgICAgcmV0dXJuIChSZWFjdC5jcmVhdGVFbGVtZW50KGZyYW1lcl8xLlNjcm9sbCwgeyB3aWR0aDogd2lkdGgsIGhlaWdodDogaGVpZ2h0LCBvdmVyZmxvdzogXFxcImhpZGRlblxcXCIsIGRpcmVjdGlvbjogXFxcInZlcnRpY2FsXFxcIiwgb25Nb3ZlOiAoeyB5IH0pID0+IHVwZGF0ZVRvcCh5KSB9LCB0aGlzLnByb3BzLmNoaWxkcmVuKSk7XFxuICAgICAgICB9KSk7XFxuICAgIH1cXG59XFxuZXhwb3J0cy5fX2luZm9fXyA9IFt7IG5hbWU6IFxcXCJUd2l0dGVyU3RpY2t5Q29udGVudFxcXCIsIGNoaWxkcmVuOiB0cnVlLCB0eXBlOiBcXFwiY29tcG9uZW50XFxcIiB9XTtcXG4vLyMgc291cmNlVVJMPVttb2R1bGVdXFxuLy8jIHNvdXJjZU1hcHBpbmdVUkw9ZGF0YTphcHBsaWNhdGlvbi9qc29uO2NoYXJzZXQ9dXRmLTg7YmFzZTY0LGV5SjJaWEp6YVc5dUlqb3pMQ0p6YjNWeVkyVnpJanBiSW5kbFluQmhZMnM2THk4dkxpOWpiMlJsTDFSM2FYUjBaWEpUZEdsamEzbERiMjUwWlc1MExuUnplQ0pkTENKdVlXMWxjeUk2VzEwc0ltMWhjSEJwYm1keklqb2lRVUZCUVR0QlFVTkJMRGhEUVVFNFF5eGpRVUZqTzBGQlF6VkVPMEZCUTBFN1FVRkRRU3h4UkVGQmNVUTdRVUZEY2tRN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFUdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEVzWlVGQlpTeDNRa0ZCZDBJN1FVRkRka01zTkVWQlFUUkZPMEZCUXpWRk8wRkJRMEU3UVVGRFFUdEJRVU5CTEcxRVFVRnRSQ3hOUVVGTk8wRkJRM3BFTEN0Q1FVRXJRaXh0UWtGQmJVSXNiMEpCUVc5Q0xHMUNRVUZ0UWp0QlFVTjZSaXhoUVVGaExFVkJRVVU3UVVGRFpqdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFUdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJMRzFGUVVGdFJTeGxRVUZsTEdkRFFVRm5RenRCUVVOc1NEdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFUdEJRVU5CTzBGQlEwRXNTMEZCU3p0QlFVTk1PMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFUdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFTeGxRVUZsTEdkQ1FVRm5RanRCUVVNdlFpd3lSVUZCTWtVc2VVSkJRWGxDTzBGQlEzQkhPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFTd3dSRUZCTUVRc2IwWkJRVzlHTEVsQlFVa3NiVUpCUVcxQ08wRkJRM0pMTEZOQlFWTTdRVUZEVkR0QlFVTkJPMEZCUTBFc2NVSkJRWEZDTEd0RlFVRnJSU0lzSW1acGJHVWlPaUl1TDJOdlpHVXZWSGRwZEhSbGNsTjBhV05yZVVOdmJuUmxiblF1ZEhONExtcHpJaXdpYzI5MWNtTmxjME52Ym5SbGJuUWlPbHNpWENKMWMyVWdjM1J5YVdOMFhDSTdYRzVQWW1wbFkzUXVaR1ZtYVc1bFVISnZjR1Z5ZEhrb1pYaHdiM0owY3l3Z1hDSmZYMlZ6VFc5a2RXeGxYQ0lzSUhzZ2RtRnNkV1U2SUhSeWRXVWdmU2s3WEc1amIyNXpkQ0JTWldGamRDQTlJSEpsY1hWcGNtVW9YQ0p5WldGamRGd2lLVHRjYm1OdmJuTjBJR1p5WVcxbGNsOHhJRDBnY21WeGRXbHlaU2hjSW1aeVlXMWxjbHdpS1R0Y2JtVjRjRzl5ZEhNdVZIZHBkSFJsY2xOMGFXTnJlVU52Ym5SbGVIUWdQU0JTWldGamRDNWpjbVZoZEdWRGIyNTBaWGgwS0h0OUtUdGNibVY0Y0c5eWRITXVWSGRwZEhSbGNsTjBhV05yZVVOdmJuTjFiV1Z5SUQwZ1pYaHdiM0owY3k1VWQybDBkR1Z5VTNScFkydDVRMjl1ZEdWNGRDNURiMjV6ZFcxbGNqdGNibU5zWVhOeklGUjNhWFIwWlhKVGRHbGphM2xRY205MmFXUmxjaUJsZUhSbGJtUnpJRkpsWVdOMExrTnZiWEJ2Ym1WdWRDQjdYRzRnSUNBZ1kyOXVjM1J5ZFdOMGIzSW9LU0I3WEc0Z0lDQWdJQ0FnSUhOMWNHVnlLQzR1TG1GeVozVnRaVzUwY3lrN1hHNGdJQ0FnSUNBZ0lIUm9hWE11YzNSaGRHVWdQU0I3WEc0Z0lDQWdJQ0FnSUNBZ0lDQjBiM0E2SURBc1hHNGdJQ0FnSUNBZ0lDQWdJQ0J0YVc1VWIzQTZJREFzWEc0Z0lDQWdJQ0FnSUNBZ0lDQmtkWEpoZEdsdmJqb2dNakF3TEZ4dUlDQWdJQ0FnSUNCOU8xeHVJQ0FnSUgxY2JpQWdJQ0J5Wlc1a1pYSW9LU0I3WEc0Z0lDQWdJQ0FnSUhkcGJtUnZkMXRjSWw5ZlkyaGxZMnRDZFdSblpYUmZYMXdpWFNncE8xeHVJQ0FnSUNBZ0lDQmpiMjV6ZENCN0lIUnZjQ3dnYldsdVZHOXdMQ0JrZFhKaGRHbHZiaUI5SUQwZ2RHaHBjeTV6ZEdGMFpUdGNiaUFnSUNBZ0lDQWdjbVYwZFhKdUlDaFNaV0ZqZEM1amNtVmhkR1ZGYkdWdFpXNTBLR1Y0Y0c5eWRITXVWSGRwZEhSbGNsTjBhV05yZVVOdmJuUmxlSFF1VUhKdmRtbGtaWElzSUhzZ2RtRnNkV1U2SUh0Y2JpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNCMGIzQXNYRzRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdiV2x1Vkc5d0xGeHVJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lHUjFjbUYwYVc5dUxGeHVJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lIVndaR0YwWlZSdmNEb2dLSFJ2Y0NrZ1BUNGdkR2hwY3k1elpYUlRkR0YwWlNoN0lIUnZjQ0I5S1N4Y2JpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNCMWNHUmhkR1ZRY205d2N6b2dLSHNnYldsdVZHOXdMQ0JrZFhKaGRHbHZiaUI5S1NBOVBpQjBhR2x6TG5ObGRGTjBZWFJsS0hzZ2JXbHVWRzl3TENCa2RYSmhkR2x2YmlCOUtTeGNiaUFnSUNBZ0lDQWdJQ0FnSUgwZ2ZTd2dkR2hwY3k1d2NtOXdjeTVqYUdsc1pISmxiaWtwTzF4dUlDQWdJSDFjYm4xY2JqdGNibU5zWVhOeklGUjNhWFIwWlhKVGRHbGphM2xEYjI1MFpXNTBJR1Y0ZEdWdVpITWdVbVZoWTNRdVEyOXRjRzl1Wlc1MElIdGNiaUFnSUNCamIyNXpkSEoxWTNSdmNpZ3BJSHRjYmlBZ0lDQWdJQ0FnYzNWd1pYSW9MaTR1WVhKbmRXMWxiblJ6S1R0Y2JpQWdJQ0FnSUNBZ2RHaHBjeTV6ZEdGMFpTQTlJSHRjYmlBZ0lDQWdJQ0FnSUNBZ0lHTm9hV3hrU0dWcFoyaDBPaUF3WEc0Z0lDQWdJQ0FnSUgwN1hHNGdJQ0FnZlZ4dUlDQWdJSEpsYm1SbGNpZ3BJSHRjYmlBZ0lDQWdJQ0FnZDJsdVpHOTNXMXdpWDE5amFHVmphMEoxWkdkbGRGOWZYQ0pkS0NrN1hHNGdJQ0FnSUNBZ0lISmxkSFZ5YmlBb1VtVmhZM1F1WTNKbFlYUmxSV3hsYldWdWRDaFVkMmwwZEdWeVUzUnBZMnQ1VUhKdmRtbGtaWElzSUc1MWJHd3NYRzRnSUNBZ0lDQWdJQ0FnSUNCU1pXRmpkQzVqY21WaGRHVkZiR1Z0Wlc1MEtGTmpjbTlzYkdGaWJHVkRiMjUwWlc1MExDQlBZbXBsWTNRdVlYTnphV2R1S0h0OUxDQjBhR2x6TG5CeWIzQnpMQ0I3SUdOb2FXeGtjbVZ1T2lCMGFHbHpMbkJ5YjNCekxtTm9hV3hrY21WdUlIMHBLU2twTzF4dUlDQWdJSDFjYm4xY2JsUjNhWFIwWlhKVGRHbGphM2xEYjI1MFpXNTBMbVJsWm1GMWJIUlFjbTl3Y3lBOUlIdGNiaUFnSUNCdGFXNVViM0E2SURBc1hHNGdJQ0FnWkhWeVlYUnBiMjQ2SURJd01DeGNibjA3WEc1VWQybDBkR1Z5VTNScFkydDVRMjl1ZEdWdWRDNXdjbTl3WlhKMGVVTnZiblJ5YjJ4eklEMGdlMXh1SUNBZ0lHMXBibFJ2Y0RvZ2UxeHVJQ0FnSUNBZ0lDQjBlWEJsT2lCbWNtRnRaWEpmTVM1RGIyNTBjbTlzVkhsd1pTNU9kVzFpWlhJc1hHNGdJQ0FnSUNBZ0lIUnBkR3hsT2lCY0lrOW1abk5sZEZ3aUxGeHVJQ0FnSUNBZ0lDQnRhVzQ2SURCY2JpQWdJQ0I5TEZ4dUlDQWdJR1IxY21GMGFXOXVPaUI3WEc0Z0lDQWdJQ0FnSUhSNWNHVTZJR1p5WVcxbGNsOHhMa052Ym5SeWIyeFVlWEJsTGs1MWJXSmxjaXhjYmlBZ0lDQWdJQ0FnZEdsMGJHVTZJQ2RFZFhKaGRHbHZiaWh0Y3lrbkxGeHVJQ0FnSUNBZ0lDQnRhVzQ2SURCY2JpQWdJQ0I5WEc1OU8xeHVaWGh3YjNKMGN5NVVkMmwwZEdWeVUzUnBZMnQ1UTI5dWRHVnVkQ0E5SUZSM2FYUjBaWEpUZEdsamEzbERiMjUwWlc1ME8xeHVZMnhoYzNNZ1UyTnliMnhzWVdKc1pVTnZiblJsYm5RZ1pYaDBaVzVrY3lCU1pXRmpkQzVEYjIxd2IyNWxiblFnZTF4dUlDQWdJR052Ym5OMGNuVmpkRzl5S0NrZ2UxeHVJQ0FnSUNBZ0lDQnpkWEJsY2lndUxpNWhjbWQxYldWdWRITXBPMXh1SUNBZ0lDQWdJQ0IwYUdsekxsOXpaWFFnUFNCbVlXeHpaVHRjYmlBZ0lDQjlYRzRnSUNBZ2NtVnVaR1Z5S0NrZ2UxeHVJQ0FnSUNBZ0lDQjNhVzVrYjNkYlhDSmZYMk5vWldOclFuVmtaMlYwWDE5Y0lsMG9LVHRjYmlBZ0lDQWdJQ0FnWTI5dWMzUWdleUIzYVdSMGFDd2dhR1ZwWjJoMElIMGdQU0IwYUdsekxuQnliM0J6TzF4dUlDQWdJQ0FnSUNCeVpYUjFjbTRnS0ZKbFlXTjBMbU55WldGMFpVVnNaVzFsYm5Rb1pYaHdiM0owY3k1VWQybDBkR1Z5VTNScFkydDVRMjl1YzNWdFpYSXNJRzUxYkd3c0lDaDdJSFZ3WkdGMFpWQnliM0J6TENCMWNHUmhkR1ZVYjNBZ2ZTa2dQVDRnZTF4dUlDQWdJQ0FnSUNBZ0lDQWdkMmx1Wkc5M1cxd2lYMTlqYUdWamEwSjFaR2RsZEY5ZlhDSmRLQ2s3WEc0Z0lDQWdJQ0FnSUNBZ0lDQnBaaUFvSVhSb2FYTXVYM05sZENrZ2UxeHVJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lIUm9hWE11WDNObGRDQTlJSFJ5ZFdVN1hHNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ2RYQmtZWFJsVUhKdmNITW9kR2hwY3k1d2NtOXdjeWs3WEc0Z0lDQWdJQ0FnSUNBZ0lDQjlYRzRnSUNBZ0lDQWdJQ0FnSUNCeVpYUjFjbTRnS0ZKbFlXTjBMbU55WldGMFpVVnNaVzFsYm5Rb1puSmhiV1Z5WHpFdVUyTnliMnhzTENCN0lIZHBaSFJvT2lCM2FXUjBhQ3dnYUdWcFoyaDBPaUJvWldsbmFIUXNJRzkyWlhKbWJHOTNPaUJjSW1ocFpHUmxibHdpTENCa2FYSmxZM1JwYjI0NklGd2lkbVZ5ZEdsallXeGNJaXdnYjI1TmIzWmxPaUFvZXlCNUlIMHBJRDArSUhWd1pHRjBaVlJ2Y0NoNUtTQjlMQ0IwYUdsekxuQnliM0J6TG1Ob2FXeGtjbVZ1S1NrN1hHNGdJQ0FnSUNBZ0lIMHBLVHRjYmlBZ0lDQjlYRzU5WEc1bGVIQnZjblJ6TGw5ZmFXNW1iMTlmSUQwZ1czc2dibUZ0WlRvZ1hDSlVkMmwwZEdWeVUzUnBZMnQ1UTI5dWRHVnVkRndpTENCamFHbHNaSEpsYmpvZ2RISjFaU3dnZEhsd1pUb2dYQ0pqYjIxd2IyNWxiblJjSWlCOVhUdGNiaUpkTENKemIzVnlZMlZTYjI5MElqb2lJbjA9XFxuLy8jIHNvdXJjZVVSTD13ZWJwYWNrLWludGVybmFsOi8vLy4vY29kZS9Ud2l0dGVyU3RpY2t5Q29udGVudC50c3hcXG5cIik7XG5cbi8qKiovIH0pLFxuXG4vKioqLyBcIi4vY29kZS9Ud2l0dGVyU3RpY2t5Q29udGV4dC50c3hcIjpcbi8qISoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiEqXFxcbiAgISoqKiAuL2NvZGUvVHdpdHRlclN0aWNreUNvbnRleHQudHN4ICoqKiFcbiAgXFwqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiovXG4vKiEgbm8gc3RhdGljIGV4cG9ydHMgZm91bmQgKi9cbi8qKiovIChmdW5jdGlvbihtb2R1bGUsIGV4cG9ydHMsIF9fd2VicGFja19yZXF1aXJlX18pIHtcblxuXCJ1c2Ugc3RyaWN0XCI7XG5ldmFsKFwiXFxuT2JqZWN0LmRlZmluZVByb3BlcnR5KGV4cG9ydHMsIFxcXCJfX2VzTW9kdWxlXFxcIiwgeyB2YWx1ZTogdHJ1ZSB9KTtcXG4vLyMgc291cmNlVVJMPVttb2R1bGVdXFxuLy8jIHNvdXJjZU1hcHBpbmdVUkw9ZGF0YTphcHBsaWNhdGlvbi9qc29uO2NoYXJzZXQ9dXRmLTg7YmFzZTY0LGV5SjJaWEp6YVc5dUlqb3pMQ0p6YjNWeVkyVnpJanBiSW5kbFluQmhZMnM2THk4dkxpOWpiMlJsTDFSM2FYUjBaWEpUZEdsamEzbERiMjUwWlhoMExuUnplQ0pkTENKdVlXMWxjeUk2VzEwc0ltMWhjSEJwYm1keklqb2lRVUZCUVR0QlFVTkJMRGhEUVVFNFF5eGpRVUZqSWl3aVptbHNaU0k2SWk0dlkyOWtaUzlVZDJsMGRHVnlVM1JwWTJ0NVEyOXVkR1Y0ZEM1MGMzZ3Vhbk1pTENKemIzVnlZMlZ6UTI5dWRHVnVkQ0k2V3lKY0luVnpaU0J6ZEhKcFkzUmNJanRjYms5aWFtVmpkQzVrWldacGJtVlFjbTl3WlhKMGVTaGxlSEJ2Y25SekxDQmNJbDlmWlhOTmIyUjFiR1ZjSWl3Z2V5QjJZV3gxWlRvZ2RISjFaU0I5S1R0Y2JpSmRMQ0p6YjNWeVkyVlNiMjkwSWpvaUluMD1cXG4vLyMgc291cmNlVVJMPXdlYnBhY2staW50ZXJuYWw6Ly8vLi9jb2RlL1R3aXR0ZXJTdGlja3lDb250ZXh0LnRzeFxcblwiKTtcblxuLyoqKi8gfSksXG5cbi8qKiovIFwiLi9jb2RlL1R3aXR0ZXJTdGlja3lIZWFkZXIudHN4XCI6XG4vKiEqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiEqXFxcbiAgISoqKiAuL2NvZGUvVHdpdHRlclN0aWNreUhlYWRlci50c3ggKioqIVxuICBcXCoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xuLyohIG5vIHN0YXRpYyBleHBvcnRzIGZvdW5kICovXG4vKioqLyAoZnVuY3Rpb24obW9kdWxlLCBleHBvcnRzLCBfX3dlYnBhY2tfcmVxdWlyZV9fKSB7XG5cblwidXNlIHN0cmljdFwiO1xuZXZhbChcIlxcbk9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCBcXFwiX19lc01vZHVsZVxcXCIsIHsgdmFsdWU6IHRydWUgfSk7XFxuY29uc3QgUmVhY3QgPSBfX3dlYnBhY2tfcmVxdWlyZV9fKC8qISByZWFjdCAqLyBcXFwicmVhY3RcXFwiKTtcXG5jb25zdCBUd2l0dGVyU3RpY2t5Q29udGVudF8xID0gX193ZWJwYWNrX3JlcXVpcmVfXygvKiEgLi9Ud2l0dGVyU3RpY2t5Q29udGVudCAqLyBcXFwiLi9jb2RlL1R3aXR0ZXJTdGlja3lDb250ZW50LnRzeFxcXCIpO1xcbmNsYXNzIFR3aXR0ZXJTdGlja3lIZWFkZXIgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xcbiAgICByZW5kZXIoKSB7XFxuICAgICAgICB3aW5kb3dbXFxcIl9fY2hlY2tCdWRnZXRfX1xcXCJdKCk7XFxuICAgICAgICByZXR1cm4gKFJlYWN0LmNyZWF0ZUVsZW1lbnQoVHdpdHRlclN0aWNreUNvbnRlbnRfMS5Ud2l0dGVyU3RpY2t5Q29uc3VtZXIsIG51bGwsICh2YWx1ZSkgPT4ge1xcbiAgICAgICAgICAgIHdpbmRvd1tcXFwiX19jaGVja0J1ZGdldF9fXFxcIl0oKTtcXG4gICAgICAgICAgICByZXR1cm4gUmVhY3QuY3JlYXRlRWxlbWVudChDb250ZW50LCBPYmplY3QuYXNzaWduKHt9LCB2YWx1ZSwgeyBjaGlsZHJlbjogdGhpcy5wcm9wcy5jaGlsZHJlbiB9KSk7XFxuICAgICAgICB9KSk7XFxuICAgIH1cXG59XFxuZXhwb3J0cy5Ud2l0dGVyU3RpY2t5SGVhZGVyID0gVHdpdHRlclN0aWNreUhlYWRlcjtcXG5jbGFzcyBDb250ZW50IGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcXG4gICAgY29uc3RydWN0b3IoKSB7XFxuICAgICAgICBzdXBlciguLi5hcmd1bWVudHMpO1xcbiAgICAgICAgdGhpcy5fbGF0ZXN0VG9wID0gMDtcXG4gICAgICAgIHRoaXMuX3VwZGF0ZWRBdCA9IERhdGUubm93KCk7XFxuICAgICAgICB0aGlzLnN0YXRlID0ge1xcbiAgICAgICAgICAgIHZpc2libGU6IHRydWUsXFxuICAgICAgICB9O1xcbiAgICB9XFxuICAgIGNvbXBvbmVudFdpbGxSZWNlaXZlUHJvcHMoeyB0b3AsIG1pblRvcCB9KSB7XFxuICAgICAgICB3aW5kb3dbXFxcIl9fY2hlY2tCdWRnZXRfX1xcXCJdKCk7XFxuICAgICAgICBjb25zdCB7IHZpc2libGUgfSA9IHRoaXMuc3RhdGU7XFxuICAgICAgICBjb25zdCBub3cgPSBEYXRlLm5vdygpO1xcbiAgICAgICAgY29uc3QgdXBkYXRhYmxlID0gbm93ID4gdGhpcy5fdXBkYXRlZEF0ICsgNDAwO1xcbiAgICAgICAgY29uc3Qgc2hvdWxkSGlkZSA9IHRoaXMuX2xhdGVzdFRvcCA+IHRvcCArIDEwICYmIC10b3AgPiBtaW5Ub3AgJiYgdmlzaWJsZSA9PT0gdHJ1ZTtcXG4gICAgICAgIGNvbnN0IHNob3VsZFZpc2libGUgPSB0b3AgLSAxID4gdGhpcy5fbGF0ZXN0VG9wICYmIHZpc2libGUgPT09IGZhbHNlO1xcbiAgICAgICAgaWYgKHVwZGF0YWJsZSAmJiAoc2hvdWxkSGlkZSB8fCBzaG91bGRWaXNpYmxlKSkge1xcbiAgICAgICAgICAgIHRoaXMuX3VwZGF0ZWRBdCA9IERhdGUubm93KCk7XFxuICAgICAgICAgICAgdGhpcy5zZXRTdGF0ZSh7IHZpc2libGU6ICF2aXNpYmxlIH0pO1xcbiAgICAgICAgfVxcbiAgICAgICAgdGhpcy5fbGF0ZXN0VG9wID0gdG9wO1xcbiAgICB9XFxuICAgIHJlbmRlcigpIHtcXG4gICAgICAgIHdpbmRvd1tcXFwiX19jaGVja0J1ZGdldF9fXFxcIl0oKTtcXG4gICAgICAgIGNvbnN0IHsgdG9wLCBkdXJhdGlvbiB9ID0gdGhpcy5wcm9wcztcXG4gICAgICAgIGNvbnN0IHsgdmlzaWJsZSB9ID0gdGhpcy5zdGF0ZTtcXG4gICAgICAgIHJldHVybiAoUmVhY3QuY3JlYXRlRWxlbWVudChcXFwiZGl2XFxcIiwgeyBzdHlsZToge1xcbiAgICAgICAgICAgICAgICBwb3NpdGlvbjogJ2ZpeGVkJyxcXG4gICAgICAgICAgICAgICAgdG9wOiBgJHstdG9wfXB4YCxcXG4gICAgICAgICAgICAgICAgbGVmdDogJzAnLFxcbiAgICAgICAgICAgICAgICByaWdodDogJzAnLFxcbiAgICAgICAgICAgICAgICBoZWlnaHQ6ICcxMDAlJyxcXG4gICAgICAgICAgICAgICAgdHJhbnNmb3JtOiBgdHJhbnNsYXRlM2QoMCwgJHt2aXNpYmxlID8gMCA6ICctMTAwJSd9LCAwKWAsXFxuICAgICAgICAgICAgICAgIHRyYW5zaXRpb246IHZpc2libGUgPyAnJyA6IGB0cmFuc2Zvcm0gJHtkdXJhdGlvbn1tcyBlYXNlLWluYFxcbiAgICAgICAgICAgIH0gfSwgdGhpcy5wcm9wcy5jaGlsZHJlbikpO1xcbiAgICB9XFxufVxcbmV4cG9ydHMuX19pbmZvX18gPSBbeyBuYW1lOiBcXFwiVHdpdHRlclN0aWNreUhlYWRlclxcXCIsIGNoaWxkcmVuOiB0cnVlLCB0eXBlOiBcXFwiY29tcG9uZW50XFxcIiB9XTtcXG4vLyMgc291cmNlVVJMPVttb2R1bGVdXFxuLy8jIHNvdXJjZU1hcHBpbmdVUkw9ZGF0YTphcHBsaWNhdGlvbi9qc29uO2NoYXJzZXQ9dXRmLTg7YmFzZTY0LGV5SjJaWEp6YVc5dUlqb3pMQ0p6YjNWeVkyVnpJanBiSW5kbFluQmhZMnM2THk4dkxpOWpiMlJsTDFSM2FYUjBaWEpUZEdsamEzbElaV0ZrWlhJdWRITjRJbDBzSW01aGJXVnpJanBiWFN3aWJXRndjR2x1WjNNaU9pSkJRVUZCTzBGQlEwRXNPRU5CUVRoRExHTkJRV003UVVGRE5VUTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFTeG5SVUZCWjBVc1ZVRkJWU3huUTBGQlowTTdRVUZETVVjc1UwRkJVenRCUVVOVU8wRkJRMEU3UVVGRFFUdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJPMEZCUTBFN1FVRkRRVHRCUVVOQk8wRkJRMEU3UVVGRFFUdEJRVU5CTEN0Q1FVRXJRaXhqUVVGak8wRkJRemRETzBGQlEwRXNaVUZCWlN4VlFVRlZPMEZCUTNwQ08wRkJRMEU3UVVGRFFUdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJMREpDUVVFeVFpeHZRa0ZCYjBJN1FVRkRMME03UVVGRFFUdEJRVU5CTzBGQlEwRTdRVUZEUVR0QlFVTkJMR1ZCUVdVc1owSkJRV2RDTzBGQlF5OUNMR1ZCUVdVc1ZVRkJWVHRCUVVONlFpdzBRMEZCTkVNN1FVRkROVU03UVVGRFFTeDNRa0ZCZDBJc1MwRkJTenRCUVVNM1FqdEJRVU5CTzBGQlEwRTdRVUZEUVN3MlEwRkJOa01zYzBKQlFYTkNPMEZCUTI1RkxIZEVRVUYzUkN4VFFVRlRPMEZCUTJwRkxHRkJRV0VzUlVGQlJUdEJRVU5tTzBGQlEwRTdRVUZEUVN4eFFrRkJjVUlzYVVWQlFXbEZJaXdpWm1sc1pTSTZJaTR2WTI5a1pTOVVkMmwwZEdWeVUzUnBZMnQ1U0dWaFpHVnlMblJ6ZUM1cWN5SXNJbk52ZFhKalpYTkRiMjUwWlc1MElqcGJJbHdpZFhObElITjBjbWxqZEZ3aU8xeHVUMkpxWldOMExtUmxabWx1WlZCeWIzQmxjblI1S0dWNGNHOXlkSE1zSUZ3aVgxOWxjMDF2WkhWc1pWd2lMQ0I3SUhaaGJIVmxPaUIwY25WbElIMHBPMXh1WTI5dWMzUWdVbVZoWTNRZ1BTQnlaWEYxYVhKbEtGd2ljbVZoWTNSY0lpazdYRzVqYjI1emRDQlVkMmwwZEdWeVUzUnBZMnQ1UTI5dWRHVnVkRjh4SUQwZ2NtVnhkV2x5WlNoY0lpNHZWSGRwZEhSbGNsTjBhV05yZVVOdmJuUmxiblJjSWlrN1hHNWpiR0Z6Y3lCVWQybDBkR1Z5VTNScFkydDVTR1ZoWkdWeUlHVjRkR1Z1WkhNZ1VtVmhZM1F1UTI5dGNHOXVaVzUwSUh0Y2JpQWdJQ0J5Wlc1a1pYSW9LU0I3WEc0Z0lDQWdJQ0FnSUhkcGJtUnZkMXRjSWw5ZlkyaGxZMnRDZFdSblpYUmZYMXdpWFNncE8xeHVJQ0FnSUNBZ0lDQnlaWFIxY200Z0tGSmxZV04wTG1OeVpXRjBaVVZzWlcxbGJuUW9WSGRwZEhSbGNsTjBhV05yZVVOdmJuUmxiblJmTVM1VWQybDBkR1Z5VTNScFkydDVRMjl1YzNWdFpYSXNJRzUxYkd3c0lDaDJZV3gxWlNrZ1BUNGdlMXh1SUNBZ0lDQWdJQ0FnSUNBZ2QybHVaRzkzVzF3aVgxOWphR1ZqYTBKMVpHZGxkRjlmWENKZEtDazdYRzRnSUNBZ0lDQWdJQ0FnSUNCeVpYUjFjbTRnVW1WaFkzUXVZM0psWVhSbFJXeGxiV1Z1ZENoRGIyNTBaVzUwTENCUFltcGxZM1F1WVhOemFXZHVLSHQ5TENCMllXeDFaU3dnZXlCamFHbHNaSEpsYmpvZ2RHaHBjeTV3Y205d2N5NWphR2xzWkhKbGJpQjlLU2s3WEc0Z0lDQWdJQ0FnSUgwcEtUdGNiaUFnSUNCOVhHNTlYRzVsZUhCdmNuUnpMbFIzYVhSMFpYSlRkR2xqYTNsSVpXRmtaWElnUFNCVWQybDBkR1Z5VTNScFkydDVTR1ZoWkdWeU8xeHVZMnhoYzNNZ1EyOXVkR1Z1ZENCbGVIUmxibVJ6SUZKbFlXTjBMa052YlhCdmJtVnVkQ0I3WEc0Z0lDQWdZMjl1YzNSeWRXTjBiM0lvS1NCN1hHNGdJQ0FnSUNBZ0lITjFjR1Z5S0M0dUxtRnlaM1Z0Wlc1MGN5azdYRzRnSUNBZ0lDQWdJSFJvYVhNdVgyeGhkR1Z6ZEZSdmNDQTlJREE3WEc0Z0lDQWdJQ0FnSUhSb2FYTXVYM1Z3WkdGMFpXUkJkQ0E5SUVSaGRHVXVibTkzS0NrN1hHNGdJQ0FnSUNBZ0lIUm9hWE11YzNSaGRHVWdQU0I3WEc0Z0lDQWdJQ0FnSUNBZ0lDQjJhWE5wWW14bE9pQjBjblZsTEZ4dUlDQWdJQ0FnSUNCOU8xeHVJQ0FnSUgxY2JpQWdJQ0JqYjIxd2IyNWxiblJYYVd4c1VtVmpaV2wyWlZCeWIzQnpLSHNnZEc5d0xDQnRhVzVVYjNBZ2ZTa2dlMXh1SUNBZ0lDQWdJQ0IzYVc1a2IzZGJYQ0pmWDJOb1pXTnJRblZrWjJWMFgxOWNJbDBvS1R0Y2JpQWdJQ0FnSUNBZ1kyOXVjM1FnZXlCMmFYTnBZbXhsSUgwZ1BTQjBhR2x6TG5OMFlYUmxPMXh1SUNBZ0lDQWdJQ0JqYjI1emRDQnViM2NnUFNCRVlYUmxMbTV2ZHlncE8xeHVJQ0FnSUNBZ0lDQmpiMjV6ZENCMWNHUmhkR0ZpYkdVZ1BTQnViM2NnUGlCMGFHbHpMbDkxY0dSaGRHVmtRWFFnS3lBME1EQTdYRzRnSUNBZ0lDQWdJR052Ym5OMElITm9iM1ZzWkVocFpHVWdQU0IwYUdsekxsOXNZWFJsYzNSVWIzQWdQaUIwYjNBZ0t5QXhNQ0FtSmlBdGRHOXdJRDRnYldsdVZHOXdJQ1ltSUhacGMybGliR1VnUFQwOUlIUnlkV1U3WEc0Z0lDQWdJQ0FnSUdOdmJuTjBJSE5vYjNWc1pGWnBjMmxpYkdVZ1BTQjBiM0FnTFNBeElENGdkR2hwY3k1ZmJHRjBaWE4wVkc5d0lDWW1JSFpwYzJsaWJHVWdQVDA5SUdaaGJITmxPMXh1SUNBZ0lDQWdJQ0JwWmlBb2RYQmtZWFJoWW14bElDWW1JQ2h6YUc5MWJHUklhV1JsSUh4OElITm9iM1ZzWkZacGMybGliR1VwS1NCN1hHNGdJQ0FnSUNBZ0lDQWdJQ0IwYUdsekxsOTFjR1JoZEdWa1FYUWdQU0JFWVhSbExtNXZkeWdwTzF4dUlDQWdJQ0FnSUNBZ0lDQWdkR2hwY3k1elpYUlRkR0YwWlNoN0lIWnBjMmxpYkdVNklDRjJhWE5wWW14bElIMHBPMXh1SUNBZ0lDQWdJQ0I5WEc0Z0lDQWdJQ0FnSUhSb2FYTXVYMnhoZEdWemRGUnZjQ0E5SUhSdmNEdGNiaUFnSUNCOVhHNGdJQ0FnY21WdVpHVnlLQ2tnZTF4dUlDQWdJQ0FnSUNCM2FXNWtiM2RiWENKZlgyTm9aV05yUW5Wa1oyVjBYMTljSWwwb0tUdGNiaUFnSUNBZ0lDQWdZMjl1YzNRZ2V5QjBiM0FzSUdSMWNtRjBhVzl1SUgwZ1BTQjBhR2x6TG5CeWIzQnpPMXh1SUNBZ0lDQWdJQ0JqYjI1emRDQjdJSFpwYzJsaWJHVWdmU0E5SUhSb2FYTXVjM1JoZEdVN1hHNGdJQ0FnSUNBZ0lISmxkSFZ5YmlBb1VtVmhZM1F1WTNKbFlYUmxSV3hsYldWdWRDaGNJbVJwZGx3aUxDQjdJSE4wZVd4bE9pQjdYRzRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdjRzl6YVhScGIyNDZJQ2RtYVhobFpDY3NYRzRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdkRzl3T2lCZ0pIc3RkRzl3ZlhCNFlDeGNiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQnNaV1owT2lBbk1DY3NYRzRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdjbWxuYUhRNklDY3dKeXhjYmlBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0JvWldsbmFIUTZJQ2N4TURBbEp5eGNiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQjBjbUZ1YzJadmNtMDZJR0IwY21GdWMyeGhkR1V6WkNnd0xDQWtlM1pwYzJsaWJHVWdQeUF3SURvZ0p5MHhNREFsSjMwc0lEQXBZQ3hjYmlBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0IwY21GdWMybDBhVzl1T2lCMmFYTnBZbXhsSUQ4Z0p5Y2dPaUJnZEhKaGJuTm1iM0p0SUNSN1pIVnlZWFJwYjI1OWJYTWdaV0Z6WlMxcGJtQmNiaUFnSUNBZ0lDQWdJQ0FnSUgwZ2ZTd2dkR2hwY3k1d2NtOXdjeTVqYUdsc1pISmxiaWtwTzF4dUlDQWdJSDFjYm4xY2JtVjRjRzl5ZEhNdVgxOXBibVp2WDE4Z1BTQmJleUJ1WVcxbE9pQmNJbFIzYVhSMFpYSlRkR2xqYTNsSVpXRmtaWEpjSWl3Z1kyaHBiR1J5Wlc0NklIUnlkV1VzSUhSNWNHVTZJRndpWTI5dGNHOXVaVzUwWENJZ2ZWMDdYRzRpWFN3aWMyOTFjbU5sVW05dmRDSTZJaUo5XFxuLy8jIHNvdXJjZVVSTD13ZWJwYWNrLWludGVybmFsOi8vLy4vY29kZS9Ud2l0dGVyU3RpY2t5SGVhZGVyLnRzeFxcblwiKTtcblxuLyoqKi8gfSksXG5cbi8qKiovIFwiLi9jb2RlL2NhbnZhcy50c3hcIjpcbi8qISoqKioqKioqKioqKioqKioqKioqKioqKiohKlxcXG4gICEqKiogLi9jb2RlL2NhbnZhcy50c3ggKioqIVxuICBcXCoqKioqKioqKioqKioqKioqKioqKioqKiovXG4vKiEgbm8gc3RhdGljIGV4cG9ydHMgZm91bmQgKi9cbi8qKiovIChmdW5jdGlvbihtb2R1bGUsIGV4cG9ydHMsIF9fd2VicGFja19yZXF1aXJlX18pIHtcblxuXCJ1c2Ugc3RyaWN0XCI7XG5cbk9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCBcIl9fZXNNb2R1bGVcIiwgeyB2YWx1ZTogdHJ1ZSB9KTtcbi8vIFdBUk5JTkc6IHRoaXMgZmlsZSBpcyBhdXRvIGdlbmVyYXRlZCwgYW55IGNoYW5nZXMgd2lsbCBiZSBsb3N0XG5jb25zdCBmcmFtZXJfMSA9IF9fd2VicGFja19yZXF1aXJlX18oLyohIGZyYW1lciAqLyBcImZyYW1lclwiKTtcbmNvbnN0IGNhbnZhcyA9IGZyYW1lcl8xLkNhbnZhc1N0b3JlLnNoYXJlZCh7XCJjaGlsZHJlblwiOltdfSk7XG5cblxuLyoqKi8gfSksXG5cbi8qKiovIFwiLi9wYWNrYWdlLmpzXCI6XG4vKiEqKioqKioqKioqKioqKioqKioqKiEqXFxcbiAgISoqKiAuL3BhY2thZ2UuanMgKioqIVxuICBcXCoqKioqKioqKioqKioqKioqKioqL1xuLyohIG5vIHN0YXRpYyBleHBvcnRzIGZvdW5kICovXG4vKioqLyAoZnVuY3Rpb24obW9kdWxlLCBleHBvcnRzLCBfX3dlYnBhY2tfcmVxdWlyZV9fKSB7XG5cbi8vIFRoZSB0ZW1wbGF0ZSBmb3IgdGhlIGR5bmFtaWMgd2VicGFjayBlbnRyeS4gQmUgYXdhcmUgb2YgdGhlIHZhcmlhYmxlc1xuXG5jb25zdCBwYWNrYWdlSnNvbiA9IF9fd2VicGFja19yZXF1aXJlX18oLyohIC4vcGFja2FnZS5qc29uICovIFwiLi9wYWNrYWdlLmpzb25cIilcblxuY29uc3QgcGFja2FnZSA9IHtcbiAgICBwYWNrYWdlSnNvbixcbiAgICBzb3VyY2VNb2R1bGVzOiB7fSxcbiAgICBkZXBlbmRlbmNpZXM6IHt9LFxufVxuXG4vLyBUaGlzIGlzIGEgc3BlY2lhbCB3ZWJwYWNrIHRoaW5nIHRoYXQgd2F0Y2hlcyB0aGUgd2hvbGUgZGlyZWN0b3J5XG4vLyBodHRwczovL2dpdGh1Yi5jb20vd2VicGFjay9kb2NzL3dpa2kvY29udGV4dFxuY29uc3QgY3R4ID0gX193ZWJwYWNrX3JlcXVpcmVfXyhcIi4vY29kZSBzeW5jIHJlY3Vyc2l2ZSBcXFxcLih0fGopcyh4Pyl8XFxcXC5jc3MkXCIpXG5cbmN0eC5rZXlzKCkuZm9yRWFjaChrZXkgPT4ge1xuICAgIHBhY2thZ2Uuc291cmNlTW9kdWxlc1trZXldID0gKCkgPT4gY3R4KGtleSlcbn0pXG5cbi8vIFRoZSBwYWNrYWdlcyBhcmUgcGFzc2VkIGluIHRocm91Z2ggYSB0ZW1wbGF0ZVxuY29uc3QgcGFja2FnZXMgPSB7fVxuXG4gICAgICAgICAgICAgICAgcGFja2FnZXNbXCJmcmFtZXJcIl0gPSAoKSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIHZhciBwYWNrYWdlID0ge31cbiAgICAgICAgICAgICAgICAgICAgdHJ5IHtcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhY2thZ2UgPSBfX3dlYnBhY2tfcmVxdWlyZV9fKC8qISBmcmFtZXIgKi8gXCJmcmFtZXJcIilcbiAgICAgICAgICAgICAgICAgICAgfSBjYXRjaCAoZSkge1xuICAgICAgICAgICAgICAgICAgICAgICAgY29uc29sZS5sb2coZSlcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICBwYWNrYWdlLl9fZnJhbWVyX18gPSBwYWNrYWdlLl9fZnJhbWVyX18gfHwge31cbiAgICAgICAgICAgICAgICAgICAgcGFja2FnZS5fX2ZyYW1lcl9fLnBhY2thZ2VKc29uID0ge1wibmFtZVwiOlwiZnJhbWVyXCIsXCJ2ZXJzaW9uXCI6XCIwLjEwLjEwXCIsXCJtYWluXCI6XCJidWlsZC9mcmFtZXIuanNcIixcImF1dGhvclwiOlwiRnJhbWVyXCIsXCJsaWNlbnNlXCI6XCJNSVRcIixcInNjcmlwdHNcIjp7XCJjb3ZlcmFnZVwiOlwiamVzdCAtLWNvbmZpZyBqZXN0Lmpzb24gLS1jb3ZlcmFnZVwiLFwidGVzdFwiOlwiamVzdCAtLWNvbmZpZyBqZXN0Lmpzb25cIixcIndhdGNoXCI6XCJqZXN0IC0tY29uZmlnIGplc3QuanNvbiAtLXdhdGNoXCJ9LFwiZGV2RGVwZW5kZW5jaWVzXCI6e1wiQG1pY3Jvc29mdC9hcGktZG9jdW1lbnRlclwiOlwiXjEuNS40N1wiLFwiQG1pY3Jvc29mdC9hcGktZXh0cmFjdG9yXCI6XCJeN1wiLFwiQHR5cGVzL2NoYWxrXCI6XCJeMi4yLjBcIixcIkB0eXBlcy9kcmFmdC1qc1wiOlwiMC4xMC4xOVwiLFwiQHR5cGVzL2VuenltZVwiOlwiXjMuMS4xMFwiLFwiQHR5cGVzL2VuenltZS1hZGFwdGVyLXJlYWN0LTE2XCI6XCJeMS4wLjNcIixcIkB0eXBlcy9oc2x1dlwiOlwiaHR0cHM6Ly9naXRodWIuY29tL2ZyYW1lci90eXBlZF9oc2x1diNidW1wXCIsXCJAdHlwZXMvamVzdFwiOlwiXjIzLjAuMFwiLFwiQHR5cGVzL2plc3QtZGlmZlwiOlwiXjIwLjAuMFwiLFwiQHR5cGVzL2plc3QtbWF0Y2hlci11dGlsc1wiOlwiXjIxLjAuMVwiLFwiQHR5cGVzL25vZGVcIjpcIl45LjYuMFwiLFwiQHR5cGVzL3JlYWN0XCI6XCJeMTZcIixcIkB0eXBlcy9yZWFjdC1kb21cIjpcIl4xNlwiLFwiY2FjaGUtbG9hZGVyXCI6XCJeMS4yLjJcIixcImNoYWxrXCI6XCJeMi40LjFcIixcImNvbnZlcnQtdHNjb25maWctcGF0aHMtdG8td2VicGFjay1hbGlhc2VzXCI6XCJeMC45LjJcIixcImNzcy5lc2NhcGVcIjpcIl4xLjUuMVwiLFwiZHJhZnQtanNcIjpcIjAuMTAuNFwiLFwiZW56eW1lXCI6XCJeMy4zLjBcIixcImVuenltZS1hZGFwdGVyLXJlYWN0LTE2XCI6XCJeMS4xLjFcIixcImV2ZW50ZW1pdHRlcjNcIjpcIl4zLjEuMFwiLFwiZm9yay10cy1jaGVja2VyLXdlYnBhY2stcGx1Z2luXCI6XCJeMC40LjFcIixcImhvaXN0LW5vbi1yZWFjdC1zdGF0aWNzXCI6XCJeMi41LjBcIixcImhzbHV2XCI6XCJeMC4wLjNcIixcImltbXV0YWJsZVwiOlwiXjMuOC4yXCIsXCJqZXN0XCI6XCJeMjMuMS4wXCIsXCJqZXN0LWRpZmZcIjpcIl4yMy42LjBcIixcImplc3QtanVuaXRcIjpcIl41LjIuMFwiLFwicHJvZ3Jlc3MtYmFyLXdlYnBhY2stcGx1Z2luXCI6XCJeMS4xMS4wXCIsXCJyYWZcIjpcIl4zLjQuMFwiLFwicmVhY3RcIjpcIn4xNi40XCIsXCJyZWFjdC1kZXYtdXRpbHNcIjpcIl41LjAuMVwiLFwicmVhY3QtZG9tXCI6XCJ+MTYuNFwiLFwic2VtdmVyXCI6XCJeNS42LjBcIixcInRzLWplc3RcIjpcIl4yMy4xMC41XCIsXCJ0cy1sb2FkZXJcIjpcIl40LjEuMFwiLFwidHlwZXNjcmlwdFwiOlwiXjMuMC4xXCIsXCJ3YXRjaFwiOlwiXjEuMC4yXCIsXCJ3ZWJwYWNrXCI6XCJeNC40LjFcIixcIndlYnBhY2stY2xpXCI6XCJeMy4xLjJcIixcIndlYnBhY2stZGV2LXNlcnZlclwiOlwiXjMuMS4xMFwiLFwieGNzc21hdHJpeFwiOlwiXjAuMi4yXCJ9LFwicGVlckRlcGVuZGVuY2llc1wiOntcInJlYWN0XCI6XCJeMTYuM1wiLFwicmVhY3QtZG9tXCI6XCJeMTYuM1wifSxcInRzZG9jXCI6e1widHNkb2NGbGF2b3JcIjpcIkFFRG9jXCJ9LFwiZnJhbWVyXCI6e1wiY29tcG9uZW50c1wiOlt7XCJuYW1lXCI6XCJTY3JvbGxcIixcImNoaWxkcmVuXCI6dHJ1ZSxcInByb3BlcnRpZXNcIjpbe1wia2V5XCI6XCJkaXJlY3Rpb25cIixcInRpdGxlXCI6XCJEaXJlY3Rpb25cIixcImtpbmRcIjpcImVudW1cIixcIm9wdGlvbnNcIjpbXCJob3Jpem9udGFsXCIsXCJ2ZXJ0aWNhbFwiLFwiYm90aFwiXX1dfSx7XCJuYW1lXCI6XCJQYWdlXCJ9LHtcIm5hbWVcIjpcIlN0YWNrXCJ9LHtcIm5hbWVcIjpcIkZyYW1lckFwcGxlV2F0Y2gzOFwiLFwidHlwZVwiOlwiZGV2aWNlXCJ9LHtcIm5hbWVcIjpcIkZyYW1lckFwcGxlV2F0Y2g0MlwiLFwidHlwZVwiOlwiZGV2aWNlXCJ9LHtcIm5hbWVcIjpcIkZyYW1lclNvbnlTbWFydFdhdGNoXCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyQXBwbGVJUGhvbmVTRVwiLFwidHlwZVwiOlwiZGV2aWNlXCJ9LHtcIm5hbWVcIjpcIkZyYW1lckFwcGxlSVBob25lOFwiLFwidHlwZVwiOlwiZGV2aWNlXCJ9LHtcIm5hbWVcIjpcIkZyYW1lckFwcGxlSVBob25lOFBsdXNcIixcInR5cGVcIjpcImRldmljZVwifSx7XCJuYW1lXCI6XCJGcmFtZXJBcHBsZUlQaG9uZVhTXCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyQXBwbGVJUGhvbmVYUlwiLFwidHlwZVwiOlwiZGV2aWNlXCJ9LHtcIm5hbWVcIjpcIkZyYW1lckFwcGxlSVBob25lWFNNYXhcIixcInR5cGVcIjpcImRldmljZVwifSx7XCJuYW1lXCI6XCJGcmFtZXJHb29nbGVQaXhlbDJcIixcInR5cGVcIjpcImRldmljZVwifSx7XCJuYW1lXCI6XCJGcmFtZXJHb29nbGVQaXhlbDJYTFwiLFwidHlwZVwiOlwiZGV2aWNlXCJ9LHtcIm5hbWVcIjpcIkZyYW1lckdvb2dsZVBpeGVsM1wiLFwidHlwZVwiOlwiZGV2aWNlXCJ9LHtcIm5hbWVcIjpcIkZyYW1lckdvb2dsZVBpeGVsM1hMXCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyU2Ftc3VuZ05vdGU1XCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyU2Ftc3VuZ0dhbGF4eVM5XCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyQXBwbGVJUGFkQWlyXCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyQXBwbGVJUGFkTWluaVwiLFwidHlwZVwiOlwiZGV2aWNlXCJ9LHtcIm5hbWVcIjpcIkZyYW1lckFwcGxlSVBhZFByb1wiLFwidHlwZVwiOlwiZGV2aWNlXCJ9LHtcIm5hbWVcIjpcIkZyYW1lckdvb2dsZU5leHVzVGFibGV0XCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyTWljcm9zb2Z0U3VyZmFjZVBybzNcIixcInR5cGVcIjpcImRldmljZVwifSx7XCJuYW1lXCI6XCJGcmFtZXJNaWNyb3NvZnRTdXJmYWNlUHJvNFwiLFwidHlwZVwiOlwiZGV2aWNlXCJ9LHtcIm5hbWVcIjpcIkZyYW1lckFwcGxlSU1hY1wiLFwidHlwZVwiOlwiZGV2aWNlXCJ9LHtcIm5hbWVcIjpcIkZyYW1lckFwcGxlVGh1bmRlcmJvbHREaXNwbGF5XCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyQXBwbGVNYWNCb29rXCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyQXBwbGVNYWNCb29rQWlyXCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyQXBwbGVNYWNCb29rUHJvXCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyRGVsbFhQU1wiLFwidHlwZVwiOlwiZGV2aWNlXCJ9LHtcIm5hbWVcIjpcIkZyYW1lck1pY3Jvc29mdFN1cmZhY2VCb29rXCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyU29ueVc4NTBDXCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyU3RvcmVBcnR3b3JrXCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn0se1wibmFtZVwiOlwiRnJhbWVyU3RvcmVJY29uXCIsXCJ0eXBlXCI6XCJkZXZpY2VcIn1dfX1cbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIHBhY2thZ2VcbiAgICAgICAgICAgICAgICB9XG5cbnBhY2thZ2UuZGVwZW5kZW5jaWVzID0gcGFja2FnZXNcblxuZXhwb3J0cy5fX2ZyYW1lcl9fID0gcGFja2FnZVxuXG5cbi8qKiovIH0pLFxuXG4vKioqLyBcIi4vcGFja2FnZS5qc29uXCI6XG4vKiEqKioqKioqKioqKioqKioqKioqKioqISpcXFxuICAhKioqIC4vcGFja2FnZS5qc29uICoqKiFcbiAgXFwqKioqKioqKioqKioqKioqKioqKioqL1xuLyohIGV4cG9ydHMgcHJvdmlkZWQ6IG1haW4sIGxpY2Vuc2UsIGRldkRlcGVuZGVuY2llcywgcGVlckRlcGVuZGVuY2llcywgZnJhbWVyLCBhdXRob3IsIGRlcGVuZGVuY2llcywgbmFtZSwgZGVmYXVsdCAqL1xuLyoqKi8gKGZ1bmN0aW9uKG1vZHVsZSkge1xuXG5tb2R1bGUuZXhwb3J0cyA9IHtcIm1haW5cIjpcImRpc3QvaW5kZXguanNcIixcImxpY2Vuc2VcIjpcIk1JVFwiLFwiZGV2RGVwZW5kZW5jaWVzXCI6e1wiQHR5cGVzL3JlYWN0XCI6XCJeMTYuNC4xNlwifSxcInBlZXJEZXBlbmRlbmNpZXNcIjp7XCJmcmFtZXJcIjpcIl4wLjEwXCIsXCJyZWFjdFwiOlwiXjE2LjMuMFwiLFwicmVhY3QtZG9tXCI6XCJeMTYuMy4wXCJ9LFwiZnJhbWVyXCI6e1wiaWRcIjpcImZjZjllNTEyLWViNjQtNGNlZC1hNDE0LTUzNDliNWMwZDkxN1wiLFwiZGlzcGxheU5hbWVcIjpcIlR3aXR0ZXIgU3RpY2t5XCJ9LFwiYXV0aG9yXCI6XCJKb295b3VuZyBNb29uXCIsXCJkZXBlbmRlbmNpZXNcIjp7fSxcIm5hbWVcIjpcIkBmcmFtZXIvY29kZW1pbGxpLnR3aXR0ZXItc3RpY2t5XCJ9O1xuXG4vKioqLyB9KSxcblxuLyoqKi8gXCJmcmFtZXJcIjpcbi8qISoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiEqXFxcbiAgISoqKiBleHRlcm5hbCB7XCJyb290XCI6XCJGcmFtZXJcIixcImNvbW1vbmpzMlwiOlwiZnJhbWVyXCIsXCJjb21tb25qc1wiOlwiZnJhbWVyXCIsXCJhbWRcIjpcImZyYW1lclwifSAqKiohXG4gIFxcKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xuLyohIG5vIHN0YXRpYyBleHBvcnRzIGZvdW5kICovXG4vKioqLyAoZnVuY3Rpb24obW9kdWxlLCBleHBvcnRzKSB7XG5cbm1vZHVsZS5leHBvcnRzID0gX19XRUJQQUNLX0VYVEVSTkFMX01PRFVMRV9mcmFtZXJfXztcblxuLyoqKi8gfSksXG5cbi8qKiovIFwicmVhY3RcIjpcbi8qISoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqISpcXFxuICAhKioqIGV4dGVybmFsIHtcInJvb3RcIjpcIlJlYWN0XCIsXCJjb21tb25qczJcIjpcInJlYWN0XCIsXCJjb21tb25qc1wiOlwicmVhY3RcIixcImFtZFwiOlwicmVhY3RcIn0gKioqIVxuICBcXCoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xuLyohIG5vIHN0YXRpYyBleHBvcnRzIGZvdW5kICovXG4vKioqLyAoZnVuY3Rpb24obW9kdWxlLCBleHBvcnRzKSB7XG5cbm1vZHVsZS5leHBvcnRzID0gX19XRUJQQUNLX0VYVEVSTkFMX01PRFVMRV9yZWFjdF9fO1xuXG4vKioqLyB9KVxuXG4vKioqKioqLyB9KTtcbn0pO1xuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///../../../../Applications/Framer X.app/Contents/Resources/Server/lib/framer-package-loader.js!./node_modules/@framer/codemilli.twitter-sticky/dist/index.js\n");
+
+/***/ }),
+
+/***/ "./code sync recursive \\.(t|j)s(x?)|\\.css$":
+/*!***************************************!*\
+  !*** ./code sync \.(t|j)s(x?)|\.css$ ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./canvas.tsx": "./code/canvas.tsx"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	var module = __webpack_require__(id);
+	return module;
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error('Cannot find module "' + req + '".');
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./code sync recursive \\.(t|j)s(x?)|\\.css$";
+
+/***/ }),
+
+/***/ "./code/canvas.tsx":
+/*!*************************!*\
+  !*** ./code/canvas.tsx ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+// WARNING: this file is auto generated, any changes will be lost
+const framer_1 = __webpack_require__(/*! framer */ "framer");
+const canvas = framer_1.CanvasStore.shared({"children":[]});
+
+
+/***/ }),
+
+/***/ "./package.js":
+/*!********************!*\
+  !*** ./package.js ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// The template for the dynamic webpack entry. Be aware of the variables
+
+const packageJson = __webpack_require__(/*! ./package.json */ "./package.json")
+
+const package = {
+    packageJson,
+    sourceModules: {},
+    dependencies: {},
+}
+
+// This is a special webpack thing that watches the whole directory
+// https://github.com/webpack/docs/wiki/context
+const ctx = __webpack_require__("./code sync recursive \\.(t|j)s(x?)|\\.css$")
+
+ctx.keys().forEach(key => {
+    package.sourceModules[key] = () => ctx(key)
+})
+
+// The packages are passed in through a template
+const packages = {}
+
+                packages["framer"] = () => {
+                    var package = {}
+                    try {
+                        package = __webpack_require__(/*! framer */ "framer")
+                    } catch (e) {
+                        console.log(e)
+                    }
+                    package.__framer__ = package.__framer__ || {}
+                    package.__framer__.packageJson = {"name":"framer","version":"0.10.10","main":"build/framer.js","author":"Framer","license":"MIT","scripts":{"coverage":"jest --config jest.json --coverage","test":"jest --config jest.json","watch":"jest --config jest.json --watch"},"devDependencies":{"@microsoft/api-documenter":"^1.5.47","@microsoft/api-extractor":"^7","@types/chalk":"^2.2.0","@types/draft-js":"0.10.19","@types/enzyme":"^3.1.10","@types/enzyme-adapter-react-16":"^1.0.3","@types/hsluv":"https://github.com/framer/typed_hsluv#bump","@types/jest":"^23.0.0","@types/jest-diff":"^20.0.0","@types/jest-matcher-utils":"^21.0.1","@types/node":"^9.6.0","@types/react":"^16","@types/react-dom":"^16","cache-loader":"^1.2.2","chalk":"^2.4.1","convert-tsconfig-paths-to-webpack-aliases":"^0.9.2","css.escape":"^1.5.1","draft-js":"0.10.4","enzyme":"^3.3.0","enzyme-adapter-react-16":"^1.1.1","eventemitter3":"^3.1.0","fork-ts-checker-webpack-plugin":"^0.4.1","hoist-non-react-statics":"^2.5.0","hsluv":"^0.0.3","immutable":"^3.8.2","jest":"^23.1.0","jest-diff":"^23.6.0","jest-junit":"^5.2.0","progress-bar-webpack-plugin":"^1.11.0","raf":"^3.4.0","react":"~16.4","react-dev-utils":"^5.0.1","react-dom":"~16.4","semver":"^5.6.0","ts-jest":"^23.10.5","ts-loader":"^4.1.0","typescript":"^3.0.1","watch":"^1.0.2","webpack":"^4.4.1","webpack-cli":"^3.1.2","webpack-dev-server":"^3.1.10","xcssmatrix":"^0.2.2"},"peerDependencies":{"react":"^16.3","react-dom":"^16.3"},"tsdoc":{"tsdocFlavor":"AEDoc"},"framer":{"components":[{"name":"Scroll","children":true,"properties":[{"key":"direction","title":"Direction","kind":"enum","options":["horizontal","vertical","both"]}]},{"name":"Page"},{"name":"Stack"},{"name":"FramerAppleWatch38","type":"device"},{"name":"FramerAppleWatch42","type":"device"},{"name":"FramerSonySmartWatch","type":"device"},{"name":"FramerAppleIPhoneSE","type":"device"},{"name":"FramerAppleIPhone8","type":"device"},{"name":"FramerAppleIPhone8Plus","type":"device"},{"name":"FramerAppleIPhoneXS","type":"device"},{"name":"FramerAppleIPhoneXR","type":"device"},{"name":"FramerAppleIPhoneXSMax","type":"device"},{"name":"FramerGooglePixel2","type":"device"},{"name":"FramerGooglePixel2XL","type":"device"},{"name":"FramerGooglePixel3","type":"device"},{"name":"FramerGooglePixel3XL","type":"device"},{"name":"FramerSamsungNote5","type":"device"},{"name":"FramerSamsungGalaxyS9","type":"device"},{"name":"FramerAppleIPadAir","type":"device"},{"name":"FramerAppleIPadMini","type":"device"},{"name":"FramerAppleIPadPro","type":"device"},{"name":"FramerGoogleNexusTablet","type":"device"},{"name":"FramerMicrosoftSurfacePro3","type":"device"},{"name":"FramerMicrosoftSurfacePro4","type":"device"},{"name":"FramerAppleIMac","type":"device"},{"name":"FramerAppleThunderboltDisplay","type":"device"},{"name":"FramerAppleMacBook","type":"device"},{"name":"FramerAppleMacBookAir","type":"device"},{"name":"FramerAppleMacBookPro","type":"device"},{"name":"FramerDellXPS","type":"device"},{"name":"FramerMicrosoftSurfaceBook","type":"device"},{"name":"FramerSonyW850C","type":"device"},{"name":"FramerStoreArtwork","type":"device"},{"name":"FramerStoreIcon","type":"device"}]}}
+                    return package
+                }
+
+                packages["@framer/codemilli.twitter-sticky"] = () => {
+                    var package = {}
+                    try {
+                        package = __webpack_require__(/*! framer-package-loader!@framer/codemilli.twitter-sticky */ "../../../../Applications/Framer X.app/Contents/Resources/Server/lib/framer-package-loader.js!./node_modules/@framer/codemilli.twitter-sticky/dist/index.js")
+                    } catch (e) {
+                        console.log(e)
+                    }
+                    package.__framer__ = package.__framer__ || {}
+                    package.__framer__.packageJson = {"main":"dist/index.js","license":"MIT","devDependencies":{"@types/react":"^16.4.16"},"peerDependencies":{"framer":"^0.10","react":"^16.3.0","react-dom":"^16.3.0"},"framer":{"id":"fcf9e512-eb64-4ced-a414-5349b5c0d917","displayName":"Twitter Sticky"},"author":"Jooyoung Moon","dependencies":{},"name":"@framer/codemilli.twitter-sticky","version":"1.0.0","design":{"root":{"__class":"RootNode","children":[{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0,"centerAnchorY":0,"children":[{"__class":"CodeComponentNode","aspectRatio":null,"bottom":0,"centerAnchorX":0.5,"centerAnchorY":0.5,"children":[],"clip":true,"codeComponentIdentifier":"./TwitterStickyContent.tsx_TwitterStickyContent","codeComponentProps":{"children":[{"enabled":true,"type":"componentinstance","value":"oQXCDzW1v"}],"duration":600,"minTop":200},"codeOverrideEnabled":false,"constraintsLocked":false,"exportOptions":[],"fillColor":"rgba(255,255,255,1)","fillEnabled":false,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":667,"heightType":0,"id":"IL99VOaTh","intrinsicHeight":null,"intrinsicWidth":null,"left":0,"locked":false,"name":"TwitterStickyContent","opacity":1,"originalid":null,"parentid":"Stdz8IR2q","radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"right":0,"rotation":0,"top":0,"visible":true,"width":375,"widthType":0}],"clip":true,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":"framer/FramerAppleIPhone8","exportOptions":[],"fillColor":"rgba(255,255,255,1)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":667,"heightType":0,"id":"Stdz8IR2q","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":1176,"locked":false,"name":"Apple iPhone 8","navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"B6O00DmRx","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":null,"rotation":0,"top":-813,"visible":true,"width":375,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.011244377811094454,"children":[],"clip":true,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"hsl(0, 4%, 43%)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":49,"heightType":0,"id":"vLji7ez0t","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":1176,"locked":false,"name":"FirstHeader","navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"B6O00DmRx","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":null,"rotation":0,"top":-904,"visible":true,"width":375,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":1.4493333333333334,"centerAnchorY":0.6755181347150259,"children":[{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.17487046632124353,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"AFMMXj8fM","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"oQXCDzW1v","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":222,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.25777202072538863,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"ABWwlnTv6","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"oQXCDzW1v","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":350,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.34067357512953367,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"L9oNoBAcG","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"oQXCDzW1v","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":478,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.42357512953367876,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"nwIedAhNA","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"oQXCDzW1v","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":606,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":716,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.5051813471502591,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"b8Ibv4OzR","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"oQXCDzW1v","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":null,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":588,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.5880829015544041,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"Rk7gnBsPO","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"oQXCDzW1v","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":null,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":460,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.6709844559585493,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"GGyVaQ5jh","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"oQXCDzW1v","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":null,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":332,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.7538860103626943,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"J4HyULN7m","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"oQXCDzW1v","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":null,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.09196891191709844,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"TOXWJEid2","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"oQXCDzW1v","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":94,"visible":true,"width":314,"widthType":0},{"__class":"CodeComponentNode","aspectRatio":null,"bottom":null,"centerAnchorX":0.5,"centerAnchorY":0.02104922279792746,"children":[],"clip":true,"codeComponentIdentifier":"./TwitterStickyHeader.tsx_TwitterStickyHeader","codeComponentProps":{"children":[{"enabled":true,"type":"componentinstance","value":"vLji7ez0t"}]},"codeOverrideEnabled":false,"constraintsLocked":false,"exportOptions":[],"fillColor":"rgba(255,255,255,1)","fillEnabled":false,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":65,"heightType":0,"id":"M1J3AJ5Hv","intrinsicHeight":null,"intrinsicWidth":null,"left":0,"locked":false,"name":null,"opacity":1,"originalid":null,"parentid":"oQXCDzW1v","radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"right":0,"rotation":0,"top":0,"visible":true,"width":375,"widthType":0}],"clip":true,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(255,255,255,1)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":1544,"heightType":0,"id":"oQXCDzW1v","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":1738,"locked":false,"name":"Tweets","navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"B6O00DmRx","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":null,"rotation":0,"top":-1050,"visible":true,"width":375,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0,"centerAnchorY":0,"children":[{"__class":"CodeComponentNode","aspectRatio":null,"bottom":0,"centerAnchorX":0.5,"centerAnchorY":0.5,"children":[],"clip":true,"codeComponentIdentifier":"@framer/perrysmotors.sticky-headers/./StickyScroll.tsx_StickyScroll","codeComponentProps":{"children":[{"enabled":true,"type":"componentinstance","value":"K3UBvRxLw"}],"offset":135},"codeOverrideEnabled":false,"constraintsLocked":false,"exportOptions":[],"fillColor":"rgba(255,255,255,1)","fillEnabled":false,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":667,"heightType":0,"id":"b4EdXt2Ik","intrinsicHeight":null,"intrinsicWidth":null,"left":0,"locked":false,"name":null,"opacity":1,"originalid":null,"parentid":"lcTanAMY0","radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"right":0,"rotation":0,"top":0,"visible":true,"width":375,"widthType":0}],"clip":true,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":"framer/FramerAppleIPhone8","exportOptions":[],"fillColor":"rgba(255,255,255,1)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":667,"heightType":0,"id":"lcTanAMY0","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":2334,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"B6O00DmRx","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":null,"rotation":0,"top":-813,"visible":true,"width":375,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0.58,"centerAnchorY":0.0472263868065967,"children":[],"clip":true,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"hsl(0, 4%, 43%)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":49,"heightType":0,"id":"hxy06KKXU","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":2334,"locked":false,"name":"FirstHeader","navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"B6O00DmRx","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":null,"rotation":0,"top":-1050,"visible":true,"width":375,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":1.404,"centerAnchorY":1.4017991004497752,"children":[{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.17487046632124353,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"izwwnWynN","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"K3UBvRxLw","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":222,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.25777202072538863,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"wYmKFWlng","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"K3UBvRxLw","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":350,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.34067357512953367,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"usQ37Vwoe","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"K3UBvRxLw","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":478,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.42357512953367876,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"Npylkvy_k","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"K3UBvRxLw","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":606,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":716,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.5051813471502591,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"U_kY_k4Jw","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"K3UBvRxLw","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":null,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":588,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.5880829015544041,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"o5gHVLwlH","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"K3UBvRxLw","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":null,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":460,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.6709844559585493,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"Znxq8jjzB","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"K3UBvRxLw","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":null,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":332,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.7538860103626943,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"jqcP0E7uq","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"K3UBvRxLw","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":null,"visible":true,"width":314,"widthType":0},{"__class":"FrameNode","aspectRatio":null,"blendingEnabled":0,"blendingMode":"normal","bottom":null,"centerAnchorX":0.49866666666666665,"centerAnchorY":0.09196891191709844,"children":[],"clip":false,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(0, 153, 255, 0.5)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":96,"heightType":0,"id":"f2ol9z3Lo","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":30,"locked":false,"name":null,"navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"K3UBvRxLw","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":31,"rotation":0,"top":94,"visible":true,"width":314,"widthType":0},{"__class":"CodeComponentNode","aspectRatio":null,"bottom":null,"centerAnchorX":0.5,"centerAnchorY":0.015867875647668395,"children":[],"clip":true,"codeComponentIdentifier":"@framer/perrysmotors.sticky-headers/./StickyElement.tsx_StickyElement","codeComponentProps":{"children":[{"enabled":true,"type":"componentinstance","value":"hxy06KKXU"}]},"codeOverrideEnabled":false,"constraintsLocked":false,"exportOptions":[],"fillColor":"rgba(255,255,255,1)","fillEnabled":false,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":49,"heightType":0,"id":"iKsPgEDFl","intrinsicHeight":null,"intrinsicWidth":null,"left":0,"locked":false,"name":null,"opacity":1,"originalid":null,"parentid":"K3UBvRxLw","radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"right":0,"rotation":0,"top":0,"visible":true,"width":375,"widthType":0}],"clip":true,"codeOverrideEnabled":false,"constraintsLocked":false,"deviceType":null,"exportOptions":[],"fillColor":"rgba(255,255,255,1)","fillEnabled":true,"fillGradient":{"__class":"LinearGradient","alpha":1,"angle":0,"end":"rgba(0,0,0,0)","start":"black"},"fillImage":null,"fillImagePixelHeight":null,"fillImagePixelWidth":null,"fillImageResize":"fill","fillType":"color","height":1544,"heightType":0,"id":"K3UBvRxLw","intrinsicHeight":null,"intrinsicWidth":null,"isExternalMaster":null,"isMaster":false,"isTarget":false,"left":2970,"locked":false,"name":"Tweets","navigationTarget":null,"navigationTransition":"push","navigationTransitionBackdropColor":"rgba(4,4,15,.4)","navigationTransitionDirection":"left","opacity":1,"originalid":null,"parentid":"B6O00DmRx","previewSettings":null,"radius":0,"radiusBottomLeft":0,"radiusBottomRight":0,"radiusIsRelative":false,"radiusPerCorner":false,"radiusTopLeft":0,"radiusTopRight":0,"replicaInfo":null,"right":null,"rotation":0,"top":-1050,"visible":true,"width":375,"widthType":0}],"id":"B6O00DmRx","name":null,"originalid":null,"parentid":null,"visible":false},"version":48}}
+                    return package
+                }
+
+package.dependencies = packages
+
+exports.__framer__ = package
+
+
+/***/ }),
+
+/***/ "./package.json":
+/*!**********************!*\
+  !*** ./package.json ***!
+  \**********************/
+/*! exports provided: main, license, devDependencies, peerDependencies, framer, author, dependencies, default */
+/***/ (function(module) {
+
+module.exports = {"main":"dist/index.js","license":"MIT","devDependencies":{"@types/react":"^16.4.16"},"peerDependencies":{"framer":"^0.10","react":"^16.3.0","react-dom":"^16.3.0"},"framer":{"id":"b2284bf3-fc9c-4980-a43b-cee0533df206"},"author":"Jooyoung Moon","dependencies":{"@framer/codemilli.twitter-sticky":"^1.0.0"}};
+
+/***/ }),
+
+/***/ "framer":
+/*!******************************************************************************************!*\
+  !*** external {"root":"Framer","commonjs2":"framer","commonjs":"framer","amd":"framer"} ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_framer__;
+
+/***/ }),
+
+/***/ "react":
+/*!**************************************************************************************!*\
+  !*** external {"root":"React","commonjs2":"react","commonjs":"react","amd":"react"} ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
+
+/***/ })
+
+/******/ });
+});
+        </script>
+        
+        <script>
+        const data = {
+  "presentationNode": {
+    "componentClass": "Frame",
+    "props": {
+      "key": "jSYbzLPrd",
+      "id": "id_jSYbzLPrd",
+      "willChangeTransform": false,
+      "opacity": 1,
+      "radius": 0,
+      "rotation": 0,
+      "visible": true,
+      "overflow": "hidden",
+      "background": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1,
+        "h": 0,
+        "s": 0,
+        "l": 1,
+        "initialValue": "rgba(255,255,255,1)",
+        "roundA": 1,
+        "format": "rgb"
+      },
+      "left": 1128,
+      "right": null,
+      "top": -277,
+      "bottom": null,
+      "width": 375,
+      "height": 667,
+      "aspectRatio": null,
+      "centerX": "0%",
+      "centerY": "0%",
+      "parentSize": null
+    },
+    "children": [
+      {
+        "componentClass": "ComponentContainer",
+        "props": {
+          "key": "bBYKK1U6r",
+          "id": "id_bBYKK1U6r",
+          "willChangeTransform": false,
+          "rotation": 0,
+          "opacity": 1,
+          "componentIdentifier": "@framer/codemilli.twitter-sticky/./TwitterStickyContent.tsx_TwitterStickyContent",
+          "visible": true,
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 375,
+          "height": 667,
+          "aspectRatio": null,
+          "centerX": "50%",
+          "centerY": "50%",
+          "parentSize": null
+        },
+        "children": [
+          {
+            "componentClass": "@framer/codemilli.twitter-sticky/./TwitterStickyContent.tsx_TwitterStickyContent",
+            "props": {
+              "minTop": 0,
+              "duration": 200,
+              "placeholders": null,
+              "__slotKeys": [
+                "children"
+              ],
+              "children": [
+                {
+                  "componentClass": "Frame",
+                  "props": {
+                    "key": "K3UBvRxLw",
+                    "id": "id_K3UBvRxLw",
+                    "willChangeTransform": false,
+                    "opacity": 1,
+                    "radius": 0,
+                    "rotation": 0,
+                    "visible": true,
+                    "overflow": "hidden",
+                    "background": {
+                      "r": 255,
+                      "g": 255,
+                      "b": 255,
+                      "a": 1,
+                      "h": 0,
+                      "s": 0,
+                      "l": 1,
+                      "initialValue": "rgba(255,255,255,1)",
+                      "roundA": 1,
+                      "format": "rgb"
+                    },
+                    "left": 653,
+                    "right": null,
+                    "top": -277,
+                    "bottom": null,
+                    "width": 375,
+                    "height": 1544,
+                    "aspectRatio": null,
+                    "centerX": "140.39999999999998%",
+                    "centerY": "140.17991004497753%",
+                    "parentSize": null
+                  },
+                  "children": [
+                    {
+                      "componentClass": "Frame",
+                      "props": {
+                        "key": "izwwnWynN",
+                        "id": "id_izwwnWynN",
+                        "willChangeTransform": false,
+                        "opacity": 1,
+                        "radius": 0,
+                        "rotation": 0,
+                        "visible": true,
+                        "overflow": "visible",
+                        "background": {
+                          "r": 0,
+                          "g": 153,
+                          "b": 255,
+                          "a": 0.5,
+                          "h": 204,
+                          "s": 1,
+                          "l": 0.5,
+                          "initialValue": "rgba(0, 153, 255, 0.5)",
+                          "roundA": 0.5,
+                          "format": "rgb"
+                        },
+                        "left": 30,
+                        "right": 31,
+                        "top": 222,
+                        "bottom": null,
+                        "width": 314,
+                        "height": 96,
+                        "aspectRatio": null,
+                        "centerX": "49.86666666666667%",
+                        "centerY": "17.487046632124354%",
+                        "parentSize": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "componentClass": "Frame",
+                      "props": {
+                        "key": "wYmKFWlng",
+                        "id": "id_wYmKFWlng",
+                        "willChangeTransform": false,
+                        "opacity": 1,
+                        "radius": 0,
+                        "rotation": 0,
+                        "visible": true,
+                        "overflow": "visible",
+                        "background": {
+                          "r": 0,
+                          "g": 153,
+                          "b": 255,
+                          "a": 0.5,
+                          "h": 204,
+                          "s": 1,
+                          "l": 0.5,
+                          "initialValue": "rgba(0, 153, 255, 0.5)",
+                          "roundA": 0.5,
+                          "format": "rgb"
+                        },
+                        "left": 30,
+                        "right": 31,
+                        "top": 350,
+                        "bottom": null,
+                        "width": 314,
+                        "height": 96,
+                        "aspectRatio": null,
+                        "centerX": "49.86666666666667%",
+                        "centerY": "25.777202072538863%",
+                        "parentSize": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "componentClass": "Frame",
+                      "props": {
+                        "key": "usQ37Vwoe",
+                        "id": "id_usQ37Vwoe",
+                        "willChangeTransform": false,
+                        "opacity": 1,
+                        "radius": 0,
+                        "rotation": 0,
+                        "visible": true,
+                        "overflow": "visible",
+                        "background": {
+                          "r": 0,
+                          "g": 153,
+                          "b": 255,
+                          "a": 0.5,
+                          "h": 204,
+                          "s": 1,
+                          "l": 0.5,
+                          "initialValue": "rgba(0, 153, 255, 0.5)",
+                          "roundA": 0.5,
+                          "format": "rgb"
+                        },
+                        "left": 30,
+                        "right": 31,
+                        "top": 478,
+                        "bottom": null,
+                        "width": 314,
+                        "height": 96,
+                        "aspectRatio": null,
+                        "centerX": "49.86666666666667%",
+                        "centerY": "34.067357512953365%",
+                        "parentSize": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "componentClass": "Frame",
+                      "props": {
+                        "key": "Npylkvy_k",
+                        "id": "id_Npylkvy_k",
+                        "willChangeTransform": false,
+                        "opacity": 1,
+                        "radius": 0,
+                        "rotation": 0,
+                        "visible": true,
+                        "overflow": "visible",
+                        "background": {
+                          "r": 0,
+                          "g": 153,
+                          "b": 255,
+                          "a": 0.5,
+                          "h": 204,
+                          "s": 1,
+                          "l": 0.5,
+                          "initialValue": "rgba(0, 153, 255, 0.5)",
+                          "roundA": 0.5,
+                          "format": "rgb"
+                        },
+                        "left": 30,
+                        "right": 31,
+                        "top": 606,
+                        "bottom": null,
+                        "width": 314,
+                        "height": 96,
+                        "aspectRatio": null,
+                        "centerX": "49.86666666666667%",
+                        "centerY": "42.35751295336787%",
+                        "parentSize": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "componentClass": "Frame",
+                      "props": {
+                        "key": "U_kY_k4Jw",
+                        "id": "id_U_kY_k4Jw",
+                        "willChangeTransform": false,
+                        "opacity": 1,
+                        "radius": 0,
+                        "rotation": 0,
+                        "visible": true,
+                        "overflow": "visible",
+                        "background": {
+                          "r": 0,
+                          "g": 153,
+                          "b": 255,
+                          "a": 0.5,
+                          "h": 204,
+                          "s": 1,
+                          "l": 0.5,
+                          "initialValue": "rgba(0, 153, 255, 0.5)",
+                          "roundA": 0.5,
+                          "format": "rgb"
+                        },
+                        "left": 30,
+                        "right": 31,
+                        "top": null,
+                        "bottom": 716,
+                        "width": 314,
+                        "height": 96,
+                        "aspectRatio": null,
+                        "centerX": "49.86666666666667%",
+                        "centerY": "50.51813471502591%",
+                        "parentSize": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "componentClass": "Frame",
+                      "props": {
+                        "key": "o5gHVLwlH",
+                        "id": "id_o5gHVLwlH",
+                        "willChangeTransform": false,
+                        "opacity": 1,
+                        "radius": 0,
+                        "rotation": 0,
+                        "visible": true,
+                        "overflow": "visible",
+                        "background": {
+                          "r": 0,
+                          "g": 153,
+                          "b": 255,
+                          "a": 0.5,
+                          "h": 204,
+                          "s": 1,
+                          "l": 0.5,
+                          "initialValue": "rgba(0, 153, 255, 0.5)",
+                          "roundA": 0.5,
+                          "format": "rgb"
+                        },
+                        "left": 30,
+                        "right": 31,
+                        "top": null,
+                        "bottom": 588,
+                        "width": 314,
+                        "height": 96,
+                        "aspectRatio": null,
+                        "centerX": "49.86666666666667%",
+                        "centerY": "58.80829015544041%",
+                        "parentSize": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "componentClass": "Frame",
+                      "props": {
+                        "key": "Znxq8jjzB",
+                        "id": "id_Znxq8jjzB",
+                        "willChangeTransform": false,
+                        "opacity": 1,
+                        "radius": 0,
+                        "rotation": 0,
+                        "visible": true,
+                        "overflow": "visible",
+                        "background": {
+                          "r": 0,
+                          "g": 153,
+                          "b": 255,
+                          "a": 0.5,
+                          "h": 204,
+                          "s": 1,
+                          "l": 0.5,
+                          "initialValue": "rgba(0, 153, 255, 0.5)",
+                          "roundA": 0.5,
+                          "format": "rgb"
+                        },
+                        "left": 30,
+                        "right": 31,
+                        "top": null,
+                        "bottom": 460,
+                        "width": 314,
+                        "height": 96,
+                        "aspectRatio": null,
+                        "centerX": "49.86666666666667%",
+                        "centerY": "67.09844559585493%",
+                        "parentSize": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "componentClass": "Frame",
+                      "props": {
+                        "key": "jqcP0E7uq",
+                        "id": "id_jqcP0E7uq",
+                        "willChangeTransform": false,
+                        "opacity": 1,
+                        "radius": 0,
+                        "rotation": 0,
+                        "visible": true,
+                        "overflow": "visible",
+                        "background": {
+                          "r": 0,
+                          "g": 153,
+                          "b": 255,
+                          "a": 0.5,
+                          "h": 204,
+                          "s": 1,
+                          "l": 0.5,
+                          "initialValue": "rgba(0, 153, 255, 0.5)",
+                          "roundA": 0.5,
+                          "format": "rgb"
+                        },
+                        "left": 30,
+                        "right": 31,
+                        "top": null,
+                        "bottom": 332,
+                        "width": 314,
+                        "height": 96,
+                        "aspectRatio": null,
+                        "centerX": "49.86666666666667%",
+                        "centerY": "75.38860103626943%",
+                        "parentSize": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "componentClass": "Frame",
+                      "props": {
+                        "key": "f2ol9z3Lo",
+                        "id": "id_f2ol9z3Lo",
+                        "willChangeTransform": false,
+                        "opacity": 1,
+                        "radius": 0,
+                        "rotation": 0,
+                        "visible": true,
+                        "overflow": "visible",
+                        "background": {
+                          "r": 0,
+                          "g": 153,
+                          "b": 255,
+                          "a": 0.5,
+                          "h": 204,
+                          "s": 1,
+                          "l": 0.5,
+                          "initialValue": "rgba(0, 153, 255, 0.5)",
+                          "roundA": 0.5,
+                          "format": "rgb"
+                        },
+                        "left": 30,
+                        "right": 31,
+                        "top": 94,
+                        "bottom": null,
+                        "width": 314,
+                        "height": 96,
+                        "aspectRatio": null,
+                        "centerX": "49.86666666666667%",
+                        "centerY": "9.196891191709843%",
+                        "parentSize": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "componentClass": "ComponentContainer",
+                      "props": {
+                        "key": "j0KPT5XKW",
+                        "id": "id_j0KPT5XKW",
+                        "willChangeTransform": false,
+                        "rotation": 0,
+                        "opacity": 1,
+                        "componentIdentifier": "@framer/codemilli.twitter-sticky/./TwitterStickyHeader.tsx_TwitterStickyHeader",
+                        "visible": true,
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": null,
+                        "width": 375,
+                        "height": 56,
+                        "aspectRatio": null,
+                        "centerX": "50%",
+                        "centerY": "1.8134715025906734%",
+                        "parentSize": null
+                      },
+                      "children": [
+                        {
+                          "componentClass": "@framer/codemilli.twitter-sticky/./TwitterStickyHeader.tsx_TwitterStickyHeader",
+                          "props": {
+                            "placeholders": null,
+                            "__slotKeys": [
+                              "children"
+                            ],
+                            "children": [
+                              {
+                                "componentClass": "Frame",
+                                "props": {
+                                  "key": "hxy06KKXU",
+                                  "id": "id_hxy06KKXU",
+                                  "willChangeTransform": false,
+                                  "opacity": 1,
+                                  "radius": 0,
+                                  "rotation": 0,
+                                  "visible": true,
+                                  "overflow": "hidden",
+                                  "background": {
+                                    "r": 114.036,
+                                    "g": 105.264,
+                                    "b": 105.264,
+                                    "a": 1,
+                                    "h": 0,
+                                    "s": 0.04,
+                                    "l": 0.43,
+                                    "initialValue": "hsl(0, 4%, 43%)",
+                                    "roundA": 1,
+                                    "format": "hsl"
+                                  },
+                                  "left": 177,
+                                  "right": null,
+                                  "top": -277,
+                                  "bottom": null,
+                                  "width": 375,
+                                  "height": 49,
+                                  "aspectRatio": null,
+                                  "centerX": "27.6%",
+                                  "centerY": "1.6515544041450776%",
+                                  "parentSize": null
+                                },
+                                "children": []
+                              }
+                            ],
+                            "id": "j0KPT5XKW@framer/codemilli.twitter-sticky/./TwitterStickyHeader.tsx_TwitterStickyHeader",
+                            "key": "j0KPT5XKW@framer/codemilli.twitter-sticky/./TwitterStickyHeader.tsx_TwitterStickyHeader"
+                          },
+                          "children": [
+                            {
+                              "componentClass": "Frame",
+                              "props": {
+                                "key": "hxy06KKXU",
+                                "id": "id_hxy06KKXU",
+                                "willChangeTransform": false,
+                                "opacity": 1,
+                                "radius": 0,
+                                "rotation": 0,
+                                "visible": true,
+                                "overflow": "hidden",
+                                "background": {
+                                  "r": 114.036,
+                                  "g": 105.264,
+                                  "b": 105.264,
+                                  "a": 1,
+                                  "h": 0,
+                                  "s": 0.04,
+                                  "l": 0.43,
+                                  "initialValue": "hsl(0, 4%, 43%)",
+                                  "roundA": 1,
+                                  "format": "hsl"
+                                },
+                                "left": 177,
+                                "right": null,
+                                "top": -277,
+                                "bottom": null,
+                                "width": 375,
+                                "height": 49,
+                                "aspectRatio": null,
+                                "centerX": "27.6%",
+                                "centerY": "1.6515544041450776%",
+                                "parentSize": null
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "id": "bBYKK1U6r@framer/codemilli.twitter-sticky/./TwitterStickyContent.tsx_TwitterStickyContent",
+              "key": "bBYKK1U6r@framer/codemilli.twitter-sticky/./TwitterStickyContent.tsx_TwitterStickyContent"
+            },
+            "children": [
+              {
+                "componentClass": "Frame",
+                "props": {
+                  "key": "K3UBvRxLw",
+                  "id": "id_K3UBvRxLw",
+                  "willChangeTransform": false,
+                  "opacity": 1,
+                  "radius": 0,
+                  "rotation": 0,
+                  "visible": true,
+                  "overflow": "hidden",
+                  "background": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1,
+                    "h": 0,
+                    "s": 0,
+                    "l": 1,
+                    "initialValue": "rgba(255,255,255,1)",
+                    "roundA": 1,
+                    "format": "rgb"
+                  },
+                  "left": 653,
+                  "right": null,
+                  "top": -277,
+                  "bottom": null,
+                  "width": 375,
+                  "height": 1544,
+                  "aspectRatio": null,
+                  "centerX": "140.39999999999998%",
+                  "centerY": "140.17991004497753%",
+                  "parentSize": null
+                },
+                "children": [
+                  {
+                    "componentClass": "Frame",
+                    "props": {
+                      "key": "izwwnWynN",
+                      "id": "id_izwwnWynN",
+                      "willChangeTransform": false,
+                      "opacity": 1,
+                      "radius": 0,
+                      "rotation": 0,
+                      "visible": true,
+                      "overflow": "visible",
+                      "background": {
+                        "r": 0,
+                        "g": 153,
+                        "b": 255,
+                        "a": 0.5,
+                        "h": 204,
+                        "s": 1,
+                        "l": 0.5,
+                        "initialValue": "rgba(0, 153, 255, 0.5)",
+                        "roundA": 0.5,
+                        "format": "rgb"
+                      },
+                      "left": 30,
+                      "right": 31,
+                      "top": 222,
+                      "bottom": null,
+                      "width": 314,
+                      "height": 96,
+                      "aspectRatio": null,
+                      "centerX": "49.86666666666667%",
+                      "centerY": "17.487046632124354%",
+                      "parentSize": null
+                    },
+                    "children": []
+                  },
+                  {
+                    "componentClass": "Frame",
+                    "props": {
+                      "key": "wYmKFWlng",
+                      "id": "id_wYmKFWlng",
+                      "willChangeTransform": false,
+                      "opacity": 1,
+                      "radius": 0,
+                      "rotation": 0,
+                      "visible": true,
+                      "overflow": "visible",
+                      "background": {
+                        "r": 0,
+                        "g": 153,
+                        "b": 255,
+                        "a": 0.5,
+                        "h": 204,
+                        "s": 1,
+                        "l": 0.5,
+                        "initialValue": "rgba(0, 153, 255, 0.5)",
+                        "roundA": 0.5,
+                        "format": "rgb"
+                      },
+                      "left": 30,
+                      "right": 31,
+                      "top": 350,
+                      "bottom": null,
+                      "width": 314,
+                      "height": 96,
+                      "aspectRatio": null,
+                      "centerX": "49.86666666666667%",
+                      "centerY": "25.777202072538863%",
+                      "parentSize": null
+                    },
+                    "children": []
+                  },
+                  {
+                    "componentClass": "Frame",
+                    "props": {
+                      "key": "usQ37Vwoe",
+                      "id": "id_usQ37Vwoe",
+                      "willChangeTransform": false,
+                      "opacity": 1,
+                      "radius": 0,
+                      "rotation": 0,
+                      "visible": true,
+                      "overflow": "visible",
+                      "background": {
+                        "r": 0,
+                        "g": 153,
+                        "b": 255,
+                        "a": 0.5,
+                        "h": 204,
+                        "s": 1,
+                        "l": 0.5,
+                        "initialValue": "rgba(0, 153, 255, 0.5)",
+                        "roundA": 0.5,
+                        "format": "rgb"
+                      },
+                      "left": 30,
+                      "right": 31,
+                      "top": 478,
+                      "bottom": null,
+                      "width": 314,
+                      "height": 96,
+                      "aspectRatio": null,
+                      "centerX": "49.86666666666667%",
+                      "centerY": "34.067357512953365%",
+                      "parentSize": null
+                    },
+                    "children": []
+                  },
+                  {
+                    "componentClass": "Frame",
+                    "props": {
+                      "key": "Npylkvy_k",
+                      "id": "id_Npylkvy_k",
+                      "willChangeTransform": false,
+                      "opacity": 1,
+                      "radius": 0,
+                      "rotation": 0,
+                      "visible": true,
+                      "overflow": "visible",
+                      "background": {
+                        "r": 0,
+                        "g": 153,
+                        "b": 255,
+                        "a": 0.5,
+                        "h": 204,
+                        "s": 1,
+                        "l": 0.5,
+                        "initialValue": "rgba(0, 153, 255, 0.5)",
+                        "roundA": 0.5,
+                        "format": "rgb"
+                      },
+                      "left": 30,
+                      "right": 31,
+                      "top": 606,
+                      "bottom": null,
+                      "width": 314,
+                      "height": 96,
+                      "aspectRatio": null,
+                      "centerX": "49.86666666666667%",
+                      "centerY": "42.35751295336787%",
+                      "parentSize": null
+                    },
+                    "children": []
+                  },
+                  {
+                    "componentClass": "Frame",
+                    "props": {
+                      "key": "U_kY_k4Jw",
+                      "id": "id_U_kY_k4Jw",
+                      "willChangeTransform": false,
+                      "opacity": 1,
+                      "radius": 0,
+                      "rotation": 0,
+                      "visible": true,
+                      "overflow": "visible",
+                      "background": {
+                        "r": 0,
+                        "g": 153,
+                        "b": 255,
+                        "a": 0.5,
+                        "h": 204,
+                        "s": 1,
+                        "l": 0.5,
+                        "initialValue": "rgba(0, 153, 255, 0.5)",
+                        "roundA": 0.5,
+                        "format": "rgb"
+                      },
+                      "left": 30,
+                      "right": 31,
+                      "top": null,
+                      "bottom": 716,
+                      "width": 314,
+                      "height": 96,
+                      "aspectRatio": null,
+                      "centerX": "49.86666666666667%",
+                      "centerY": "50.51813471502591%",
+                      "parentSize": null
+                    },
+                    "children": []
+                  },
+                  {
+                    "componentClass": "Frame",
+                    "props": {
+                      "key": "o5gHVLwlH",
+                      "id": "id_o5gHVLwlH",
+                      "willChangeTransform": false,
+                      "opacity": 1,
+                      "radius": 0,
+                      "rotation": 0,
+                      "visible": true,
+                      "overflow": "visible",
+                      "background": {
+                        "r": 0,
+                        "g": 153,
+                        "b": 255,
+                        "a": 0.5,
+                        "h": 204,
+                        "s": 1,
+                        "l": 0.5,
+                        "initialValue": "rgba(0, 153, 255, 0.5)",
+                        "roundA": 0.5,
+                        "format": "rgb"
+                      },
+                      "left": 30,
+                      "right": 31,
+                      "top": null,
+                      "bottom": 588,
+                      "width": 314,
+                      "height": 96,
+                      "aspectRatio": null,
+                      "centerX": "49.86666666666667%",
+                      "centerY": "58.80829015544041%",
+                      "parentSize": null
+                    },
+                    "children": []
+                  },
+                  {
+                    "componentClass": "Frame",
+                    "props": {
+                      "key": "Znxq8jjzB",
+                      "id": "id_Znxq8jjzB",
+                      "willChangeTransform": false,
+                      "opacity": 1,
+                      "radius": 0,
+                      "rotation": 0,
+                      "visible": true,
+                      "overflow": "visible",
+                      "background": {
+                        "r": 0,
+                        "g": 153,
+                        "b": 255,
+                        "a": 0.5,
+                        "h": 204,
+                        "s": 1,
+                        "l": 0.5,
+                        "initialValue": "rgba(0, 153, 255, 0.5)",
+                        "roundA": 0.5,
+                        "format": "rgb"
+                      },
+                      "left": 30,
+                      "right": 31,
+                      "top": null,
+                      "bottom": 460,
+                      "width": 314,
+                      "height": 96,
+                      "aspectRatio": null,
+                      "centerX": "49.86666666666667%",
+                      "centerY": "67.09844559585493%",
+                      "parentSize": null
+                    },
+                    "children": []
+                  },
+                  {
+                    "componentClass": "Frame",
+                    "props": {
+                      "key": "jqcP0E7uq",
+                      "id": "id_jqcP0E7uq",
+                      "willChangeTransform": false,
+                      "opacity": 1,
+                      "radius": 0,
+                      "rotation": 0,
+                      "visible": true,
+                      "overflow": "visible",
+                      "background": {
+                        "r": 0,
+                        "g": 153,
+                        "b": 255,
+                        "a": 0.5,
+                        "h": 204,
+                        "s": 1,
+                        "l": 0.5,
+                        "initialValue": "rgba(0, 153, 255, 0.5)",
+                        "roundA": 0.5,
+                        "format": "rgb"
+                      },
+                      "left": 30,
+                      "right": 31,
+                      "top": null,
+                      "bottom": 332,
+                      "width": 314,
+                      "height": 96,
+                      "aspectRatio": null,
+                      "centerX": "49.86666666666667%",
+                      "centerY": "75.38860103626943%",
+                      "parentSize": null
+                    },
+                    "children": []
+                  },
+                  {
+                    "componentClass": "Frame",
+                    "props": {
+                      "key": "f2ol9z3Lo",
+                      "id": "id_f2ol9z3Lo",
+                      "willChangeTransform": false,
+                      "opacity": 1,
+                      "radius": 0,
+                      "rotation": 0,
+                      "visible": true,
+                      "overflow": "visible",
+                      "background": {
+                        "r": 0,
+                        "g": 153,
+                        "b": 255,
+                        "a": 0.5,
+                        "h": 204,
+                        "s": 1,
+                        "l": 0.5,
+                        "initialValue": "rgba(0, 153, 255, 0.5)",
+                        "roundA": 0.5,
+                        "format": "rgb"
+                      },
+                      "left": 30,
+                      "right": 31,
+                      "top": 94,
+                      "bottom": null,
+                      "width": 314,
+                      "height": 96,
+                      "aspectRatio": null,
+                      "centerX": "49.86666666666667%",
+                      "centerY": "9.196891191709843%",
+                      "parentSize": null
+                    },
+                    "children": []
+                  },
+                  {
+                    "componentClass": "ComponentContainer",
+                    "props": {
+                      "key": "j0KPT5XKW",
+                      "id": "id_j0KPT5XKW",
+                      "willChangeTransform": false,
+                      "rotation": 0,
+                      "opacity": 1,
+                      "componentIdentifier": "@framer/codemilli.twitter-sticky/./TwitterStickyHeader.tsx_TwitterStickyHeader",
+                      "visible": true,
+                      "left": 0,
+                      "right": 0,
+                      "top": 0,
+                      "bottom": null,
+                      "width": 375,
+                      "height": 56,
+                      "aspectRatio": null,
+                      "centerX": "50%",
+                      "centerY": "1.8134715025906734%",
+                      "parentSize": null
+                    },
+                    "children": [
+                      {
+                        "componentClass": "@framer/codemilli.twitter-sticky/./TwitterStickyHeader.tsx_TwitterStickyHeader",
+                        "props": {
+                          "placeholders": null,
+                          "__slotKeys": [
+                            "children"
+                          ],
+                          "children": [
+                            {
+                              "componentClass": "Frame",
+                              "props": {
+                                "key": "hxy06KKXU",
+                                "id": "id_hxy06KKXU",
+                                "willChangeTransform": false,
+                                "opacity": 1,
+                                "radius": 0,
+                                "rotation": 0,
+                                "visible": true,
+                                "overflow": "hidden",
+                                "background": {
+                                  "r": 114.036,
+                                  "g": 105.264,
+                                  "b": 105.264,
+                                  "a": 1,
+                                  "h": 0,
+                                  "s": 0.04,
+                                  "l": 0.43,
+                                  "initialValue": "hsl(0, 4%, 43%)",
+                                  "roundA": 1,
+                                  "format": "hsl"
+                                },
+                                "left": 177,
+                                "right": null,
+                                "top": -277,
+                                "bottom": null,
+                                "width": 375,
+                                "height": 49,
+                                "aspectRatio": null,
+                                "centerX": "27.6%",
+                                "centerY": "1.6515544041450776%",
+                                "parentSize": null
+                              },
+                              "children": []
+                            }
+                          ],
+                          "id": "j0KPT5XKW@framer/codemilli.twitter-sticky/./TwitterStickyHeader.tsx_TwitterStickyHeader",
+                          "key": "j0KPT5XKW@framer/codemilli.twitter-sticky/./TwitterStickyHeader.tsx_TwitterStickyHeader"
+                        },
+                        "children": [
+                          {
+                            "componentClass": "Frame",
+                            "props": {
+                              "key": "hxy06KKXU",
+                              "id": "id_hxy06KKXU",
+                              "willChangeTransform": false,
+                              "opacity": 1,
+                              "radius": 0,
+                              "rotation": 0,
+                              "visible": true,
+                              "overflow": "hidden",
+                              "background": {
+                                "r": 114.036,
+                                "g": 105.264,
+                                "b": 105.264,
+                                "a": 1,
+                                "h": 0,
+                                "s": 0.04,
+                                "l": 0.43,
+                                "initialValue": "hsl(0, 4%, 43%)",
+                                "roundA": 1,
+                                "format": "hsl"
+                              },
+                              "left": 177,
+                              "right": null,
+                              "top": -277,
+                              "bottom": null,
+                              "width": 375,
+                              "height": 49,
+                              "aspectRatio": null,
+                              "centerX": "27.6%",
+                              "centerY": "1.6515544041450776%",
+                              "parentSize": null
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "name": "Apple iPhone 8",
+    "id": "jSYbzLPrd",
+    "width": 375,
+    "height": 667,
+    "settings": {
+      "deviceType": "framer/FramerAppleIPhone8",
+      "deviceDescriptor": {
+        "hands": {
+          "Hand 1": {
+            "package": "@framer/framer.device-hand-iphone-1"
+          },
+          "Hand 2": {
+            "package": "@framer/framer.device-hand-iphone-2"
+          }
+        },
+        "pixelRatio": 2,
+        "canRotate": true,
+        "screen": {
+          "width": 750,
+          "height": 1334
+        },
+        "kind": "phone",
+        "skins": {
+          "Space Gray": {
+            "package": "@framer/framer.device-skin-apple-iphone8-space-gray"
+          },
+          "Silver": {
+            "package": "@framer/framer.device-skin-apple-iphone8-silver"
+          },
+          "Gold": {
+            "package": "@framer/framer.device-skin-apple-iphone8-gold"
+          }
+        },
+        "title": "Framer Bezel Apple iPhone 8",
+        "category": "Framer Bezel",
+        "selector": "Apple iPhone 8"
+      },
+      "zoom": -1,
+      "rotate": false,
+      "bezel": false,
+      "responsive": false,
+      "touch": true,
+      "__class": "PreviewSettings"
+    }
+  },
+  "navigation": {}
+};
+        const $build_index_js = document.querySelector("#build_index_js")
+        const script = $build_index_js ? $build_index_js.textContent.trim() : ""
+        
+        // need react to have rendered, before we can do setPreviewData
+        setTimeout(() => {
+            if (script.length > 0) {
+                setPreviewData(script, data)
+            } else {
+                fetch("build/index.js").then((response) => {
+                    return response.text().then((script) => {
+                        setPreviewData(script, data)
+                    })
+                })
+            }
+        }, 0)
+        </script>
+    </body>
+</html>
